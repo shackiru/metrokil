@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400; /* Regular weight */
+    font-display: swap;
+    src: url('/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 400; /* Regular italic weight */
+    font-display: swap;
+    src: url('/fonts/Raleway/static/Raleway-Italic.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700; /* Bold weight */
+    font-display: swap;
+    src: url('/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 700; /* Bold italic weight */
+    font-display: swap;
+    src: url('/fonts/Raleway/static/Raleway-BoldItalic.ttf') format('truetype');
+  }
+
+  /* Add more weights and styles as needed */
+}
