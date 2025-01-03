@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+    :root {
+        --primary-color: theme('colors.primary');
+    }
+
   @font-face {
     font-family: 'Raleway';
     font-style: normal;
@@ -33,6 +37,10 @@
     font-weight: 700; /* Bold italic weight */
     font-display: swap;
     src: url('/fonts/Raleway/static/Raleway-BoldItalic.ttf') format('truetype');
+  }
+
+  .active {
+    border-bottom: 3px solid var(--primary-color);
   }
 
   /* Add more weights and styles as needed */
