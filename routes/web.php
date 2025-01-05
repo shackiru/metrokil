@@ -8,3 +8,7 @@ Route::get('/', function () {
 });
 
 Route::apiResource('blogs', BlogController::class);
+
+Route::get('/pricing', function () {
+    return view('features.pricing.index');
+});

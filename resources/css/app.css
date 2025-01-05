@@ -44,4 +44,11 @@
   }
 
   /* Add more weights and styles as needed */
+  input:checked + div {
+    @apply border-primary;
 }
+input:checked + div svg {
+    @apply block;
+}
+}
+
