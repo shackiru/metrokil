@@ -16,7 +16,7 @@
     <div class="mt-12 mx-44">
         <div class="grid grid-cols-4 grid-rows-2 gap-6">
             @foreach ($blogs as $blog)
-                <a href="/blogs/{{ $blog->id }}" class="duration-300 transform hover:scale-105">
+                <a href="/blogs/{{ $blog->id }}">
                     <x-blog-card category="{{ $blog->category }}" image="{{ $blog->image_url }}"
                         author="{{ $blog->user->name }}" isLimitWidth="false">
                         {{ $blog->title }}
