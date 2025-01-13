@@ -1,46 +1,141 @@
 <x-template title="Service" active="services">
     <div class="mt-24 mx-44">
+        <div class="grid grid-cols-5 justify-between">
+            <div class="col-span-3">
+                <div class="flex flex-col">
+                    <h4 class="text-xl font-semibold">Layanan <span class="text-primary">Metrokil</span></h4>
+                    <h2 class="text-5xl font-semibold mt-3">Kenapa harus <span class="text-primary">Metrokil</span>?</h2>
+                    <p class="text-lg opacity-55 font-semibold mt-5">Sementara dalam Kamus Besar Bahasa Indonesia
+                        dijelaskan
+                        pelayanan sebagai hal, cara, atau hasil
+                        pekerjaan melayani. Dalam pengertian lain, menurut Moenir (2015: 27) pelayanan hakikatnya adalah
+                        serangkaian kegiatan, karena itu merupakan proses.
+                        <br><br>
+                        Tikus adalah hewan pengerat yang terkenal karena kemampuannya beradaptasi dengan lingkungan
+                        manusia. Mereka dapat ditemukan di berbagai tempat, mulai dari rumah tinggal, gudang, hingga
+                        area pertanian.
+                        <br><br>
+                        Ada berbagai cara yang dapat digunakan untuk membasmi tikus, dari yang tradisional hingga
+                        teknologi modern. Berikut adalah beberapa metode yang umum digunakan:
+                    </p>
+                </div>
+            </div>
+            <div class="col-span-2 justify-self-end">
+                <img src="https://imgs.search.brave.com/ewPePM7Kfpgek378czv-hge_4Uwp5ZuXfErEjPHH55Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTYy/MzUyODczL3Bob3Rv/L3Blc3QtY29udHJv/bC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9emg5UkNvajBj/cktOQTgwSG5RUnpB/UTRfeTlRMDNKaHBY/N1JmOHpwa2dUcz0"
+                    width="550" class="rounded-xl" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="mt-24 mx-44">
         <div class="pricing" id="pricing">
-            <div class="service-header">
+            <div class="pricing-header">
                 <h2 class="font-semibold text-4xl">Pricelist <span class="text-primary">Metrokil</span></h2>
             </div>
-            <div class="service-content">
-                <div class="grid grid-cols-5">
+            <div class="pricing-content">
+                <div class="grid grid-cols-7 mt-8 gap-6">
+                    <div class="col-span-4">
+                        <div class="flex flex-col gap-6">
+                            <x-pricing-card :active="true" id="1" value="Pondasi">Penyemprotan
+                                Pondasi</x-pricing-card>
+                            <x-pricing-card :active="false" id="2" value="Spray">Spray Anti
+                                Rayap</x-pricing-card>
+                            <x-pricing-card :active="false" id="3" value="Control">Control
+                                Services</x-pricing-card>
+                            <x-pricing-card :active="false" id="4" value="Cleaning">Cleaning
+                                Services</x-pricing-card>
+                        </div>
+
+                    </div>
                     <div class="col-span-3">
-                        <div class="flex flex-col">
-                            <div
-                                class="service-card px-6 py-8 flex items-center ring-1 ring-black ring-opacity-20 rounded-xl justify-between">
-                                <div class="service-type flex gap-4">
-                                    <div class="service-checkbox">
-                                        <input type="checkbox" id="service" value="yes"
-                                            class="opacity-0 absolute h-6 w-6" />
-                                        <div
-                                            class="bg-white border-2 rounded-md border-blue-400 w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500">
-                                            <svg class="fill-current hidden w-3 h-3 text-blue-600 pointer-events-none"
-                                                version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
-                                                <g fill="none" fill-rule="evenodd">
-                                                    <g transform="translate(-9 -11)" fill="#FE5352" fill-rule="nonzero">
-                                                        <path
-                                                            d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <p class="font-semibold">Penyemprotan Pondasi</p>
-                                </div>
-                                <div class="service-price">
-                                    <p class="font-semibold">
-                                        <span class="opacity-50">Mulai dari</span>
-                                        <span class="opacity-100 text-black"> Rp. 1.300 / m<sup>2</sup></span>
-                                    </p>
-                                </div>
+                        <div class="pricing-detail ring-1 ring-black ring-opacity-20 h-full w-full rounded-xl p-6">
+                            <div class="pricing-description">
+                                <h2 class="text-xl font-semibold">Rincian Layanan</h2>
+                                <p class="text-md mt-2">Penyemprotan Pondasi adalah paket yang dapat anda pilih untuk
+                                    melakukan
+                                    penyemprotan
+                                    terhadap pondasi rumah anda. Dengan harga yang terjangkau, anda dapat melakukan
+                                    penyemprotan pondasi dengan pelayanan terbaik dari Metrokil.</p>
+                            </div>
+                            <div class="pricing-benefit">
+                                <h2 class="text-xl font-semibold mt-6">Manfaat Layanan</h2>
+                                <ul class="mt-4 flex flex-col gap-3">
+                                    <li class="text-lg font-semibold flex justify-between"><span>Membunuh serangga yang
+                                            ada di dalam
+                                            pondasi</span><img
+                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt="">
+                                    </li>
+                                    <li class="text-lg font-semibold flex justify-between"><span>Mencegah serangga masuk
+                                            ke dalam
+                                            rumah</span><img
+                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt=""></li>
+                                    <li class="text-lg font-semibold flex justify-between"><span>Membuat pondasi rumah
+                                            anda lebih
+                                            kuat</span><img
+                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt=""></li>
+                                    <li class="text-lg font-semibold flex justify-between"><span>Menjaga kesehatan
+                                            keluarga anda</span><img
+                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt=""></li>
+                                    <li class="text-lg font-semibold flex justify-between"><span>Memberikan jaminan
+                                            garansi</span><img
+                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt=""></li>
+                                    <li class="text-lg font-semibold flex justify-between"><span>Memberikan pelayanan
+                                            terbaik</span><img
+                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt=""></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-2">
-                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-24 mx-44">
+        <div class="benefit-header">
+            <h2 class="font-semibold text-4xl">Benefit Layanan <span class="text-primary">Metrokil</span></h2>
+        </div>
+        <div class="benefit-content grid grid-cols-4 mt-6 gap-5">
+            <div class="benefit-card flex flex-col items-start gap-4">
+                <div class="badge-img rounded-xl p-4 shadow-soft">
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/verify.svg') }}" width="40" alt="">
+                </div>
+                <h3 class="font-semibold text-2xl">Tenaga <span class="text-primary">Bersertifikasi</span></h3>
+                <p class="text-lg opacity-55">Tenaga kerja Metrokil telah bersertifikasi sehingga anda tidak perlu
+                    khawatir
+                    dengan kualitas pelayanan kami.</p>
+            </div>
+            <div class="benefit-card flex flex-col items-start gap-4">
+                <div class="badge-img rounded-xl p-4 shadow-soft">
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/house-2.svg') }}" width="40" alt="">
+                </div>
+                <h3 class="font-semibold text-2xl">Ramah <span class="text-primary">Lingkungan</span></h3>
+                <p class="text-lg opacity-55">Metrokil menggunakan bahan-bahan yang ramah lingkungan sehingga tidak
+                    merusak
+                    lingkungan sekitar.</p>
+            </div>
+            <div class="benefit-card flex flex-col items-start gap-4">
+                <div class="badge-img rounded-xl p-4 shadow-soft">
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/shield-tick.svg') }}" width="40"
+                        alt="">
+                </div>
+                <h3 class="font-semibold text-2xl">Jaminan <span class="text-primary">Bebas Hama</span></h3>
+                <p class="text-lg opacity-55">Metrokil memberikan jaminan bebas hama selama 3 bulan setelah melakukan
+                    layanan
+                    kami.</p>
+            </div>
+            <div class="benefit-card flex flex-col items-start gap-4">
+                <div class="badge-img rounded-xl p-4 shadow-soft">
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/timer-1.svg') }}" width="40" alt="">
+                </div>
+                <h3 class="font-semibold text-2xl">Layanan <span class="text-primary">24/7</span></h3>
+                <p class="text-lg opacity-55">Metrokil memberikan layanan 24 jam sehari, 7 hari seminggu sehingga
+                    anda
+                    dapat menghubungi kami kapan saja.</p>
             </div>
         </div>
     </div>
@@ -61,8 +156,20 @@
         }
     });
 
-    const service = document.querySelector('#service');
-    service.addEventListener('change', function() {
-        console.log('checked');
+    document.addEventListener('DOMContentLoaded', () => {
+        const pricingCards = document.querySelectorAll('.pricing-card');
+        const radioButtons = document.querySelectorAll('.pricing-radio input[type="radio"]');
+
+        pricingCards.forEach((card, index) => {
+            card.addEventListener('click', () => {
+                // Programmatically check the corresponding radio button
+                const radio = radioButtons[index];
+                radio.checked = true;
+
+                // Update the `active` state for all cards
+                pricingCards.forEach(card => card.classList.remove('bg-primary', 'text-white'));
+                card.classList.add('bg-primary', 'text-white');
+            });
+        });
     });
 </script>

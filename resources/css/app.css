@@ -50,5 +50,21 @@
 input:checked + div svg {
     @apply block;
 }
+
+.pricing-price span {
+    font-variant-numeric: tabular-nums;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .select-complaint {
+    background-image: url('/public/icons/Iconsax/Svg/All/linear/arrow-down.svg');
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+  }
 }
 

@@ -12,6 +12,14 @@ Route::apiResource('blogs', BlogController::class);
 
 Route::apiResource('services', ServiceController::class);
 
+Route::get('/admin', function () {
+    return view('admin.index');
+});
+
+Route::get('/contact', function () {
+    return view('features.contact.index');
+});
+
 // Route::get('/pricing', function () {
 //     return view('features.services.index');
 // });

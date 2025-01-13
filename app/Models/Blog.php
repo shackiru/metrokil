@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Blog extends Model
 {
     protected $guarded = ['id'];
+    protected $with = ['user'];
 
     const RULES = [
         'title' => ['required', 'string', 'max:255'],
@@ -15,8 +16,6 @@ class Blog extends Model
         'user_id' => ['required', 'integer', 'exists:users,id'],
         'image_url' => ['required', 'image'],
     ];
-
-    protected $with = ['user'];
 
     public function user()
     {

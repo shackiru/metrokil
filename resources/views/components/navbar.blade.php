@@ -12,7 +12,7 @@
             <li class="@if ($active == 'pricing') active @endif"><a href="/services#pricing">Pricing</a></li>
             <li class="@if ($active == 'testimonial') active @endif"><a href="/testimonials">Testimonial</a></li>
             <li class="@if ($active == 'blog') active @endif"><a href="/blogs">Blog</a></li>
-            <li class="@if ($active == 'contact') active @endif"><a href="/contacts">Contact Us</a></li>
+            <li class="@if ($active == 'contact') active @endif"><a href="/contact">Contact Us</a></li>
         </ul>
     </div>
     <div class="nav-button h-100 tracking-normal">
