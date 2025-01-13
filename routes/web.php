@@ -23,3 +23,10 @@ Route::get('/contact', function () {
 // Route::get('/pricing', function () {
 //     return view('features.services.index');
 // });
+Route::get('/about', function () {
+    return view('features.about.index');
+});
+
+Route::get('/testimonial', function () {
+    return view('features.testimonial.index');
+});
