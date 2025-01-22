@@ -16,11 +16,13 @@ class UserSeeder extends Seeder
         $users = [
             [
                 'name' => 'Admin Metrokil',
+                'email' => 'admin@metrokil.com',
                 'username' => 'admin',
                 'password' => bcrypt('admin'),
             ],
             [
                 'name' => 'User Metrokil',
+                'email' => 'user@metrokil.com',
                 'username' => 'user',
                 'password' => bcrypt('user'),
             ],
