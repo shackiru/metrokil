@@ -27,6 +27,11 @@ Route::get('/about', function () {
     return view('features.about.index');
 });
 
-Route::get('/testimonial', function () {
+Route::get('/testimonials', function () {
     return view('features.testimonial.index');
 });
+
+Route::get('/testimonials/galleries', function () {
+    return view('features.testimonial.gallery');
+});
+

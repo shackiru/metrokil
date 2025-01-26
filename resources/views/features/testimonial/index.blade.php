@@ -17,14 +17,14 @@
         </div>
         <div class="col-span-1">
             <div class="hero-image">
-                <img src="{{ asset('images/About-img.png') }}
+                <img src="{{ asset('images/About-img.png') }}"
                     class="rounded-lg" alt="">
             </div>
         </div>
     </div>
 
-    <div class="review-client mt-24 w-full">
-        <div class="py-24 bg-primary w-full">
+    <div class="review-client mt-24 h-200 w-full">
+        <div class="py-24 bg-primary h-200 w-full">
             <div class="px-44 flex justify-between items-center">
                 <h1 class="text-5xl font-semibold text-white">Apa kata mereka?</h1>
                 <div class="flex gap-3 text-white">
@@ -37,7 +37,7 @@
             <div class="testimonials flex mt-8 gap-6 overflow-x-auto w-full">
                 <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-44">
                     <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h4>
+                        <h1 class="text-primary font-bold text-3xl">Shaquille Ditama Putra</h1>
                         <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
                     </div>
                     <div class="content mt-5">
@@ -102,78 +102,139 @@
         </div>
     </div>
 
-    <div class="mt-12 mx-44">
-        <h1 class="text-4xl font-semibold">Visi dari <span class="text-primary">Metrokil</span></h1>
-        <div class="about-detail grid grid-rows-1 gap-4 mt-6">
-            <div class="about-description flex justify-between shadow-soft rounded-xl">
-                <div class="about-content p-12 flex flex-row">
-                    <div class="grid grid-cols-5">
-                        <div class="vision-icon col-span-1">
-
-                        </div>
-                        <div class="vision-content flex flex-col col-span-4 justify-center">                       
-                            <h1 class="text-2xl font-semibold">Visi Kami</h1>
-                            <p class="text-lg font-medium mt-2">Metrokil adalah salah satu merek terkenal di Indonesia yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama dikenal oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan masalah kesehatan dan kerusakan.</p>
-                        </div>
+    <div class="testimonial-client mt-24 w-full">
+        <div class="py-24 w-full">
+            <div class="px-44 static">
+                <h1 class="text-5xl font-semibold"><span class="text-9xl text-primary opacity-60 absolute">“</span>Testimoni <span class="text-primary">Metrokil</span></h1>
+                <div class="flex gap-3 text-white">
+                    <p class="font-medium text-lg">Pelajari selengkapnya
+                    </p>
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-white.svg') }}" alt=""
+                        width="20">
+                </div>
+            </div>
+            <div class="testimonials flex mt-8 gap-6 overflow-x-auto w-full">
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-44 shadow-soft">
+                    <div class="identity">
+                        <h4 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h4>
+                        <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
+                    </div>
+                    <div class="content mt-5">
+                        <span class="text-5xl text-primary font-bold">“</span>
+                        <p class="text-lg mt-[-15px] font-semibold">Terimakasih kepada Tim Metrokil, kerjanya
+                            sangat profesional,
+                            transparan kepada customer dan penjelasannya detail terkait layanan yang diberikan.
+                            Sukses selalu Metrokil!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
+                    <div class="identity">
+                        <h4 class="text-primary font-bold text-xl">Aurelia Natasha</h4>
+                        <p class="text-md opacity-70 font-semibold mt-1">Software Engineer, Ex-PPTI 12</p>
+                    </div>
+                    <div class="content mt-5">
+                        <span class="text-5xl text-primary font-bold">“</span>
+                        <p class="text-lg mt-[-15px] font-semibold">Kerjasama dengan Tim Metrokil sangat memuaskan!
+                            Timnya responsif,
+                            detail, dan memastikan setiap kebutuhan saya terpenuhi. Metrokil adalah pilihan terbaik
+                            untuk layanan profesional!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
+                    <div class="identity">
+                        <h4 class="text-primary font-bold text-xl">Jonathan Fajar</h4>
+                        <p class="text-md opacity-70 font-semibold mt-1">Product Manager, Ex-PPTI 13</p>
+                    </div>
+                    <div class="content mt-5">
+                        <span class="text-5xl text-primary font-bold">“</span>
+                        <p class="text-lg mt-[-15px] font-semibold">Metrokil memberikan pengalaman layanan yang
+                            luar biasa!
+                            Hasil kerja yang profesional dan tim yang sangat kooperatif. Tidak ragu untuk
+                            merekomendasikan mereka.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
+                    <div class="identity">
+                        <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
+                        <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
+                    </div>
+                    <div class="content mt-5">
+                        <span class="text-5xl text-primary font-bold">“</span>
+                        <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
+                            Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
+                            memenuhi ekspektasi pelanggan.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] mr-44 shadow-soft">
+                    <div class="identity">
+                        <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
+                        <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
+                    </div>
+                    <div class="content mt-5">
+                        <span class="text-5xl text-primary font-bold">“</span>
+                        <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
+                            Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
+                            memenuhi ekspektasi pelanggan.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <h1 class="text-4xl font-semibold mt-24">Misi dari <span class="text-primary">Metrokil</span></h1>
-        <div class="about-detail grid grid-rows-3 gap-6 mt-6">
-            <div class="about-description flex justify-between shadow-soft rounded-xl">
-                <div class="about-content p-8 flex flex-row">
-                    <div class="grid grid-cols-5">
-                        <div class="vision-icon col-span-1">
-                            <h1>ini gambar</h1>
-                        </div>
-                        <div class="vision-content flex flex-col col-span-4 justify-center">                       
-                            <h1 class="text-2xl font-semibold">Misi Kami - <span class="text-primary">Fokus</span>  terhadap <span class="text-primary">lingkungan</span>  dan <span class="text-primary">pelanggan</span> </h1>
-                            <p class="text-lg font-medium mt-2">Metrokil adalah salah satu merek terkenal di Indonesia yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama dikenal oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan masalah kesehatan dan kerusakan.</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="mt-24 mx-44">
+        <div class="gallery-header flex justify-between items-center">
+            <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
+            <div class="gallery-more flex gap-3">
+                <p class="font-medium text-lg text-primary">Pelajari selengkapnya
+                </p>
+                <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-red.svg') }}" alt=""
+                    width="20">
             </div>
-            <div class="about-description flex justify-between shadow-soft rounded-xl">
-                <div class="about-content p-8 flex flex-row">
-                    <div class="grid grid-cols-5">
-                        <div class="vision-icon col-span-1">
-
-                        </div>
-                        <div class="vision-content flex flex-col col-span-4">                       
-                            <h1 class="text-2xl font-semibold">Misi Kami - Bekerja mencapai <span class="text-primary">kesempurnaan</span> </h1>
-                            <p class="text-lg font-medium mt-2"><span class="text-primary">Metrokil</span>  adalah salah satu merek terkenal di Indonesia yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama dikenal oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan masalah kesehatan dan kerusakan. </p>
-                        </div>
-                    </div>
+        </div>
+        <div class="about-detail grid grid-cols-2 gap-4 mt-6">
+            <div class="gallery-pictures">
+                <a href="#">
+                <div class="gallery-content flex flex-col justify-between text-center">
+                    <img src="{{ asset('images/gallery1.png') }}" alt="">
                 </div>
+            </a>
             </div>
-            <div class="about-description flex justify-between shadow-soft rounded-xl">
-                <div class="about-content p-8 flex flex-row">
-                    <div class="grid grid-cols-5">
-                        <div class="vision-icon col-span-1">
-
-                        </div>
-                        <div class="vision-content flex flex-col col-span-4">                       
-                            <h1 class="text-2xl font-semibold">Misi Kami - <span class="text-primary">Kerja sama</span>  antar <span class="text-primary">kami</span>  dengan <span class="text-primary">pelanggan</span> </h1>
-                            <p class="text-lg font-medium mt-2">Metrokil adalah salah satu merek terkenal di Indonesia yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama dikenal oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan masalah kesehatan dan kerusakan. </p>
-                        </div>
-                    </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                <div class="gallery-content flex flex-col justify-between text-center">
+                    <img src="{{ asset('images/gallery1.png') }}" alt="">
                 </div>
+            </a>
             </div>
-            <div class="about-description flex justify-between shadow-soft rounded-xl">
-                <div class="about-content p-8 flex flex-row">
-                    <div class="grid grid-cols-5">
-                        <div class="vision-icon col-span-1">
-
-                        </div>
-                        <div class="vision-content flex flex-col col-span-4">                       
-                            <h1 class="text-2xl font-semibold">Misi Kami - <span class="text-primary">Berintegritas</span> dan dapat <span class="text-primary">diandalkan</span> </h1>
-                            <p class="text-lg font-medium mt-2">Metrokil adalah salah satu merek terkenal di Indonesia yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama dikenal oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan masalah kesehatan dan kerusakan. </p>
-                        </div>
-                    </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                <div class="gallery-content flex flex-col justify-between text-center">
+                    <img src="{{ asset('images/gallery1.png') }}" alt="">
                 </div>
+            </a>
             </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                <div class="gallery-content flex flex-col justify-between text-center">
+                    <img src="{{ asset('images/gallery1.png') }}" alt="">
+                </div>
+            </a>
+            </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                <div class="gallery-content flex flex-col justify-between text-center">
+                    <img src="{{ asset('images/gallery1.png') }}" alt="">
+                </div>
+            </a>
+            </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                <div class="gallery-content flex flex-col justify-between text-center">
+                    <img src="{{ asset('images/gallery1.png') }}" alt="">
+                </div>
+            </a>
+            </div>
+            
         </div>
     </div>
 </x-template>
