@@ -26,10 +26,12 @@
 </head>
 
 <body>
+    <x-floating-action-button></x-floating-action-button>
     <div class="w-100 mt-10 font-raleway">
         <x-navbar :active="$active"></x-navbar>
 
         {{ $slot }}
+
 
         <x-footer></x-footer>
     </div>
