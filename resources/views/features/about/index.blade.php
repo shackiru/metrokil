@@ -15,7 +15,7 @@
         </div>
         <div class="col-span-1">
             <div class="hero-image">
-                <img src="{{ asset('images/About-img.png') }}
+                <img src="{{ asset('images/About-img.png') }}"
                     class="rounded-lg" alt="">
             </div>
         </div>
