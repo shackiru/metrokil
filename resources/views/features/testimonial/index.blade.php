@@ -1,4 +1,4 @@
-<x-template title="Testimonial" active="Testimonial"> 
+<x-template title="Testimonial" active="testimonial"> 
     <div class="grid grid-cols-3 w-100 mt-24 gap-20 mx-44">
         <div class="col-span-2">
             <div class="hero">

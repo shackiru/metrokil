@@ -63,6 +63,7 @@ module.exports = {
       },
       boxShadow: {
         soft: '0 0 15px 5px rgba(0,0,0,0.05)',
+        regular: '0 0 15px 5px rgba(0,0,0,0.1)',
       },
     },
   },

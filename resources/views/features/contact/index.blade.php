@@ -9,7 +9,7 @@
                 <div class="contact-form shadow-soft rounded-xl p-6 flex flex-col">
                     <h3 class="text-2xl font-semibold">Tertarik dengan jasa <span class="text-primary">Metrokil</span>?
                     </h3>
-                    <form action="" method="post" class="mt-6 flex flex-col flex-grow">
+                    {{-- <form action="" method="GET" class="mt-6 flex flex-col flex-grow"> --}}
                         <div class="input-name mb-4">
                             <label for="name" class="font-semibold">Nama</label>
                             <input type="text" class="w-full rounded-xl border-2 border-gray-200 py-3 px-4 mt-1"
@@ -35,9 +35,9 @@
                                 <option value="4">Lainnya</option>
                             </select>
                         </div>
-                        <button
-                            class="mt-auto bg-primary text-white font-semibold w-full py-3 text-lg rounded-xl">Kirim</button>
-                    </form>
+                        <a href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0"><button
+                            class="mt-auto bg-primary text-white font-semibold w-full py-3 text-lg rounded-xl">Kirim</button></a>
+                    {{-- </form> --}}
                 </div>
 
                 <!-- Contact Details and Map -->

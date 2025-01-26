@@ -12,7 +12,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::get();
+        $blogs = Blog::paginate(8);
 
         return view('features.blog.index', compact('blogs'));
     }

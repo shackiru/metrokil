@@ -17,12 +17,15 @@
         <div class="grid grid-cols-4 grid-rows-2 gap-6">
             @foreach ($blogs as $blog)
                 <a href="/blogs/{{ $blog->id }}">
-                    <x-blog-card category="{{ $blog->category }}" image="{{ $blog->image_url }}"
+                    <x-blog-card date="{{ $blog->created_at }}" category="{{ $blog->category }}" image="{{ $blog->image_url }}"
                         author="{{ $blog->user->name }}" isLimitWidth="false">
-                        {{ $blog->title }}
+                        {{ \Str::limit($blog->title, 60) }}
                     </x-blog-card>
                 </a>
             @endforeach
+        </div>
+        <div class="flex justify-end mt-8">
+            {{ $blogs->links() }}
         </div>
     </div>
 </x-template>

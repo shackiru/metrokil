@@ -41,6 +41,7 @@
 
   .active {
     border-bottom: 3px solid var(--primary-color);
+    transition:0.05s all;
   }
 
   /* Add more weights and styles as needed */

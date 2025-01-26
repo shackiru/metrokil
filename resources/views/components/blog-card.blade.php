@@ -3,7 +3,7 @@
 <div
     class="blog-item shadow-soft rounded-xl min-w-[350px] @if ($isLimitWidth == 'true') max-w-[350px] @else w-full @ @endif relative bg-white">
     <div class="image">
-        <img src="http://localhost:8000/storage/{{ $image }}" class="rounded-t-xl " alt="">
+        <img src="http://localhost:7000/storage/{{ $image }}" class="rounded-t-xl h-56 w-full object-cover" alt="">
     </div>
     <div class="px-6 pb-6 h-24">
         <div
@@ -16,7 +16,7 @@
         </div>
         <div class="content mt-8 flex flex-col gap-3 h-full justify-between">
             <p class="text-lg mt-[-15px] font-semibold">{{ $slot }}</p>
-            <span class="text-sm font-semibold opacity-55">{{ $author }} · 2 jam yang lalu</span>
+            <span class="text-sm font-semibold opacity-55">{{ $author }} · {{ \Carbon\Carbon::parse($date)->locale('id')->diffForHumans() }}</span>
         </div>
     </div>
 </div>

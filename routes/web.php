@@ -1,12 +1,11 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('features.home.index');
-});
+Route::resource('/', HomeController::class);
 
 Route::apiResource('blogs', BlogController::class);
 

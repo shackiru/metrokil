@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Blog;
 
 class HomeController extends Controller
 {
@@ -11,7 +12,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //
+        $blogs = Blog::latest()->take(6)->get();
+
+        return view('features.home.index', compact('blogs'));
     }
 
     /**

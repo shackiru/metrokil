@@ -14,16 +14,15 @@
             <span class="text-primary">Detail Blog</span>
         </div>
         <div class="mt-8 content">
-            <h2 class="text-3xl font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
-                perspiciatis non consectetur natus reiciendis dolorem facere iure provident dicta ab?</h2>
+            <h2 class="text-3xl font-semibold">{{ $blog->title }}</h2>
             <div class="flex flex-col mt-6 gap-3">
                 <hr class="opacity-70">
                 <div class="flex justify-between mx-6">
                     <div class="flex items-center gap-3">
                         <img src="{{ asset('images/logo.png') }}" class="w-10 h-10 rounded-full" alt="">
                         <div class="flex flex-col ml-4">
-                            <p class="font-semibold">Admin</p>
-                            <p class="opacity-70"></p>2 jam yang lalu</p>
+                            <p class="font-semibold">{{ $blog->user->name }}</p>
+                            <p class="opacity-70"></p>{{ \Carbon\Carbon::parse($blog->created_at)->locale('id')->diffForHumans() }}</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-10">
@@ -38,7 +37,7 @@
                 <hr class="opacity-70">
             </div>
             <div class="mt-8 flex justify-center">
-                <img src="{{ $blog->image_url }}" class="rounded-xl" width="1000" alt="">
+                <img src="http://localhost:7000/storage/{{ $blog->image_url }}" class="rounded-xl" width="1000" alt="">
             </div>
             <div class="mt-8 prose max-w-max text-justify">
                 <p class="">{!! $blog->description !!}</p>
