@@ -40,7 +40,7 @@
                     <h4 class="text-white font-semibold text-lg">Berlangganan ke Blog Metrokil</h4>
                     <div class="bg-primary ring-2 ring-white rounded-lg flex align-center px-4 py-3 gap-4">
                         <input type="text"
-                            class=" w-full bg-primary outline-none placeholder:text-white placeholder:opacity-65 text-white rounded-lg font-semibold"
+                            class=" w-full bg-primary outline-none placeholder:text-white placeholder:opacity-65 text-white rounded-lg font-semibold border-0 focus:border-0 focus:ring-0"
                             placeholder="Ketik email Anda...">
                         <button>
                             <img src="{{ asset('icons/Iconsax/Svg/All/linear/send-1-white.svg') }}" alt="">
