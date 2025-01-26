@@ -99,40 +99,43 @@
         <div class="benefit-header">
             <h2 class="font-semibold text-4xl">Benefit Layanan <span class="text-primary">Metrokil</span></h2>
         </div>
-        <div class="benefit-content grid grid-cols-4 mt-6 gap-5">
+        <div class="benefit-content grid grid-cols-4 mt-10 gap-36">
             <div class="benefit-card flex flex-col items-start gap-4">
                 <div class="badge-img rounded-xl p-4 shadow-soft">
-                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/verify.svg') }}" width="40" alt="">
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/verify-primary.svg') }}" width="35"
+                        alt="">
                 </div>
-                <h3 class="font-semibold text-2xl">Tenaga <span class="text-primary">Bersertifikasi</span></h3>
+                <h3 class="font-semibold text-2xl mt-2">Tenaga <span class="text-primary">Bersertifikasi</span></h3>
                 <p class="text-lg opacity-55">Tenaga kerja Metrokil telah bersertifikasi sehingga anda tidak perlu
                     khawatir
                     dengan kualitas pelayanan kami.</p>
             </div>
             <div class="benefit-card flex flex-col items-start gap-4">
                 <div class="badge-img rounded-xl p-4 shadow-soft">
-                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/house-2.svg') }}" width="40" alt="">
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/house-2-primary.svg') }}" width="35"
+                        alt="">
                 </div>
-                <h3 class="font-semibold text-2xl">Ramah <span class="text-primary">Lingkungan</span></h3>
+                <h3 class="font-semibold text-2xl mt-2">Ramah <span class="text-primary">Lingkungan</span></h3>
                 <p class="text-lg opacity-55">Metrokil menggunakan bahan-bahan yang ramah lingkungan sehingga tidak
                     merusak
                     lingkungan sekitar.</p>
             </div>
             <div class="benefit-card flex flex-col items-start gap-4">
                 <div class="badge-img rounded-xl p-4 shadow-soft">
-                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/shield-tick.svg') }}" width="40"
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/shield-tick-primary.svg') }}" width="35"
                         alt="">
                 </div>
-                <h3 class="font-semibold text-2xl">Jaminan <span class="text-primary">Bebas Hama</span></h3>
+                <h3 class="font-semibold text-2xl mt-2">Jaminan <span class="text-primary">Bebas Hama</span></h3>
                 <p class="text-lg opacity-55">Metrokil memberikan jaminan bebas hama selama 3 bulan setelah melakukan
                     layanan
                     kami.</p>
             </div>
             <div class="benefit-card flex flex-col items-start gap-4">
                 <div class="badge-img rounded-xl p-4 shadow-soft">
-                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/timer-1.svg') }}" width="40" alt="">
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/timer-1-primary.svg') }}" width="35"
+                        alt="">
                 </div>
-                <h3 class="font-semibold text-2xl">Layanan <span class="text-primary">24/7</span></h3>
+                <h3 class="font-semibold text-2xl mt-2">Layanan <span class="text-primary">24/7</span></h3>
                 <p class="text-lg opacity-55">Metrokil memberikan layanan 24 jam sehari, 7 hari seminggu sehingga
                     anda
                     dapat menghubungi kami kapan saja.</p>
