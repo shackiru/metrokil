@@ -104,8 +104,9 @@
 
     <div class="testimonial-client mt-24 w-full">
         <div class="py-24 w-full">
-            <div class="px-44 static">
-                <h1 class="text-5xl font-semibold"><span class="text-9xl text-primary opacity-60 absolute">“</span>Testimoni <span class="text-primary">Metrokil</span></h1>
+            <div class="px-44 relative">
+                <span class="text-9xl text-primary opacity-60 absolute z-1 top-[-20px] left-36">“</span>
+                <h1 class="text-5xl font-semibold z-2">Testimoni <span class="text-primary">Metrokil</span></h1>
                 <div class="flex gap-3 text-white">
                     <p class="font-medium text-lg">Pelajari selengkapnya
                     </p>
@@ -113,7 +114,7 @@
                         width="20">
                 </div>
             </div>
-            <div class="testimonials flex mt-8 gap-6 overflow-x-auto w-full">
+            <div class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full">
                 <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-44 shadow-soft">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h4>
@@ -181,9 +182,9 @@
         </div>
     </div>
 
-    <div class="mt-24 mx-44">
+    <div class="mt-12 mx-44">
         <div class="gallery-header flex justify-between items-center">
-            <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
+            <h1 class="text-5xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
             <div class="gallery-more flex gap-3">
                 <p class="font-medium text-lg text-primary">Pelajari selengkapnya
                 </p>
@@ -191,7 +192,7 @@
                     width="20">
             </div>
         </div>
-        <div class="about-detail grid grid-cols-2 gap-4 mt-6">
+        <div class="about-detail grid grid-cols-3 gap-4 mt-6">
             <div class="gallery-pictures">
                 <a href="#">
                 <div class="gallery-content flex flex-col justify-between text-center">
