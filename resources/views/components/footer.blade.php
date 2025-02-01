@@ -1,7 +1,7 @@
-<footer class="mt-36 bg-primary w-full py-16">
-    <div class="mx-44">
+<footer class="bg-primary w-full py-16">
+    <div class="lg:mx-14 xl:mx-44 mx-8">
         <div class="grid grid-cols-5">
-            <div class="footer-menu col-span-3 grid-rows-3 flex flex-col justify-between">
+            <div class="footer-menu col-span-5 md:col-span-3 grid-rows-3 flex flex-col justify-between">
                 <div class="footer-logo  w-fit flex items-center gap-4">
                     <a href="" class=""><img src="{{ asset('images/logo.png') }}" width="65"
                             class="bg-white p-2 rounded-2xl" alt="">
@@ -28,14 +28,14 @@
                         <a href="" class="text-white opacity-55">Gallery Metrokil</a>
                     </div>
                 </div>
-                <div class="footer-socials mt-8 flex gap-6 opacity-65">
+                <div class="footer-socials mt-8 gap-6 opacity-65 hidden md:flex">
                     <img src="{{ asset('icons/socials/ic_baseline-whatsapp.svg') }}" alt="">
                     <img src="{{ asset('icons/socials/mdi_youtube.svg') }}" alt="">
                     <img src="{{ asset('icons/socials/mdi_instagram.svg') }}" alt="">
                     <img src="{{ asset('icons/socials/ant-design_x-outlined.svg') }}" alt="">
                 </div>
             </div>
-            <div class="footer-info col-span-2 flex flex-col gap-8">
+            <div class="footer-info col-span-5 mt-6 md:col-span-2 flex flex-col gap-8">
                 <div class="footer-subscribe flex flex-col gap-3">
                     <h4 class="text-white font-semibold text-lg">Berlangganan ke Blog Metrokil</h4>
                     <div class="bg-primary ring-2 ring-white rounded-lg flex align-center px-4 py-3 gap-4">
@@ -55,6 +55,12 @@
                             height="250" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="rounded-lg w-full"></iframe>
                     </div>
+                </div>
+                <div class="footer-socials gap-6 opacity-65 flex md:hidden">
+                    <img src="{{ asset('icons/socials/ic_baseline-whatsapp.svg') }}" alt="">
+                    <img src="{{ asset('icons/socials/mdi_youtube.svg') }}" alt="">
+                    <img src="{{ asset('icons/socials/mdi_instagram.svg') }}" alt="">
+                    <img src="{{ asset('icons/socials/ant-design_x-outlined.svg') }}" alt="">
                 </div>
             </div>
         </div>
