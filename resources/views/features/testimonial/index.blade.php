@@ -1,32 +1,39 @@
-<x-template title="Testimonial" active="testimonial"> 
-    <div class="grid grid-cols-3 w-100 mt-24 gap-20 mx-44">
-        <div class="col-span-2">
+<x-template title="Testimonial" active="testimonial">
+    <div class="grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
+        <div class="md:col-span-2 col-span-3">
             <div class="hero">
                 <div class="hero-content">
                     <h3 class="text-2xl font-semibold mb-2">Testimonial <span class="text-primary">Metrokil</span></h3>
-                    <h1 class="text-5xl font-semibold">An <span class="text-primary">Innovation</span> for Your Environment
+                    <h1 class="text-5xl font-semibold">An <span class="text-primary">Innovation</span> for Your
+                        Environment
                     </h1>
-                    <p class="text-lg mt-4 opacity-55 font-medium">Tikus merupakan salah satu hama yang dapat menimbulkan masalah serius di lingkungan rumah, pertanian, maupun industri. Kehadiran tikus tidak hanya mengganggu kenyamanan, tetapi juga berisiko bagi kesehatan dan merusak barang-barang berharga. 
+                    <p class="text-lg mt-4 opacity-55 font-medium">Tikus merupakan salah satu hama yang dapat
+                        menimbulkan masalah serius di lingkungan rumah, pertanian, maupun industri. Kehadiran tikus
+                        tidak hanya mengganggu kenyamanan, tetapi juga berisiko bagi kesehatan dan merusak barang-barang
+                        berharga.
                     </p>
-                    <p class="text-lg mt-4 opacity-55 font-medium">Tikus adalah hewan pengerat yang terkenal karena kemampuannya beradaptasi dengan lingkungan manusia. Mereka dapat ditemukan di berbagai tempat, mulai dari rumah tinggal, gudang, hingga area pertanian.
+                    <p class="text-lg mt-4 opacity-55 font-medium">Tikus adalah hewan pengerat yang terkenal karena
+                        kemampuannya beradaptasi dengan lingkungan manusia. Mereka dapat ditemukan di berbagai tempat,
+                        mulai dari rumah tinggal, gudang, hingga area pertanian.
                     </p>
-                    <p class="text-lg mt-4 opacity-55 font-medium">Ada berbagai cara yang dapat digunakan untuk membasmi tikus, dari yang tradisional hingga teknologi modern. Berikut adalah beberapa metode yang umum digunakan:
+                    <p class="text-lg mt-4 opacity-55 font-medium">Ada berbagai cara yang dapat digunakan untuk membasmi
+                        tikus, dari yang tradisional hingga teknologi modern. Berikut adalah beberapa metode yang umum
+                        digunakan:
                     </p>
                 </div>
             </div>
         </div>
-        <div class="col-span-1">
+        <div class="md:col-span-1 hidden md:block">
             <div class="hero-image">
-                <img src="{{ asset('images/About-img.png') }}"
-                    class="rounded-lg" alt="">
+                <img src="{{ asset('images/About-img.png') }}" class="rounded-lg" alt="">
             </div>
         </div>
     </div>
 
     <div class="review-client mt-24 h-200 w-full">
-        <div class="py-24 bg-primary h-200 w-full">
-            <div class="px-44 flex justify-between items-center">
-                <h1 class="text-5xl font-semibold text-white">Apa kata mereka?</h1>
+        <div class="py-16 lg:py-24 bg-primary h-200 w-full">
+            <div class="px-8 lg:px-14 xl:px-44 flex justify-between items-center">
+                <h1 class="text-4xl md:text-5xl font-semibold text-white">Apa kata mereka?</h1>
                 <div class="flex gap-3 text-white">
                     <p class="font-medium text-lg">Pelajari selengkapnya
                     </p>
@@ -35,7 +42,7 @@
                 </div>
             </div>
             <div class="testimonials flex mt-8 gap-6 overflow-x-auto w-full">
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-44">
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44">
                     <div class="identity">
                         <h1 class="text-primary font-bold text-3xl">Shaquille Ditama Putra</h1>
                         <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
@@ -104,9 +111,11 @@
 
     <div class="testimonial-client mt-24 w-full">
         <div class="py-24 w-full">
-            <div class="px-44 relative">
-                <span class="text-9xl text-primary opacity-60 absolute z-1 top-[-20px] left-36">“</span>
-                <h1 class="text-5xl font-semibold z-2">Testimoni <span class="text-primary">Metrokil</span></h1>
+            <div class="px-8 lg:px-14 xl:px-44 relative">
+                <span
+                    class="text-9xl text-primary opacity-60 absolute z-1 top-[-20px] left-0 lg:left-6 xl:left-36">“</span>
+                <h1 class="text-4xl lg:text-5xl font-semibold z-2">Testimoni <span class="text-primary">Metrokil</span>
+                </h1>
                 <div class="flex gap-3 text-white">
                     <p class="font-medium text-lg">Pelajari selengkapnya
                     </p>
@@ -115,7 +124,8 @@
                 </div>
             </div>
             <div class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full">
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-44 shadow-soft">
+                <div
+                    class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44 shadow-soft">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
@@ -182,9 +192,9 @@
         </div>
     </div>
 
-    <div class="mt-12 mx-44">
+    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36">
         <div class="gallery-header flex justify-between items-center">
-            <h1 class="text-5xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
+            <h1 class="text-4xl lg:text-5xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
             <div class="gallery-more flex gap-3">
                 <p class="font-medium text-lg text-primary">Pelajari selengkapnya
                 </p>
@@ -192,50 +202,50 @@
                     width="20">
             </div>
         </div>
-        <div class="about-detail grid grid-cols-3 gap-4 mt-6">
+        <div class="about-detail grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
             <div class="gallery-pictures">
                 <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
             </div>
             <div class="gallery-pictures">
                 <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
             </div>
             <div class="gallery-pictures">
                 <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
             </div>
             <div class="gallery-pictures">
                 <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
             </div>
             <div class="gallery-pictures">
                 <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
             </div>
             <div class="gallery-pictures">
                 <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
             </div>
-            
+
         </div>
     </div>
 </x-template>

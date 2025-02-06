@@ -1,5 +1,5 @@
 <x-template title="Blog" active="blog">
-    <div class="mt-20 mx-44">
+    <div class="mt-20 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36">
         <div class="flex gap-3 items-center">
             <a href="/" class="transition hover:text-primary">Home</a>
             <svg class="text-black opacity-40" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -22,7 +22,8 @@
                         <img src="{{ asset('images/logo.png') }}" class="w-10 h-10 rounded-full" alt="">
                         <div class="flex flex-col ml-4">
                             <p class="font-semibold">{{ $blog->user->name }}</p>
-                            <p class="opacity-70"></p>{{ \Carbon\Carbon::parse($blog->created_at)->locale('id')->diffForHumans() }}</p>
+                            <p class="opacity-70"></p>
+                            {{ \Carbon\Carbon::parse($blog->created_at)->locale('id')->diffForHumans() }}</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-10">
@@ -37,7 +38,8 @@
                 <hr class="opacity-70">
             </div>
             <div class="mt-8 flex justify-center">
-                <img src="http://localhost:7000/storage/{{ $blog->image_url }}" class="rounded-xl" width="1000" alt="">
+                <img src="http://localhost:7000/storage/{{ $blog->image_url }}" class="rounded-xl" width="1000"
+                    alt="">
             </div>
             <div class="mt-8 prose max-w-max text-justify">
                 <p class="">{!! $blog->description !!}</p>

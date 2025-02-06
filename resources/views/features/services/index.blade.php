@@ -1,11 +1,13 @@
 <x-template title="Service" active="services">
-    <div class="mt-24 mx-44">
-        <div class="grid grid-cols-5 justify-between">
-            <div class="col-span-3">
+    <div class="mt-24 lg:mx-14 xl:mx-44 mx-8">
+        <div class="grid grid-cols-5 justify-between lg:gap-6">
+            <div class="lg:col-span-3 col-span-5">
                 <div class="flex flex-col">
                     <h4 class="text-xl font-semibold">Layanan <span class="text-primary">Metrokil</span></h4>
-                    <h2 class="text-5xl font-semibold mt-3">Kenapa harus <span class="text-primary">Metrokil</span>?</h2>
-                    <p class="text-lg opacity-55 font-semibold mt-5">Sementara dalam Kamus Besar Bahasa Indonesia
+                    <h2 class="text-4xl xl:text-5xl font-semibold mt-3">Kenapa harus <span
+                            class="text-primary">Metrokil</span>?</h2>
+                    <p class="xl:text-lg lg:text-md opacity-55 font-semibold mt-5">Sementara dalam Kamus Besar Bahasa
+                        Indonesia
                         dijelaskan
                         pelayanan sebagai hal, cara, atau hasil
                         pekerjaan melayani. Dalam pengertian lain, menurut Moenir (2015: 27) pelayanan hakikatnya adalah
@@ -20,86 +22,90 @@
                     </p>
                 </div>
             </div>
-            <div class="col-span-2 justify-self-end">
+            <div class="col-span-2 justify-self-end lg:block hidden">
                 <img src="https://imgs.search.brave.com/ewPePM7Kfpgek378czv-hge_4Uwp5ZuXfErEjPHH55Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTYy/MzUyODczL3Bob3Rv/L3Blc3QtY29udHJv/bC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9emg5UkNvajBj/cktOQTgwSG5RUnpB/UTRfeTlRMDNKaHBY/N1JmOHpwa2dUcz0"
-                    width="550" class="rounded-xl" alt="">
+                    width="400" class="rounded-xl" alt="">
             </div>
         </div>
     </div>
-    <div class="mt-24 mx-44">
+    <div class="mt-16 lg:mt-24 lg:mx-14 xl:mx-44 mx-8">
         <div class="pricing" id="pricing">
             <div class="pricing-header">
-                <h2 class="font-semibold text-4xl">Pricelist <span class="text-primary">Metrokil</span></h2>
+                <h2 class="font-semibold text-3xl xl:text-4xl">Pricelist <span class="text-primary">Metrokil</span></h2>
             </div>
             <div class="pricing-content">
-                <div class="grid grid-cols-7 mt-8 gap-6">
-                    <div class="col-span-4">
-                        <div class="flex flex-col gap-6">
-                            <x-pricing-card :active="true" id="1" value="Pondasi">Penyemprotan
-                                Pondasi</x-pricing-card>
-                            <x-pricing-card :active="false" id="2" value="Spray">Spray Anti
-                                Rayap</x-pricing-card>
-                            <x-pricing-card :active="false" id="3" value="Control">Control
-                                Services</x-pricing-card>
-                            <x-pricing-card :active="false" id="4" value="Cleaning">Cleaning
-                                Services</x-pricing-card>
-                        </div>
-
+                <div class="flex flex-col xl:grid xl:grid-cols-7 mt-8 gap-6">
+                    <!-- Left Container (col-span-4) -->
+                    <div class="col-span-4 flex flex-col justify-between h-full gap-y-4 xl:gap-0">
+                        <x-pricing-card :active="true" id="1" value="Pondasi">Penyemprotan
+                            Pondasi</x-pricing-card>
+                        <x-pricing-card :active="false" id="2" value="Spray">Spray Anti
+                            Rayap</x-pricing-card>
+                        <x-pricing-card :active="false" id="3" value="Control">Control
+                            Services</x-pricing-card>
+                        <x-pricing-card :active="false" id="4" value="Cleaning">Cleaning
+                            Services</x-pricing-card>
                     </div>
-                    <div class="col-span-3">
-                        <div class="pricing-detail ring-1 ring-black ring-opacity-20 h-full w-full rounded-xl p-6">
+
+                    <!-- Right Container (col-span-3) -->
+                    <div class="col-span-3 flex flex-col h-full">
+                        <div class="pricing-detail ring-1 ring-black ring-opacity-20 w-full rounded-xl p-6 flex-grow">
                             <div class="pricing-description">
                                 <h2 class="text-xl font-semibold">Rincian Layanan</h2>
                                 <p class="text-md mt-2">Penyemprotan Pondasi adalah paket yang dapat anda pilih untuk
-                                    melakukan
-                                    penyemprotan
-                                    terhadap pondasi rumah anda. Dengan harga yang terjangkau, anda dapat melakukan
-                                    penyemprotan pondasi dengan pelayanan terbaik dari Metrokil.</p>
+                                    melakukan penyemprotan terhadap pondasi rumah anda. Dengan harga yang terjangkau,
+                                    anda dapat melakukan penyemprotan pondasi dengan pelayanan terbaik dari Metrokil.
+                                </p>
                             </div>
                             <div class="pricing-benefit">
                                 <h2 class="text-xl font-semibold mt-6">Manfaat Layanan</h2>
                                 <ul class="mt-4 flex flex-col gap-3">
-                                    <li class="text-lg font-semibold flex justify-between"><span>Membunuh serangga yang
-                                            ada di dalam
-                                            pondasi</span><img
-                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                    <li class="text-lg font-semibold flex justify-between">
+                                        <span>Membunuh serangga yang ada di dalam pondasi</span>
+                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
                                             alt="">
                                     </li>
-                                    <li class="text-lg font-semibold flex justify-between"><span>Mencegah serangga masuk
-                                            ke dalam
-                                            rumah</span><img
-                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt=""></li>
-                                    <li class="text-lg font-semibold flex justify-between"><span>Membuat pondasi rumah
-                                            anda lebih
-                                            kuat</span><img
-                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt=""></li>
-                                    <li class="text-lg font-semibold flex justify-between"><span>Menjaga kesehatan
-                                            keluarga anda</span><img
-                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt=""></li>
-                                    <li class="text-lg font-semibold flex justify-between"><span>Memberikan jaminan
-                                            garansi</span><img
-                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt=""></li>
-                                    <li class="text-lg font-semibold flex justify-between"><span>Memberikan pelayanan
-                                            terbaik</span><img
-                                            src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt=""></li>
+                                    <li class="text-lg font-semibold flex justify-between">
+                                        <span>Mencegah serangga masuk ke dalam rumah</span>
+                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt="">
+                                    </li>
+                                    <li class="text-lg font-semibold flex justify-between">
+                                        <span>Membuat pondasi rumah anda lebih kuat</span>
+                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt="">
+                                    </li>
+                                    <li class="text-lg font-semibold flex justify-between">
+                                        <span>Menjaga kesehatan keluarga anda</span>
+                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt="">
+                                    </li>
+                                    <li class="text-lg font-semibold flex justify-between">
+                                        <span>Memberikan jaminan garansi</span>
+                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt="">
+                                    </li>
+                                    <li class="text-lg font-semibold flex justify-between">
+                                        <span>Memberikan pelayanan terbaik</span>
+                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
+                                            alt="">
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <div class="mt-24 mx-44">
+    <div class="mt-16 lg:mt-24 lg:mx-14 xl:mx-44 mx-8 mb-36">
         <div class="benefit-header">
-            <h2 class="font-semibold text-4xl">Benefit Layanan <span class="text-primary">Metrokil</span></h2>
+            <h2 class="font-semibold text-3xl lg:text-4xl">Benefit Layanan <span class="text-primary">Metrokil</span>
+            </h2>
         </div>
-        <div class="benefit-content grid grid-cols-4 mt-10 gap-36">
+        <div
+            class="benefit-content grid md:grid-cols-2 xl:grid-cols-4 mt-10 md:gap-20 lg:gap-24 gap-y-6 xl:gap-y-0 xl:gap-36">
             <div class="benefit-card flex flex-col items-start gap-4">
                 <div class="badge-img rounded-xl p-4 shadow-soft">
                     <img src="{{ asset('icons/Iconsax/Svg/All/linear/verify-primary.svg') }}" width="35"

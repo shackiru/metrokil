@@ -1,7 +1,7 @@
 @props(['active'])
 
 <div data-id="{{ $attributes->get('id') }}"
-    class="pricing-card px-6 py-8 flex items-center ring-1 ring-black ring-opacity-20 rounded-xl justify-between cursor-pointer @if ($active) bg-primary text-white @endif">
+    class="pricing-card px-6 py-9 flex items-center ring-1 ring-black ring-opacity-20 rounded-xl justify-between cursor-pointer @if ($active) bg-primary text-white @endif">
     <div class="pricing-type flex gap-4">
         <div class="pricing-radio">
             <input type="radio" name="pricing" id="pricingRadio{{ $attributes->get('id') }}"
