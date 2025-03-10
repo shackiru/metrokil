@@ -34,12 +34,6 @@
         <div class="py-16 lg:py-24 bg-primary h-200 w-full">
             <div class="px-8 lg:px-14 xl:px-44 flex justify-between items-center">
                 <h1 class="text-4xl md:text-5xl font-semibold text-white">Apa kata mereka?</h1>
-                <div class="flex gap-3 text-white">
-                    <p class="font-medium text-lg">Pelajari selengkapnya
-                    </p>
-                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-white.svg') }}" alt=""
-                        width="20">
-                </div>
             </div>
             <div class="testimonials flex mt-8 gap-6 overflow-x-auto w-full">
                 <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44">
@@ -117,8 +111,6 @@
                 <h1 class="text-4xl lg:text-5xl font-semibold z-2">Testimoni <span class="text-primary">Metrokil</span>
                 </h1>
                 <div class="flex gap-3 text-white">
-                    <p class="font-medium text-lg">Pelajari selengkapnya
-                    </p>
                     <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-white.svg') }}" alt=""
                         width="20">
                 </div>
@@ -196,7 +188,7 @@
         <div class="gallery-header flex justify-between items-center">
             <h1 class="text-4xl lg:text-5xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
             <div class="gallery-more flex gap-3">
-                <p class="font-medium text-lg text-primary">Pelajari selengkapnya
+                <p class="font-medium text-lg text-primary"><a href="testimonials/galleries">Pelajari selengkapnya</a>
                 </p>
                 <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-red.svg') }}" alt=""
                     width="20">

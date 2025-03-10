@@ -22,6 +22,7 @@ module.exports = {
       boxShadow: {
         soft: '0 0 15px 5px rgba(0,0,0,0.05)',
         regular: '0 0 15px 5px rgba(0,0,0,0.1)',
+        smooth: 'rgba(223, 225, 231, 0.5) 0px 0px 0px 1px, rgba(223, 225, 231, 0.5) 0px 2px 0px 1px, rgba(220, 220, 220, 0.25) 0px 16px 40px 1px',
       },
     },
   },

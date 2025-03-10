@@ -19,7 +19,6 @@ return new class extends Migration
             $table->enum('category', ['news', 'information']);
             $table->text('image_url');
             $table->timestamps();
-
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }

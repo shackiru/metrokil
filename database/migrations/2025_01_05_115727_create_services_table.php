@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('price');
             $table->text('benefits');
             $table->text('description');
-            $table->timestamps();
+            $table->timestamps();   
         });
     }
 

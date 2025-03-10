@@ -38,7 +38,7 @@
                 <hr class="opacity-70">
             </div>
             <div class="mt-8 flex justify-center">
-                <img src="http://localhost:7000/storage/{{ $blog->image_url }}" class="rounded-xl" width="1000"
+                <img src="http://localhost:8000/storage/{{ $blog->image_url }}" class="rounded-xl" width="1000"
                     alt="">
             </div>
             <div class="mt-8 prose max-w-max text-justify">
