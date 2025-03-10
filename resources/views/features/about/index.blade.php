@@ -4,20 +4,12 @@
             <div class="hero">
                 <div class="hero-content">
                     <h3 class="text-2xl font-semibold mb-2">Tentang <span class="text-primary">Metrokil</span></h3>
-                    <h1 class="text-5xl font-semibold">An <span class="text-primary">Innovation</span> for Your
+                    <h1 class="text-5xl font-semibold">An <span class="text-primary text-jus">Innovation</span> for Your
                         Environment
                     </h1>
-                    <p class="text-lg mt-4 opacity-55 font-medium">Metrokil adalah salah satu merek terkenal di
-                        Indonesia yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama
-                        dikenal oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan
-                        kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan masalah
-                        kesehatan dan kerusakan.
+                    <p class="text-lg mt-4 opacity-55 font-medium text-justify">Kami percaya bahwa menjaga keseimbangan lingkungan adalah tanggung jawab bersama. Metrokil bukan hanya sekadar perusahaan pest control, tetapi juga merupakan mitra Anda dalam menjaga harmoni antara manusia dan alam. Kami terus berupaya untuk menggunakan metode pengendalian hama yang ramah lingkungan dan berkelanjutan, sehingga dapat membantu memberikan solusi yang efektif untuk mengendalikan hama dan penyakit yang dapat membahayakan rumah dan bisnis Anda. Dengan komitmen kami terhadap praktik yang berkelanjutan dan solusi yang inovatif, kami berharap dapat berperan aktif dalam menjaga lingkungan agar tetap lestari bagi generasi mendatang.
                     </p>
-                    <p class="text-lg mt-4 opacity-55 font-medium">Metrokil adalah salah satu merek terkenal di
-                        Indonesia yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama
-                        dikenal oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan
-                        kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan masalah
-                        kesehatan dan kerusakan.
+                    <p class="text-lg mt-4 opacity-55 font-medium text-justify">Kami mengajak Anda untuk menjelajahi layanan kami dan bermitra dengan kami dalam upaya menjaga keseimbangan lingkungan sambil memberikan perlindungan terhadap hama dan gangguan lainnya. Bersama-sama, mari kita menciptakan masa depan yang lebih sehat. Terima kasih atas kunjungan Anda ke website PT Metrokil, dan jangan ragu untuk menghubungi kami jika Anda memerlukan layanan pest control berkualitas atau memiliki pertanyaan lebih lanjut.
                     </p>
                 </div>
             </div>

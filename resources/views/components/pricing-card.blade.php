@@ -25,7 +25,7 @@
     <div class="pricing-price text-right">
         <p class="font-semibold">
             <span class="opacity-50">Mulai dari</span>
-            <span class="opacity-100 text-lg"> Rp. 1.300 / m<sup>2</sup></span>
+            <span class="opacity-100 text-lg"> Rp. 35.000/m2<sup>2</sup></span>
         </p>
     </div>
 </div>

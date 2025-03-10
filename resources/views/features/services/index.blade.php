@@ -35,16 +35,17 @@
             </div>
             <div class="pricing-content">
                 <div class="flex flex-col xl:grid xl:grid-cols-7 mt-8 gap-6">
-                    <!-- Left Container (col-span-4) -->
-                    <div class="col-span-4 flex flex-col justify-between h-full gap-y-4 xl:gap-0">
-                        <x-pricing-card :active="true" id="1" value="Pondasi">Penyemprotan
-                            Pondasi</x-pricing-card>
-                        <x-pricing-card :active="false" id="2" value="Spray">Spray Anti
-                            Rayap</x-pricing-card>
-                        <x-pricing-card :active="false" id="3" value="Control">Control
-                            Services</x-pricing-card>
-                        <x-pricing-card :active="false" id="4" value="Cleaning">Cleaning
-                            Services</x-pricing-card>
+                    <div class="col-span-4 flex flex-col justify-between h-full gap-4">
+                        <x-pricing-card :active="true" id="1" value="Pondasi">Anti Rayap Imidaclorprid (Impor)</x-pricing-card>
+                        <x-pricing-card :active="false" id="2" value="Spray">Anti Rayap Imidaclorprid (Lokal)</x-pricing-card>
+                        <x-pricing-card :active="false" id="3" value="Control">Anti Rayap Cypermethrin (Lokal)</x-pricing-card>
+                        <x-pricing-card :active="false" id="4" value="Cleaning">Paket Pengendalian Hama Tikus</x-pricing-card>
+                        <x-pricing-card :active="false" id="5" value="Cleaning">Basmi Nyamuk dan Kecoak</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Paket Basmi Lalat</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Basmi Kutu</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Basmi Tawon/Lebah</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Fumigasi</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Desinfeksi</x-pricing-card>
                     </div>
 
                     <!-- Right Container (col-span-3) -->
