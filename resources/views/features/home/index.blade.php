@@ -1,5 +1,5 @@
 <x-template title="Homepage" active="home">
-    <div class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-16 lg:mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <div class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-20 lg:mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <div class="col-span-3 lg:col-span-3 xl:col-span-2">
             <div class="hero">
                 <div class="hero-content">
@@ -8,8 +8,15 @@
                         Rayap
                         Untuk Rumah & Bisnis
                     </h1>
-                    <p class="text-md xl:text-lg mt-6 lg:mt-10 opacity-55 font-medium text-justify">Selamat datang di website PT Metrokil, perusahaan pest control yang telah menjadi salah satu pemimpin dalam industri ini sejak tahun 1997. Dengan pengalaman dan dedikasi kami selama lebih dari dua dekade, Metrokil telah membangun reputasi yang kuat dalam memberikan layanan terbaik kepada pelanggan kami. Tujuan utama kami adalah untuk menjadikan lingkungan sekitar lebih bersih, aman, dan nyaman. Kami sangat peduli terhadap kepuasan pelanggan, dan itulah mengapa pelayanan terbaik merupakan prioritas utama kami.</p>
-                    <div class="flex gap-6 mt-6 lg:mt-10">
+                    <p class="text-md xl:text-lg mt-6 lg:mt-6 opacity-55 font-medium text-justify">Selamat datang di
+                        website <span class="text-primary">PT Metrokil</span>, perusahaan pest control yang telah menjadi
+                        salah satu pemimpin dalam
+                        industri ini sejak tahun 1997. Dengan pengalaman dan dedikasi kami selama lebih dari dua dekade,
+                        Metrokil telah membangun reputasi yang kuat dalam memberikan layanan terbaik kepada pelanggan
+                        kami. Tujuan utama kami adalah untuk menjadikan lingkungan sekitar lebih bersih, aman, dan
+                        nyaman. Kami sangat peduli terhadap kepuasan pelanggan, dan itulah mengapa pelayanan terbaik
+                        merupakan prioritas utama kami.</p>
+                    <div class="flex gap-6 mt-6 lg:mt-6">
                         <a
                             href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0"><button
                                 class="hover:shadow-regular transition button bg-primary text-white px-6 py-3 text-sm md:px-6 md:py-4 md:h-full rounded-lg font-semibold">Hubungi
@@ -38,9 +45,24 @@
         <div class="col-span-3 lg:col-span-2">
             <div class="about-content flex flex-col justify-between h-full">
                 <h1 class="text-3xl lg:text-4xl font-semibold">Tentang <span class="text-primary">Metrokil</span></h1>
-                <p class="lg:text-lg opacity-70 mt-6 lg:mt-0">Kami percaya bahwa menjaga <span class="text-primary">keseimbangan lingkungan</span> adalah tanggung jawab bersama. <span class="text-primary">Metrokil</span> bukan hanya sekadar perusahaan pest control, tetapi juga merupakan mitra Anda dalam menjaga harmoni antara manusia dan alam. Kami terus berupaya untuk menggunakan metode pengendalian hama yang <span class="text-primary">ramah lingkungan dan berkelanjutan</span>, sehingga dapat membantu <span class="text-primary"> solusi yang efektif</span> untuk mengendalikan hama dan penyakit yang dapat membahayakan rumah dan bisnis Anda. Dengan komitmen kami terhadap praktik yang berkelanjutan dan <span class="text-primary">solusi yang inovatif</span>, kami berharap dapat berperan aktif dalam menjaga <span class="text-primary"> agar tetap lestari</span> bagi generasi mendatang.
+                <p class="lg:text-lg opacity-70 mt-6 text-justify">Kami adalah <span class="text-primary">perusahaan
+                        pembasmi
+                        hama</span>
+                    yang
+                    berbasis di Jakarta,
+                    Indonesia. Kami telah dipercaya lebih dari <span class="text-primary">500+ klien</span> yang
+                    telah bekerja sama dengan kami.
+                    <br><br>
+                    Kami telah memiliki beberapa cabang dari <span class="text-primary">Jakarta, Bandung,
+                        Jogja</span>, hingga <span class="text-primary">Malang</span>.
+                    <br><br>
+                    Metrokil memiliki beberapa layanan termasuk <span class="text-primary">pembasmian tikus</span>,
+                    <span class="text-primary">serangga berkaki sepuluh</span>, dan
+                    <span class="text-primary">rayap</span>. Mulai gunakan layanan Metrokil sekarang, dengan begitu
+                    lingkungan Anda menjadi <span class="text-primary">nyaman dan
+                        aman</span> bersama <span class="text-primary">Metrokil</span>.
                 </p>
-                <a href="/about" class="group about-history cursor-pointer mt-6 lg:mt-0">
+                <a href="/about" class="group about-history cursor-pointer mt-6">
                     <div class="flex justify-between">
                         <p class="text-lg group-hover:text-primary transition">Lihat sejarah Metrokil</p>
                         <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right.svg') }}" alt=""

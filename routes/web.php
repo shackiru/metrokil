@@ -33,4 +33,3 @@ Route::get('/testimonials', function () {
 Route::get('/testimonials/galleries', function () {
     return view('features.testimonial.gallery');
 });
-
