@@ -1,5 +1,5 @@
 <x-template title="Homepage" active="home">
-    <div class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-20 lg:mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <div class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-16 lg:mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <div class="col-span-3 lg:col-span-3 xl:col-span-2">
             <div class="hero">
                 <div class="hero-content">
