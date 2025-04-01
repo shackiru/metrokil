@@ -161,7 +161,7 @@
 
 <script>
     let rincianLayananList = [
-        "Penyemprotan Pondasi adalah paket yang dapat anda pilih untuk melakukan penyemprotan terhadap pondasi rumah anda. Dengan harga yang terjangkau, anda dapat melakukan penyemprotan pondasi dengan pelayanan terbaik dari Metrokil menggunakan bahan Imidaclorprid impor yang berkualitas tinggi.",
+        "Metode drill injection adalah salah satu teknik yang umum digunakan dalam industri pest control untuk mengatasi masalah hama rayap. Metode ini merupakan bagian dari sistem perlindungan tanah yang diterapkan untuk mencegah atau mengendalikan serangan rayap pada bangunan. Proses ini melibatkan beberapa langkah penting yang berperan dalam menjaga keberlanjutan perlindungan tanah terhadap rayap. <br><br> Pertama, langkah awal dalam metode drill injection adalah teknisi pest control akan mengebor lubang-lubang kecil di sekeliling dinding bangunan lantai dasar, pojok-pojok kusen dan titik-titik yang rawan dari serangan rayap. Kemudian, setelah lubang-lubang telah dibor, larutan pestisida diracik. Larutan ini mengandung bahan aktif kimia yang efektif dalam mengendalikan dan menjadi toxic barrier dari serangan rayap. Larutan ini kemudian disuntikkan ke dalam lubang-lubang yang telah dibor. Proses penyuntikan ini bertujuan untuk menciptakan lapisan perlindungan di dalam tanah yang rayap akan hindari. <br><br>Terakhir, setelah larutan pestisida disuntikkan, lubang-lubang tersebut biasanya ditutup kembali menggunakan nat yang warnanya disesuaikan dengan warna keramik semula. Metode drill injection efektif karena larutan pestisida yang disuntikkan langsung ke dalam tanah menciptakan zona perlindungan yang kuat terhadap serangan rayap. Dengan metode ini, bangunan dapat terlindungi dari kerusakan yang dapat disebabkan oleh rayap selama periode yang cukup lama, sehingga menjadikannya salah satu metode yang populer dalam upaya pengendalian hama rayap.",
 
         "Layanan Spray Anti Rayap menggunakan bahan Imidaclorprid lokal yang efektif untuk membasmi rayap di area tertentu rumah anda. Dengan teknologi spray modern, kami dapat menjangkau area-area yang sulit dan memberikan perlindungan maksimal.",
 
@@ -319,7 +319,7 @@
                 card.classList.add('bg-primary', 'text-white');
 
                 // Update rincian layanan text based on index
-                rincianLayananElement.textContent = rincianLayananList[index];
+                rincianLayananElement.innerHTML = rincianLayananList[index];
 
                 // Update manfaat layanan list
                 // First clear the existing list
