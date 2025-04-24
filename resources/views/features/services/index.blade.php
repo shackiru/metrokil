@@ -6,12 +6,7 @@
                     <h4 class="text-xl font-semibold">Layanan <span class="text-primary">Metrokil</span></h4>
                     <h2 class="text-4xl xl:text-5xl font-semibold mt-3">Kenapa harus <span
                             class="text-primary">Metrokil</span>?</h2>
-                    <p class="xl:text-lg lg:text-md opacity-55 font-semibold mt-5">Sementara dalam Kamus Besar Bahasa
-                        Indonesia
-                        dijelaskan
-                        pelayanan sebagai hal, cara, atau hasil
-                        pekerjaan melayani. Dalam pengertian lain, menurut Moenir (2015: 27) pelayanan hakikatnya adalah
-                        serangkaian kegiatan, karena itu merupakan proses.
+                    <p class="xl:text-lg lg:text-md opacity-55 font-semibold mt-5">Kenapa Harus Metrokil? Metrokil telah dipercaya selama lebih dari dua dekade dalam mengendalikan hama bergaransi. Mulai dari pengendalian hama rayap, tikus, kecoak, nyamuk, lalat, kutu, tawon/lebah, fumigasi, desinfeksi dan pengendalian hama lainnya.
                         <br><br>
                         Tikus adalah hewan pengerat yang terkenal karena kemampuannya beradaptasi dengan lingkungan
                         manusia. Mereka dapat ditemukan di berbagai tempat, mulai dari rumah tinggal, gudang, hingga

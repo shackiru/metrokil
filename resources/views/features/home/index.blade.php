@@ -3,13 +3,12 @@
         <div class="col-span-3 lg:col-span-3 xl:col-span-2">
             <div class="hero">
                 <div class="hero-content">
-                    <h1 class="text-4xl xl:text-5xl font-semibold"><span class="text-primary">Metrokil</span>, Jasa
+                    <p class="text-4xl xl:text-5xl font-semibold"><span class="text-primary">Metrokil</span>, Jasa
                         Pengendali
                         Rayap
                         Untuk Rumah & Bisnis
-                    </h1>
-                    <p class="text-md xl:text-lg mt-6 lg:mt-6 opacity-55 font-medium text-justify">Selamat datang di
-                        website <span class="text-primary">PT Metrokil</span>, perusahaan pest control yang telah menjadi
+                    </p>
+                    <p class="text-md xl:text-lg mt-6 lg:mt-6 opacity-55 font-medium text-justify">Selamat datang di website PT Metropolitan Agro Kimia Lestari  <span class="text-primary font-semibold">Metrokil</span>, perusahaan pest control yang telah menjadi
                         salah satu pemimpin dalam
                         industri ini sejak tahun 1997. Dengan pengalaman dan dedikasi kami selama lebih dari dua dekade,
                         Metrokil telah membangun reputasi yang kuat dalam memberikan layanan terbaik kepada pelanggan
