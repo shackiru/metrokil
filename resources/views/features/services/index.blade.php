@@ -1,15 +1,12 @@
 <x-template title="Service" active="services">
-    <div class="mt-24 lg:mx-14 xl:mx-44 mx-8" data-services="{{ json_encode($services) }}">
+    <div class="mt-24 lg:mx-14 xl:mx-44 mx-8">
         <div class="grid grid-cols-5 justify-between lg:gap-6">
             <div class="lg:col-span-3 col-span-5">
                 <div class="flex flex-col">
                     <h4 class="text-xl font-semibold">Layanan <span class="text-primary">Metrokil</span></h4>
                     <h2 class="text-4xl xl:text-5xl font-semibold mt-3">Kenapa harus <span
                             class="text-primary">Metrokil</span>?</h2>
-                    <p class="xl:text-lg lg:text-md opacity-55 font-semibold mt-5">Kenapa Harus Metrokil? Metrokil telah
-                        dipercaya selama lebih dari dua dekade dalam mengendalikan hama bergaransi. Mulai dari
-                        pengendalian hama rayap, tikus, kecoak, nyamuk, lalat, kutu, tawon/lebah, fumigasi, desinfeksi
-                        dan pengendalian hama lainnya.
+                    <p class="xl:text-lg lg:text-md opacity-55 font-semibold mt-5">Kenapa Harus Metrokil? Metrokil telah dipercaya selama lebih dari dua dekade dalam mengendalikan hama bergaransi. Mulai dari pengendalian hama rayap, tikus, kecoak, nyamuk, lalat, kutu, tawon/lebah, fumigasi, desinfeksi dan pengendalian hama lainnya.
                         <br><br>
                         Tikus adalah hewan pengerat yang terkenal karena kemampuannya beradaptasi dengan lingkungan
                         manusia. Mereka dapat ditemukan di berbagai tempat, mulai dari rumah tinggal, gudang, hingga
@@ -26,7 +23,6 @@
             </div>
         </div>
     </div>
-
     <div class="mt-16 lg:mt-24 lg:mx-14 xl:mx-44 mx-8">
         <div class="pricing" id="pricing">
             <div class="pricing-header">
@@ -35,11 +31,23 @@
             <div class="pricing-content">
                 <div class="flex flex-col xl:grid xl:grid-cols-7 mt-8 gap-6">
                     <div class="col-span-4 flex flex-col justify-between h-[455px] overflow-y-auto space-y-4 pr-2 py-1">
-                        @foreach ($services as $service)
-                            <x-pricing-card :active="false" :id="$service->id" :value="$service->name" :price="$service->price">
-                                {{ $service->name }}
-                            </x-pricing-card>
-                        @endforeach
+                        <x-pricing-card :active="true" id="1" value="Pondasi">Anti Rayap Imidaclorprid
+                            (Impor)</x-pricing-card>
+                        <x-pricing-card :active="false" id="2" value="Spray">Anti Rayap Imidaclorprid
+                            (Lokal)</x-pricing-card>
+                        <x-pricing-card :active="false" id="3" value="Control">Anti Rayap Cypermethrin
+                            (Lokal)</x-pricing-card>
+                        <x-pricing-card :active="false" id="4" value="Cleaning">Paket Pengendalian Hama
+                            Tikus</x-pricing-card>
+                        <x-pricing-card :active="false" id="5" value="Cleaning">Basmi Nyamuk dan
+                            Kecoak</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Paket Basmi
+                            Lalat</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Basmi Kutu</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Basmi
+                            Tawon/Lebah</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Fumigasi</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Desinfeksi</x-pricing-card>
                     </div>
 
                     <!-- Right Container (col-span-3) -->
@@ -147,15 +155,133 @@
 </x-template>
 
 <script>
-    // Get services data from a data attribute
-    const servicesData = document.querySelector('[data-services]').getAttribute('data-services');
-    let services = JSON.parse(servicesData);
+    let rincianLayananList = [
+        "Metode drill injection adalah salah satu teknik yang umum digunakan dalam industri pest control untuk mengatasi masalah hama rayap. Metode ini merupakan bagian dari sistem perlindungan tanah yang diterapkan untuk mencegah atau mengendalikan serangan rayap pada bangunan. Proses ini melibatkan beberapa langkah penting yang berperan dalam menjaga keberlanjutan perlindungan tanah terhadap rayap. <br><br> Pertama, langkah awal dalam metode drill injection adalah teknisi pest control akan mengebor lubang-lubang kecil di sekeliling dinding bangunan lantai dasar, pojok-pojok kusen dan titik-titik yang rawan dari serangan rayap. Kemudian, setelah lubang-lubang telah dibor, larutan pestisida diracik. Larutan ini mengandung bahan aktif kimia yang efektif dalam mengendalikan dan menjadi toxic barrier dari serangan rayap. Larutan ini kemudian disuntikkan ke dalam lubang-lubang yang telah dibor. Proses penyuntikan ini bertujuan untuk menciptakan lapisan perlindungan di dalam tanah yang rayap akan hindari. <br><br>Terakhir, setelah larutan pestisida disuntikkan, lubang-lubang tersebut biasanya ditutup kembali menggunakan nat yang warnanya disesuaikan dengan warna keramik semula. Metode drill injection efektif karena larutan pestisida yang disuntikkan langsung ke dalam tanah menciptakan zona perlindungan yang kuat terhadap serangan rayap. Dengan metode ini, bangunan dapat terlindungi dari kerusakan yang dapat disebabkan oleh rayap selama periode yang cukup lama, sehingga menjadikannya salah satu metode yang populer dalam upaya pengendalian hama rayap.",
 
-    console.log(services);
+        "Layanan Spray Anti Rayap menggunakan bahan Imidaclorprid lokal yang efektif untuk membasmi rayap di area tertentu rumah anda. Dengan teknologi spray modern, kami dapat menjangkau area-area yang sulit dan memberikan perlindungan maksimal.",
 
-    let rincianLayananList = services.map(service => service.description);
+        "Control Anti Rayap dengan Cypermethrin lokal adalah solusi ekonomis untuk pengendalian rayap jangka panjang. Bahan aktif Cypermethrin efektif membunuh dan mencegah rayap kembali ke rumah anda.",
 
-    let manfaatLayananList = services.map(service => service.benefit);
+        "Paket Pengendalian Hama Tikus dari Metrokil menawarkan solusi komprehensif untuk masalah tikus di rumah atau bisnis anda. Kami menggunakan kombinasi metode perangkap, umpan, dan teknik pencegahan untuk memberantas tikus dan mencegah kembalinya mereka.",
+
+        "Layanan Basmi Nyamuk dan Kecoak kami menggunakan insektisida yang aman namun efektif untuk memberantas nyamuk dan kecoak di rumah anda. Penyemprotan dilakukan oleh teknisi berpengalaman di area-area yang menjadi sarang kedua hama ini.",
+
+        "Paket Basmi Lalat Metrokil menggunakan kombinasi metode pengendalian untuk memberantas lalat dari properti anda. Kami menawarkan solusi jangka pendek dan jangka panjang untuk mencegah infestasi lalat di masa depan.",
+
+        "Layanan Basmi Kutu kami dirancang khusus untuk mengatasi masalah kutu pada kasur, furnitur, dan area lainnya. Kami menggunakan bahan khusus yang efektif membunuh kutu dan telurnya tanpa merusak barang-barang anda.",
+
+        "Metrokil menawarkan layanan Basmi Tawon/Lebah yang aman dan efektif. Tim kami akan mengidentifikasi dan menghilangkan sarang, serta mengambil tindakan pencegahan untuk mencegah tawon atau lebah kembali ke properti anda.",
+
+        "Layanan Fumigasi Metrokil adalah solusi menyeluruh untuk infestasi hama yang parah. Proses fumigasi menggunakan gas yang dapat menembus ke celah-celah terkecil untuk membasmi semua jenis hama, termasuk serangga dan tikus.",
+
+        "Layanan Desinfeksi kami menggunakan bahan desinfektan berkualitas tinggi untuk membunuh bakteri, virus, dan mikroorganisme berbahaya lainnya di rumah atau kantor anda. Sempurna untuk menjaga kesehatan keluarga atau karyawan anda."
+    ]
+
+    let manfaatLayananList = [
+        // 0: Anti Rayap Imidaclorprid (Impor)
+        [
+            "Membunuh serangga yang ada di dalam pondasi",
+            "Mencegah serangga masuk ke dalam rumah",
+            "Membuat pondasi rumah anda lebih kuat",
+            "Menjaga kesehatan keluarga anda",
+            "Memberikan jaminan garansi",
+            "Memberikan pelayanan terbaik"
+        ],
+
+        // 1: Anti Rayap Imidaclorprid (Lokal)
+        [
+            "Efektif membasmi koloni rayap",
+            "Melindungi furnitur kayu dari kerusakan",
+            "Mencegah infestasi rayap baru",
+            "Menggunakan bahan lokal berkualitas",
+            "Harga lebih ekonomis dibanding bahan impor",
+            "Hasil terlihat dalam waktu singkat"
+        ],
+
+        // 2: Anti Rayap Cypermethrin (Lokal)
+        [
+            "Membasmi rayap secara efektif",
+            "Perlindungan jangka panjang untuk rumah anda",
+            "Mencegah rayap kembali ke rumah anda",
+            "Biaya lebih terjangkau",
+            "Aman untuk penghuni rumah",
+            "Dilakukan oleh tenaga ahli bersertifikat"
+        ],
+
+        // 3: Paket Pengendalian Hama Tikus
+        [
+            "Menghilangkan tikus dari rumah anda",
+            "Mencegah tikus kembali ke rumah anda",
+            "Menghilangkan sumber penyakit dari tikus",
+            "Menjaga sanitasi rumah anda",
+            "Melindungi makanan dari kontaminasi",
+            "Mencegah kerusakan pada kabel dan sistem rumah"
+        ],
+
+        // 4: Basmi Nyamuk dan Kecoak
+        [
+            "Membasmi nyamuk dan kecoak secara efektif",
+            "Mencegah penyakit yang dibawa nyamuk seperti DBD",
+            "Menghilangkan sarang kecoak",
+            "Membuat rumah anda lebih nyaman",
+            "Aman untuk anak-anak dan hewan peliharaan",
+            "Solusi jangka panjang untuk masalah hama"
+        ],
+
+        // 5: Paket Basmi Lalat
+        [
+            "Membasmi lalat di seluruh area rumah",
+            "Mencegah penyebaran penyakit dari lalat",
+            "Menjaga kebersihan dapur dan ruang makan",
+            "Mengurangi risiko kontaminasi makanan",
+            "Layanan dari teknisi yang profesional",
+            "Menggunakan bahan yang ramah lingkungan"
+        ],
+
+        // 6: Basmi Kutu
+        [
+            "Membasmi kutu hingga ke telurnya",
+            "Menghilangkan alergi akibat kutu",
+            "Mencegah gigitan kutu dan masalah kulit",
+            "Membuat kasur dan furnitur bebas kutu",
+            "Menggunakan bahan yang aman untuk fabrik",
+            "Teknisi khusus terlatih untuk penanganan kutu"
+        ],
+
+        // 7: Basmi Tawon/Lebah
+        [
+            "Menghilangkan sarang tawon/lebah dengan aman",
+            "Mencegah sengatan berbahaya",
+            "Penanganan oleh ahli yang terlatih",
+            "Pencegahan pembentukan sarang baru",
+            "Pemindahan sarang jika memungkinkan",
+            "Perlindungan untuk keluarga anda"
+        ],
+
+        // 8: Fumigasi
+        [
+            "Membasmi semua jenis hama sekaligus",
+            "Menjangkau area-area tersembunyi",
+            "Solusi total untuk infestasi parah",
+            "Membunuh hama di semua tahap kehidupan",
+            "Mencegah kerusakan struktural pada bangunan",
+            "Penanganan oleh tim fumigasi bersertifikasi"
+        ],
+
+        // 9: Desinfeksi
+        [
+            "Membunuh bakteri dan virus berbahaya",
+            "Membersihkan permukaan dari mikroorganisme",
+            "Mencegah penyebaran penyakit",
+            "Menciptakan lingkungan yang sehat",
+            "Menggunakan bahan desinfektan medis",
+            "Cocok untuk rumah dan tempat usaha"
+        ]
+    ];
+
+    // let manfaatLayananList = {
+    //     'anti-rayap-imidaclorprid': 'Membunuh serangga yang ada di dalam pondasi'
+    // }
 
     // Scroll to the #pricing section if the URL contains #pricing
     document.addEventListener('DOMContentLoaded', () => {
