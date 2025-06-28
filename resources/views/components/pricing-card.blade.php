@@ -1,4 +1,4 @@
-@props(['active'])
+@props(['active', 'price'])
 
 <div data-id="{{ $attributes->get('id') }}"
     class="pricing-card px-6 py-9 flex items-center ring-1 ring-black ring-opacity-20 rounded-xl justify-between cursor-pointer ml-1 @if ($active) bg-primary text-white @endif">
@@ -24,8 +24,12 @@
     </div>
     <div class="pricing-price text-right">
         <p class="font-semibold">
-            <span class="opacity-50">Mulai dari</span>
-            <span class="opacity-100 text-lg"> Rp. 35.000/m2<sup>2</sup></span>
+            @if ($price == 0)
+                <span class="opacity-50">Hubungi kami untuk harga</span>
+            @else
+                <span class="opacity-50">Mulai dari</span>
+                <span class="opacity-100 text-lg"> Rp. {{ $price }}</span>
+            @endif
         </p>
     </div>
 </div>
