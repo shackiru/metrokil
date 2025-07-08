@@ -6,7 +6,7 @@
         <div class="contact-content mt-6">
             <div class="grid lg:grid-cols-2 gap-8 items-stretch">
                 <!-- Contact Form -->
-                <div class="contact-form shadow-soft rounded-xl p-6 flex flex-col">
+                <div class="contact-form shadow-soft rounded-xl p-6 flex flex-col" data-aos="fade-right">
                     <h3 class="text-2xl font-semibold">Tertarik dengan jasa <span class="text-primary">Metrokil</span>?
                     </h3>
                     {{-- <form action="" method="GET" class="mt-6 flex flex-col flex-grow"> --}}
@@ -42,7 +42,7 @@
                 </div>
 
                 <!-- Contact Details and Map -->
-                <div class="contact-detail flex flex-col">
+                <div class="contact-detail flex flex-col" data-aos="fade-left">
                     <!-- Contact Info -->
                     <div class="contact-call mb-6">
                         <h3 class="font-semibold text-3xl">Hubungi <span class="text-primary">Metrokil</span></h3>

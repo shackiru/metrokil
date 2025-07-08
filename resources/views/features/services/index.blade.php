@@ -1,7 +1,7 @@
 <x-template title="Service" active="services">
     <div class="mt-24 lg:mx-14 xl:mx-44 mx-8" data-services="{{ json_encode($services) }}">
         <div class="grid grid-cols-5 justify-between lg:gap-6">
-            <div class="lg:col-span-3 col-span-5">
+            <div class="lg:col-span-3 col-span-5" data-aos="fade-right">
                 <div class="flex flex-col">
                     <h4 class="text-xl font-semibold">Layanan <span class="text-primary">Metrokil</span></h4>
                     <h2 class="text-4xl xl:text-5xl font-semibold mt-3">Kenapa harus <span
@@ -20,7 +20,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-span-2 justify-self-end lg:block hidden">
+            <div class="col-span-2 justify-self-end lg:block hidden" data-aos="fade-left">
                 <img src="https://imgs.search.brave.com/ewPePM7Kfpgek378czv-hge_4Uwp5ZuXfErEjPHH55Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTYy/MzUyODczL3Bob3Rv/L3Blc3QtY29udHJv/bC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9emg5UkNvajBj/cktOQTgwSG5RUnpB/UTRfeTlRMDNKaHBY/N1JmOHpwa2dUcz0"
                     width="400" class="rounded-xl" alt="">
             </div>
@@ -34,7 +34,7 @@
             </div>
             <div class="pricing-content">
                 <div class="flex flex-col xl:grid xl:grid-cols-7 mt-8 gap-6">
-                    <div class="col-span-4 flex flex-col justify-between h-[455px] overflow-y-auto space-y-4 pr-2 py-1">
+                    <div class="col-span-4 flex flex-col justify-between h-[455px] overflow-y-auto space-y-4 pr-2 py-1" data-aos="fade-right">
                         @foreach ($services as $service)
                             <x-pricing-card :active="false" :id="$service->id" :value="$service->name" :price="$service->price">
                                 {{ $service->name }}
@@ -43,7 +43,7 @@
                     </div>
 
                     <!-- Right Container (col-span-3) -->
-                    <div class="col-span-3 flex flex-col h-full">
+                    <div class="col-span-3 flex flex-col h-full" data-aos="fade-left">
                         <div
                             class="pricing-detail ring-1 ring-black ring-opacity-20 w-full rounded-xl p-6 flex-grow h-[455px] overflow-y-auto">
                             <div class="pricing-description">
@@ -101,7 +101,7 @@
             </h2>
         </div>
         <div
-            class="benefit-content grid md:grid-cols-2 xl:grid-cols-4 mt-10 md:gap-20 lg:gap-24 gap-y-6 xl:gap-y-0 xl:gap-36">
+            class="benefit-content grid md:grid-cols-2 xl:grid-cols-4 mt-10 md:gap-20 lg:gap-24 gap-y-6 xl:gap-y-0 xl:gap-36" data-aos="fade-up">
             <div class="benefit-card flex flex-col items-start gap-4">
                 <div class="badge-img rounded-xl p-4 shadow-soft">
                     <img src="{{ asset('icons/Iconsax/Svg/All/linear/verify-primary.svg') }}" width="35"

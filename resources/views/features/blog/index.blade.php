@@ -16,7 +16,7 @@
     </div>
 
     <div class="mt-12 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36">
-        <div class="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 grid-rows-2 gap-6">
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 grid-rows-2 gap-6" data-aos="fade-up">
             @foreach ($blogs as $blog)
                 <a href="/blogs/{{ $blog->id }}">
                     <x-blog-card date="{{ $blog->created_at }}" category="{{ $blog->category }}"

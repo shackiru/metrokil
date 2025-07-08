@@ -1,6 +1,7 @@
 <x-template title="Homepage" active="home">
-    <div class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-20 lg:mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
-        <div class="col-span-3 lg:col-span-3 xl:col-span-2">
+    <div
+        class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-20 lg:mt-32 gap-20 lg:mx-14 xl:mx-44 mx-8">
+        <div class="col-span-3 lg:col-span-3 xl:col-span-2" data-aos="fade-right">
             <div class="hero">
                 <div class="hero-content">
                     <p class="text-4xl xl:text-5xl font-semibold"><span class="text-primary">Metrokil</span>, Jasa
@@ -8,7 +9,10 @@
                         Rayap
                         Untuk Rumah & Bisnis
                     </p>
-                    <p class="text-md xl:text-lg mt-6 lg:mt-6 opacity-55 font-medium text-justify">Selamat datang di website PT Metropolitan Agro Kimia Lestari  <span class="text-primary font-semibold">Metrokil</span>, perusahaan pest control yang telah menjadi
+                    <p class="text-md xl:text-lg mt-6 lg:mt-6 opacity-55 font-medium text-justify">Selamat datang di
+                        website PT Metropolitan Agro Kimia Lestari <span
+                            class="text-primary font-semibold">Metrokil</span>, perusahaan pest control yang telah
+                        menjadi
                         salah satu pemimpin dalam
                         industri ini sejak tahun 1997. Dengan pengalaman dan dedikasi kami selama lebih dari dua dekade,
                         Metrokil telah membangun reputasi yang kuat dalam memberikan layanan terbaik kepada pelanggan
@@ -27,7 +31,7 @@
                 </div>
             </div>
         </div>
-        <div class="hidden lg:block col-span-1 lg:col-span-2 xl:col-span-1">
+        <div class="hidden lg:block col-span-1 lg:col-span-2 xl:col-span-1" data-aos="fade-left">
             <div class="hero-image">
                 <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
                     class="rounded-lg" alt="">
@@ -36,12 +40,12 @@
         </div>
     </div>
 
-    <div class="mt-12 lg:mt-28 grid grid-cols-3 gap-10 lg:mx-14 xl:mx-44 mx-8">
-        <div class="hidden lg:block col-span-1">
+    <div class="mt-12 lg:mt-48 grid grid-cols-3 gap-10 lg:mx-14 xl:mx-44 mx-8">
+        <div class="hidden lg:block col-span-1" data-aos="fade-right">
             <img src="https://imgs.search.brave.com/tDwDKckiFCktmSVZfLfjAHN6huS-ZrbafSC3MMxVAvU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI1/MDQzNjg1NS9waG90/by9ob3VzZS1wZXN0/LWNvbnRyb2wuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTkx/Nl81TTA0MlVMenlJ/YmoxOUswQXZieVpE/UEhOWl94SEJuUnR0/QTZwaXc9"
                 class="rounded-lg" alt="">
         </div>
-        <div class="col-span-3 lg:col-span-2">
+        <div class="col-span-3 lg:col-span-2" data-aos="fade-left">
             <div class="about-content flex flex-col justify-between h-full">
                 <h1 class="text-3xl lg:text-4xl font-semibold">Tentang <span class="text-primary">Metrokil</span></h1>
                 <p class="lg:text-lg opacity-70 mt-6 text-justify">Kami adalah <span class="text-primary">perusahaan
@@ -86,7 +90,7 @@
             </a>
         </div>
         <div class="service-content grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4 mt-6">
-            <div class="service-item flex justify-between shadow-soft rounded-xl">
+            <div class="service-item flex justify-between shadow-soft rounded-xl" data-aos="fade-right">
                 <div class="service-image min-w-40">
                     <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
                         class="rounded-l-xl h-full object-cover" alt="">
@@ -113,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl">
+            <div class="service-item flex justify-between shadow-soft rounded-xl" data-aos="fade-left">
                 <div class="service-image min-w-40">
                     <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
                         class="rounded-l-xl h-full object-cover" alt="">
@@ -140,7 +144,7 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl">
+            <div class="service-item flex justify-between shadow-soft rounded-xl" data-aos="fade-right">
                 <div class="service-image min-w-40">
                     <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
                         class="rounded-l-xl h-full object-cover" alt="">
@@ -167,7 +171,7 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl">
+            <div class="service-item flex justify-between shadow-soft rounded-xl" data-aos="fade-left">
                 <div class="service-image min-w-40">
                     <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
                         class="rounded-l-xl h-full object-cover" alt="">
@@ -213,7 +217,7 @@
                 </a>
             </div>
             <div class="testimonials flex mt-8 gap-6 overflow-x-auto w-full">
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44">
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44" data-aos="fade-left">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
@@ -226,7 +230,7 @@
                             Sukses selalu Metrokil!</p>
                     </div>
                 </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]">
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]" data-aos="fade-left">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Aurelia Natasha</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Software Engineer, Ex-PPTI 12</p>
@@ -239,7 +243,7 @@
                             untuk layanan profesional!</p>
                     </div>
                 </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]">
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]" data-aos="fade-left">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Jonathan Fajar</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Product Manager, Ex-PPTI 13</p>
@@ -252,7 +256,7 @@
                             merekomendasikan mereka.</p>
                     </div>
                 </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]">
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]" data-aos="fade-left">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
@@ -264,7 +268,7 @@
                             memenuhi ekspektasi pelanggan.</p>
                     </div>
                 </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] mr-44">
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] mr-44" data-aos="fade-left">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
@@ -297,7 +301,7 @@
             </div>
             <div class="blogs px-8 lg:px-14 xl:px-44 flex mt-4 gap-4 overflow-visible w-full overflow-x-auto py-4">
                 @foreach ($blogs as $blog)
-                    <a href="/blogs/{{ $blog->id }}">
+                    <a href="/blogs/{{ $blog->id }}" data-aos="fade-left">
                         <x-blog-card date="{{ $blog->created_at }}" category="{{ $blog->category }}"
                             image="{{ $blog->image_url }}" author="{{ $blog->user->name }}" isLimitWidth="true">
                             {{ \Str::limit($blog->title, 50) }}

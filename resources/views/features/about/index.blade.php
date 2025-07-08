@@ -2,7 +2,7 @@
     <div class="grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <div class="md:col-span-2 col-span-3">
             <div class="hero">
-                <div class="hero-content">
+                <div class="hero-content" data-aos="fade-right">
                     <h3 class="text-2xl font-semibold mb-2">Tentang <span class="text-primary">Metrokil</span></h3>
                     <h1 class="text-5xl font-semibold">An <span class="text-primary text-jus">Innovation</span> for Your
                         Environment
@@ -14,14 +14,14 @@
                 </div>
             </div>
         </div>
-        <div class="md:col-span-1 hidden md:block">
+        <div class="md:col-span-1 hidden md:block" data-aos="fade-left">
             <div class="hero-image">
                 <img src="{{ asset('images/About-img.png') }}" class="rounded-lg" alt="">
             </div>
         </div>
     </div>
 
-    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8">
+    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8" data-aos="fade-up">
         <div class="about-detail grid md:grid-cols-3 gap-y-6 md:gap-y-0 gap-4 mt-6">
             <div class="about-description flex justify-between shadow-smooth rounded-xl">
                 <div class="about-content p-12 flex flex-col justify-between text-center">
@@ -55,7 +55,7 @@
     <div class="mt-12 lg:mx-14 xl:mx-44 mx-8">
         <h1 class="text-4xl font-semibold">Visi dari <span class="text-primary">Metrokil</span></h1>
         <div class="about-detail grid grid-rows-1 gap-4 mt-6">
-            <div class="about-description flex justify-between shadow-smooth rounded-xl">
+            <div class="about-description flex justify-between shadow-smooth rounded-xl" data-aos="fade-right">
                 <div class="about-content p-12 flex flex-row">
                     <div class="flex gap-12 md:grid-cols-5">
                         <div class="vision-icon w-48 md:col-span-1 md:flex md:justify-center md:items-center">
@@ -76,7 +76,7 @@
 
         <h1 class="text-4xl font-semibold mt-16">Misi dari <span class="text-primary">Metrokil</span></h1>
         <div class="about-detail grid grid-rows-3 gap-6 mt-6 mb-20 lg:mb-36">
-            <div class="about-description flex justify-between shadow-smooth rounded-xl">
+            <div class="about-description flex justify-between shadow-smooth rounded-xl" data-aos="fade-right">
                 <div class="about-content p-8 flex flex-row">
                     <div class="flex md:grid-cols-5 gap-12">
                         <div class="vision-icon justfify-center w-48 md:col-span-1 md:flex md:justify-center md:items-center">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-description flex justify-between shadow-smooth rounded-xl">
+            <div class="about-description flex justify-between shadow-smooth rounded-xl" data-aos="fade-right">
                 <div class="about-content p-8 flex flex-row">
                     <div class="flex gap-12 md:grid-cols-5">
                         <div class="vision-icon justify-center w-48 md:col-span-1 md:flex md:justify-center md:items-center">  
@@ -112,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-description flex justify-between shadow-smooth rounded-xl">
+            <div class="about-description flex justify-between shadow-smooth rounded-xl" data-aos="fade-right">
                 <div class="about-content p-8 flex flex-row">
                     <div class="flex gap-12 md:grid-cols-5">
                         <div class="vision-icon w-48 md:col-span-1 md:flex md:justify-center md:items-center">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-description flex justify-between shadow-smooth rounded-xl">
+            <div class="about-description flex justify-between shadow-smooth rounded-xl" data-aos="fade-right">
                 <div class="about-content p-8 flex flex-row">
                     <div class="flex gap-12 md:grid-cols-5">
                         <div class="vision-icon w-48 md:col-span-1 md:flex md:justify-center md:items-center">
