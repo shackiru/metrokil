@@ -4,13 +4,15 @@
             <h2 class="font-semibold inline-flex text-3xl lg:text-4xl">Blog&nbsp;<span
                     class="text-primary">Metrokil</span>
             </h2>
-            <div class="ring-primary ring-2 rounded-lg flex align-center px-4 py-2 gap-4 w-96">
-                <input type="text"
-                    class="w-full outline-none placeholder:text-primary placeholder:opacity-65 text-primary font-semibold flex items-center border-0 focus:border-0 focus:ring-0"
-                    placeholder="Cari...">
-                <button>
-                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/search-normal-1-primary.svg') }}" alt="">
-                </button>
+            <div class="ring-primary ring-2 rounded-lg align-center px-4 py-2 gap-4 w-96">
+                <form action="" class="flex">
+                    <input type="text"
+                        class="w-full outline-none placeholder:text-primary placeholder:opacity-65 text-primary font-semibold flex items-center border-0 focus:border-0 focus:ring-0"
+                        placeholder="Cari..." name="search" value="{{ request('search') }}">
+                    <button type="submit">
+                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/search-normal-1-primary.svg') }}" alt="">
+                    </button>
+                </form>
             </div>
         </div>
     </div>

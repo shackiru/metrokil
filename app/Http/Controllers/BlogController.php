@@ -12,7 +12,14 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::paginate(8);
+        if (request('search')) {
+            $blogs = Blog::where('title', 'like', '%' . request('search') . '%')
+                ->orWhere('description', 'like', '%' . request('search') . '%')
+                ->paginate(8)
+                ->withQueryString();
+        } else {
+            $blogs = Blog::paginate(8);
+        }
 
         return view('features.blog.index', compact('blogs'));
     }
