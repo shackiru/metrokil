@@ -50,8 +50,7 @@
                 <div class="footer-location flex flex-col gap-3" data-aos="fade-left">
                     <h4 class="text-white font-semibold text-lg">Lokasi</h4>
                     <div class="w-full rounded-lg">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d623.1586470859122!2d106.79777815851703!3d-6.189863913711569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f76971a5e855%3A0xaa88a8a84eb8dbef!2sWisma%20Asia%202!5e0!3m2!1sen!2sid!4v1735282334916!5m2!1sen!2sid"
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5811298386343!2d106.72602219999999!3d-6.318620999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e517d2288a55%3A0xe0a2488cf2ae85d3!2sAnti%20Rayap%20Metrokil!5e0!3m2!1sen!2sid!4v1752582105000!5m2!1sen!2sid"
                             height="250" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="rounded-lg w-full"></iframe>
                     </div>

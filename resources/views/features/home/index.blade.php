@@ -97,10 +97,8 @@
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
-                        <h1 class="text-2xl font-semibold">Pembasmian Rayap</h1>
-                        <p class="lg:text-lg mt-2">Metrokil memberikan layanan pembasmian rayap yang efektif dan aman
-                            untuk
-                            rumah dan bisnis Anda.</p>
+                        <h1 class="text-2xl font-semibold">Anti Rayap Imidaclorprid (Import)</h1>
+                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
                         <a href="/contact"><button
@@ -124,10 +122,8 @@
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
-                        <h1 class="text-2xl font-semibold">Pembasmian Rayap</h1>
-                        <p class="lg:text-lg mt-2">Metrokil memberikan layanan pembasmian rayap yang efektif dan aman
-                            untuk
-                            rumah dan bisnis Anda.</p>
+                        <h1 class="text-2xl font-semibold">Anti Rayap Imidaclorprid (Lokal)</h1>
+                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan pasca treatment menjadi tanggung jawab kami. </p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
                         <a href="/contact"><button
@@ -151,10 +147,8 @@
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
-                        <h1 class="text-2xl font-semibold">Pembasmian Rayap</h1>
-                        <p class="lg:text-lg mt-2">Metrokil memberikan layanan pembasmian rayap yang efektif dan aman
-                            untuk
-                            rumah dan bisnis Anda.</p>
+                        <h1 class="text-2xl font-semibold">Anti Rayap Cypermethrin (Lokal)</h1>
+                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
                         <a href="/contact"><button
@@ -178,10 +172,8 @@
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
-                        <h1 class="text-2xl font-semibold">Pembasmian Rayap</h1>
-                        <p class="lg:text-lg mt-2">Metrokil memberikan layanan pembasmian rayap yang efektif dan aman
-                            untuk
-                            rumah dan bisnis Anda.</p>
+                        <h1 class="text-2xl font-semibold">Paket Pengendalian Hama Tikus</h1>
+                        <p class="lg:text-lg mt-2">Menggunakan metode perangkap hidup, perangkap mati, dan racun. Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
                         <a href="/contact"><button

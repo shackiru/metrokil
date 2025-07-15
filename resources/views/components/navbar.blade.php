@@ -21,16 +21,16 @@
         class="hidden lg:flex flex-col lg:flex-row items-center absolute top-full left-0 w-full lg:w-auto bg-white shadow-lg lg:shadow-soft rounded-lg px-8 lg:px-8 xl:px-12 py-6 lg:py-0 lg:static transition-all duration-300 z-[-1] lg:z-auto">
         <ul
             class="flex flex-col lg:flex-row gap-8 lg:gap-8 xl:gap-12 items-center justify-center font-semibold text-md xl:text-md">
-            <li class="@if ($active == 'home') active @endif hover:active"><a href="/">Home</a></li>
-            <li class="@if ($active == 'about') active @endif hover:active"><a href="/about">About Us</a></li>
-            <li class="@if ($active == 'services') active @endif hover:active"><a href="/services">Services</a>
+            <li class="@if ($active == 'home') active @endif hover:active"><a href="/">Beranda</a></li>
+            <li class="@if ($active == 'about') active @endif hover:active"><a href="/about">Tentang</a></li>
+            <li class="@if ($active == 'services') active @endif hover:active"><a href="/services">Layanan</a>
             </li>
             <li class="@if ($active == 'pricing') active @endif hover:active"><a
-                    href="/services#pricing">Pricing</a></li>
+                    href="/services#pricing">Harga</a></li>
             <li class="@if ($active == 'testimonial') active @endif hover:active"><a
-                    href="/testimonials">Testimonial</a></li>
+                    href="/testimonials">Testimoni</a></li>
             <li class="@if ($active == 'blog') active @endif hover:active"><a href="/blogs">Blog</a></li>
-            <li class="@if ($active == 'contact') active @endif hover:active"><a href="/contact">Contact Us</a>
+            <li class="@if ($active == 'contact') active @endif hover:active"><a href="/contact">Kontak Kami</a>
             </li>
         </ul>
     </div>

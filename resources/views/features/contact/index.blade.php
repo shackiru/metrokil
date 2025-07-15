@@ -47,7 +47,7 @@
                     <div class="contact-call mb-6">
                         <h3 class="font-semibold text-3xl">Hubungi <span class="text-primary">Metrokil</span></h3>
                         <div class="contacts flex flex-col gap-4 mt-4">
-                            <div class="contact-item flex gap-4 items-center">
+                            {{-- <div class="contact-item flex gap-4 items-center">
                                 <img src="{{ asset('icons/Iconsax/Svg/All/linear/call-primary.svg') }}" alt="">
                                 <p class="font-semibold">+62 812 3456 7890</p>
                             </div>
@@ -59,15 +59,26 @@
                             <div class="contact-item flex gap-4 items-center">
                                 <img src="{{ asset('icons/Iconsax/Svg/All/linear/clock-primary.svg') }}" alt="">
                                 <p class="font-semibold">Senin - Jumat, 09:00 - 17:00 (WIB)</p>
+                            </div> --}}
+                            <div class="contact-item flex gap-4 items-start">
+                                <img src="{{ asset('icons/Iconsax/Svg/All/linear/location-primary.svg') }}" class="mt-1" alt="">
+                                <div>
+                                    <p class="font-semibold">Jabodetabek</p>
+                                    <p class="font-semibold">Bandung Raya</p>
+                                    <p class="font-semibold">Surabaya Raya</p>
+                                    <p class="font-semibold">Malang Raya</p>
+                                    <p class="font-semibold">Semarang Raya</p>
+                                    <p class="font-semibold">Yogyakarta-Solo Raya</p>
+                                    <p class="font-semibold">Jambi</p>
+                                    <p class="font-semibold">Palembang</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Map Section -->
                     <div class="contact-map flex-grow rounded-xl overflow-hidden">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.013292073073!2d106.8227453147697!3d-6.175392995514768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f43b1b4d8b0f%3A0x7b3b3b3b3b3b3b3b!2sJl.%20Jend.%20Sudirman%20No.Kav%2054-55%2C%20RT.5%2FRW.3%2C%20Karet%20Semanggi%2C%20Kecamatan%20Setiabudi%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012910!5e0!3m2!1sid!2sid!4v1633660730734!5m2!1sid!2sid"
-                            class="w-full h-72 lg:h-full border-0" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5811298386343!2d106.72602219999999!3d-6.318620999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e517d2288a55%3A0xe0a2488cf2ae85d3!2sAnti%20Rayap%20Metrokil!5e0!3m2!1sen!2sid!4v1752582105000!5m2!1sen!2sid" class="w-full h-72 lg:h-full border-0" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
