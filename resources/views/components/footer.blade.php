@@ -1,6 +1,6 @@
 <footer class="bg-primary w-full py-16">
     <div class="lg:mx-14 xl:mx-44 mx-8">
-        <div class="grid grid-cols-5">
+        <div class="grid grid-cols-5 gap-12">
             <div class="footer-menu col-span-5 md:col-span-3 grid-rows-3 flex flex-col justify-between">
                 <div class="footer-logo  w-fit flex items-center gap-4">
                     <a href="" class=""><img src="{{ asset('images/logo.png') }}" width="65"
@@ -8,24 +8,38 @@
                     </a>
                     <p class="text-xl text-white font-semibold">Metrokil</p>
                 </div>
-                <div class="mt-6 footer-navigation grid grid-cols-3" data-aos="fade-up">
+                <div class="mt-6 footer-navigation grid grid-cols-4" data-aos="fade-up">
                     <div class="footer-about flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">About Us</h4>
-                        <a href="" class="text-white opacity-55">Tentang Kami</a>
-                        <a href="" class="text-white opacity-55">Visi dan Misi Metrokil</a>
-                        <a href="" class="text-white opacity-55">Sejarah Metrokil</a>
+                        <a href="/about" class="text-white opacity-55 hover:opacity-100 transition-all">Tentang
+                            Metrokil</a>
+                        <a href="/about" class="text-white opacity-55 hover:opacity-100 transition-all">Sejarah
+                            Metrokil</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Services</h4>
-                        <a href="" class="text-white opacity-55">Penyemprotan Pondasi</a>
-                        <a href="" class="text-white opacity-55">Penyemprotan Dinding</a>
-                        <a href="" class="text-white opacity-55">Penyemprotan Anti Rayap pada Area
-                            Taman</a>
+                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Pembasmi
+                            Hama</a>
+                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Metode Drill
+                            Inject</a>
+                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Metode
+                            Pembasmi
+                            Semut</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Testimonial</h4>
-                        <a href="" class="text-white opacity-55">Testimoni Pelanggan</a>
-                        <a href="" class="text-white opacity-55">Gallery Metrokil</a>
+                        <a href="/testimonials" class="text-white opacity-55 hover:opacity-100 transition-all">Testimoni
+                            Pelanggan</a>
+                        <a href="/testimonials#gallery"
+                            class="text-white opacity-55 hover:opacity-100 transition-all">Gallery
+                            Metrokil</a>
+                    </div>
+                    <div class="footer-service flex flex-col gap-2">
+                        <h4 class="text-white font-semibold text-lg">Blog</h4>
+                        <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Berita
+                            Metrokil</a>
+                        <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Artikel
+                            Metrokil</a>
                     </div>
                 </div>
                 <div class="footer-socials mt-8 gap-6 opacity-65 hidden md:flex">
@@ -34,6 +48,8 @@
                     <img src="{{ asset('icons/socials/mdi_instagram.svg') }}" alt="">
                     <img src="{{ asset('icons/socials/ant-design_x-outlined.svg') }}" alt="">
                 </div>
+                <hr class="my-1">
+                <p class="text-lg text-white font-semibold opacity-55">Copyright © Metrokil 2025</p>
             </div>
             <div class="footer-info col-span-5 mt-6 md:col-span-2 flex flex-col gap-8">
                 <div class="footer-subscribe flex flex-col gap-3" data-aos="fade-left">
@@ -50,7 +66,8 @@
                 <div class="footer-location flex flex-col gap-3" data-aos="fade-left">
                     <h4 class="text-white font-semibold text-lg">Lokasi</h4>
                     <div class="w-full rounded-lg">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5811298386343!2d106.72602219999999!3d-6.318620999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e517d2288a55%3A0xe0a2488cf2ae85d3!2sAnti%20Rayap%20Metrokil!5e0!3m2!1sen!2sid!4v1752582105000!5m2!1sen!2sid"
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5811298386343!2d106.72602219999999!3d-6.318620999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e517d2288a55%3A0xe0a2488cf2ae85d3!2sAnti%20Rayap%20Metrokil!5e0!3m2!1sen!2sid!4v1752582105000!5m2!1sen!2sid"
                             height="250" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade" class="rounded-lg w-full"></iframe>
                     </div>
@@ -63,7 +80,5 @@
                 </div>
             </div>
         </div>
-        <hr class="my-8">
-        <p class="text-lg text-white font-semibold opacity-55">Copyright © Metrokil 2024</p>
     </div>
 </footer>

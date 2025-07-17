@@ -184,7 +184,7 @@
         </div>
     </div>
 
-    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36">
+    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36" id="gallery">
         <div class="gallery-header flex justify-between items-center">
             <h1 class="text-4xl lg:text-5xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
             <div class="gallery-more flex gap-3">
