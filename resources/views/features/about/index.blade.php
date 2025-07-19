@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8">
+    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8" id="about-vision">
         <h1 class="text-4xl font-semibold">Visi dari <span class="text-primary">Metrokil</span></h1>
         <div class="about-detail grid grid-rows-1 gap-4 mt-6">
             <div class="about-description flex justify-between shadow-smooth rounded-xl">
