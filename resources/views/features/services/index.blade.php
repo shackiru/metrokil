@@ -47,7 +47,7 @@
                         <x-pricing-card :active="false" id="6" value="Cleaning">Basmi
                             Tawon/Lebah</x-pricing-card>
                         <x-pricing-card :active="false" id="6" value="Cleaning">Fumigasi</x-pricing-card>
-                        <x-pricing-card :active="false" id="6" value="Cleaning">Disinfeksi</x-pricing-card>
+                        <x-pricing-card :active="false" id="6" value="Cleaning">Desinfeksi</x-pricing-card>
                     </div>
 
                     <!-- Right Container (col-span-3) -->

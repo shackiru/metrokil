@@ -196,16 +196,48 @@
         </div>
         <div class="about-detail grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
             <div class="gallery-pictures">
-                <div class="mt-12 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36">
-                    <div class="grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 grid-rows-2 gap-6">
-                        @foreach ($galleries as $gallery)
-                            <a href="/testimonials/gallery/{{ $gallery->id }}">
-                                <img src="{{ asset($gallery->image_url) }}" alt="">
-                                <p>{{ $gallery->name }}</p>
-                            </a>
-                        @endforeach
+                <a href="#">
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
                     </div>
-                </div>
+                </a>
             </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-pictures">
+                <a href="#">
+                    <div class="gallery-content flex flex-col justify-between text-center">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="">
+                    </div>
+                </a>
+            </div>
+
         </div>
+    </div>
 </x-template>

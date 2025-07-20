@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Gallery;
+
 use Illuminate\Http\Request;
 
 class GalleryController extends Controller
@@ -11,11 +11,7 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        $galleries = Gallery::query()
-            ->orderBy('created_at', 'desc')
-            ->get();
-
-        return view('features.testimonial.index', compact('galleries'));
+        //
     }
 
     /**
@@ -39,9 +35,7 @@ class GalleryController extends Controller
      */
     public function show(string $id)
     {
-        $gallery = Gallery::findOrFail($id);
-
-        return view('features.testimonial.gallery', compact('gallery'));
+        //
     }
 
     /**

@@ -6,32 +6,26 @@
                     <a href="" class=""><img src="{{ asset('images/logo.png') }}" width="65"
                             class="bg-white p-2 rounded-2xl" alt="">
                     </a>
-                    <div class="footer-navigation grid grid-rows-2">
-                        <p class="text-xl text-white font-semibold">Metrokil</p>
-                        <p class="text-white opacity-75">Jasa Pengendali Rayap Untuk Rumah & Bisnis</p>
-                    </div>
+                    <p class="text-xl text-white font-semibold">Metrokil</p>
                 </div>
-                <div class="mt-6 footer-navigation grid grid-cols-4">
+                <div class="mt-6 footer-navigation grid grid-cols-3">
                     <div class="footer-about flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">About Us</h4>
-                        <a href="/about" class="text-white opacity-55">Tentang Kami</a>
-                        <a href="/about#about-vision" class="text-white opacity-55">Visi dan Misi Metrokil</a>
+                        <a href="" class="text-white opacity-55">Tentang Kami</a>
+                        <a href="" class="text-white opacity-55">Visi dan Misi Metrokil</a>
                         <a href="" class="text-white opacity-55">Sejarah Metrokil</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Services</h4>
-                        <a href="/services" class="text-white opacity-55">Layanan Metrokil</a>
-                        <a href="/services#pricing" class="text-white opacity-55">Harga Layanan</a>
+                        <a href="" class="text-white opacity-55">Penyemprotan Pondasi</a>
+                        <a href="" class="text-white opacity-55">Penyemprotan Dinding</a>
+                        <a href="" class="text-white opacity-55">Penyemprotan Anti Rayap pada Area
+                            Taman</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Testimonial</h4>
-                        <a href="/testimonials" class="text-white opacity-55">Testimoni Pelanggan</a>
+                        <a href="" class="text-white opacity-55">Testimoni Pelanggan</a>
                         <a href="" class="text-white opacity-55">Gallery Metrokil</a>
-                    </div>
-                    <div class="footer-service flex flex-col gap-2">
-                        <h4 class="text-white font-semibold text-lg">Blog Metrokil</h4>
-                        <a href="" class="text-white opacity-55">Berita Metrokil</a>
-                        <a href="" class="text-white opacity-55">Artikel Metrokil</a>
                     </div>
                 </div>
                 <div class="footer-socials mt-8 gap-6 opacity-65 hidden md:flex">
