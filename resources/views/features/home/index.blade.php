@@ -1,6 +1,5 @@
 <x-template title="Homepage" active="home">
-    <div
-        class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-20 lg:mt-32 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <div class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-20 lg:mt-32 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <div class="col-span-3 lg:col-span-3 xl:col-span-2" data-aos="fade-right">
             <div class="hero">
                 <div class="hero-content">
@@ -98,7 +97,8 @@
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Anti Rayap Imidaclorprid (Import)</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
+                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan
+                            pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
                         <a href="/contact"><button
@@ -123,7 +123,8 @@
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Anti Rayap Imidaclorprid (Lokal)</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan pasca treatment menjadi tanggung jawab kami. </p>
+                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan
+                            pasca treatment menjadi tanggung jawab kami. </p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
                         <a href="/contact"><button
@@ -148,7 +149,8 @@
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Anti Rayap Cypermethrin (Lokal)</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
+                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan
+                            pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
                         <a href="/contact"><button
@@ -173,7 +175,8 @@
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Paket Pengendalian Hama Tikus</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode perangkap hidup, perangkap mati, dan racun. Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
+                        <p class="lg:text-lg mt-2">Menggunakan metode perangkap hidup, perangkap mati, dan racun.
+                            Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
                         <a href="/contact"><button
@@ -208,14 +211,19 @@
                     </div>
                 </a>
             </div>
-            <div class="testimonials flex mt-8 gap-6 overflow-x-auto w-full">
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44" data-aos="fade-left">
+            <div class="testimonials flex mt-8 gap-6 overflow-x-auto w-full cursor-grab select-none"
+                id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"
+                onmousedown="startDrag(event)" onmousemove="dragMove(event)" onmouseup="endDrag()"
+                onmouseleave="endDrag()" ontouchstart="startDrag(event)" ontouchmove="dragMove(event)"
+                ontouchend="endDrag()">
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44"
+                    data-aos="fade-left">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Terimakasih kepada Tim Metrokil, kerjanya
                             sangat profesional,
                             transparan kepada customer dan penjelasannya detail terkait layanan yang diberikan.
@@ -228,7 +236,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Software Engineer, Ex-PPTI 12</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Kerjasama dengan Tim Metrokil sangat memuaskan!
                             Timnya responsif,
                             detail, dan memastikan setiap kebutuhan saya terpenuhi. Metrokil adalah pilihan terbaik
@@ -241,7 +249,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Product Manager, Ex-PPTI 13</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Metrokil memberikan pengalaman layanan yang
                             luar biasa!
                             Hasil kerja yang profesional dan tim yang sangat kooperatif. Tidak ragu untuk
@@ -254,7 +262,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
                             Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
                             memenuhi ekspektasi pelanggan.</p>
@@ -266,7 +274,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
                             Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
                             memenuhi ekspektasi pelanggan.</p>
@@ -291,7 +299,11 @@
                     </div>
                 </a>
             </div>
-            <div class="blogs px-8 lg:px-14 xl:px-44 flex mt-4 gap-4 overflow-visible w-full overflow-x-auto py-4">
+            <div class="blogs px-8 lg:px-14 xl:px-44 flex mt-4 gap-4 overflow-visible w-full overflow-x-auto py-4 cursor-grab select-none"
+                id="blogs-container" style="scrollbar-width: none; -ms-overflow-style: none;"
+                onmousedown="startBlogDrag(event)" onmousemove="blogDragMove(event)" onmouseup="endBlogDrag()"
+                onmouseleave="endBlogDrag()" ontouchstart="startBlogDrag(event)" ontouchmove="blogDragMove(event)"
+                ontouchend="endBlogDrag()">
                 @foreach ($blogs as $blog)
                     <a href="/blogs/{{ $blog->id }}" data-aos="fade-left">
                         <x-blog-card date="{{ $blog->created_at }}" category="{{ $blog->category }}"
@@ -304,4 +316,77 @@
 
         </div>
     </div>
+
+    <style>
+        #testimonials-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        #testimonials-container.dragging {
+            cursor: grabbing !important;
+        }
+
+        #blogs-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        #blogs-container.dragging {
+            cursor: grabbing !important;
+        }
+    </style>
+
+    <script>
+        let isDragging = false;
+        let startX;
+        let scrollLeft;
+        let container = document.getElementById('testimonials-container');
+
+        function startDrag(e) {
+            isDragging = true;
+            container.classList.add('dragging');
+            startX = (e.pageX || e.touches[0].pageX) - container.offsetLeft;
+            scrollLeft = container.scrollLeft;
+            e.preventDefault();
+        }
+
+        function dragMove(e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = (e.pageX || e.touches[0].pageX) - container.offsetLeft;
+            const walk = (x - startX) * 2;
+            container.scrollLeft = scrollLeft - walk;
+        }
+
+        function endDrag() {
+            isDragging = false;
+            container.classList.remove('dragging');
+        }
+
+        // Blog drag functionality
+        let isBlogDragging = false;
+        let blogStartX;
+        let blogScrollLeft;
+        let blogContainer = document.getElementById('blogs-container');
+
+        function startBlogDrag(e) {
+            isBlogDragging = true;
+            blogContainer.classList.add('dragging');
+            blogStartX = (e.pageX || e.touches[0].pageX) - blogContainer.offsetLeft;
+            blogScrollLeft = blogContainer.scrollLeft;
+            e.preventDefault();
+        }
+
+        function blogDragMove(e) {
+            if (!isBlogDragging) return;
+            e.preventDefault();
+            const x = (e.pageX || e.touches[0].pageX) - blogContainer.offsetLeft;
+            const walk = (x - blogStartX) * 2;
+            blogContainer.scrollLeft = blogScrollLeft - walk;
+        }
+
+        function endBlogDrag() {
+            isBlogDragging = false;
+            blogContainer.classList.remove('dragging');
+        }
+    </script>
 </x-template>

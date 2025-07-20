@@ -35,14 +35,19 @@
             <div class="px-8 lg:px-14 xl:px-44 flex justify-between items-center">
                 <h1 class="text-4xl md:text-5xl font-semibold text-white">Apa kata mereka?</h1>
             </div>
-            <div class="testimonials flex mt-8 gap-6 overflow-x-auto w-full" data-aos="fade-left">
+            <div class="testimonials-review flex mt-8 gap-6 overflow-x-auto w-full cursor-grab select-none"
+                id="testimonials-review-container" style="scrollbar-width: none; -ms-overflow-style: none;"
+                onmousedown="startTestimonialsReviewDrag(event)" onmousemove="testimonialsReviewDragMove(event)"
+                onmouseup="endTestimonialsReviewDrag()" onmouseleave="endTestimonialsReviewDrag()"
+                ontouchstart="startTestimonialsReviewDrag(event)" ontouchmove="testimonialsReviewDragMove(event)"
+                ontouchend="endTestimonialsReviewDrag()" data-aos="fade-left">
                 <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44">
                     <div class="identity">
                         <h1 class="text-primary font-bold text-3xl">Shaquille Ditama Putra</h1>
                         <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Terimakasih kepada Tim Metrokil, kerjanya
                             sangat profesional,
                             transparan kepada customer dan penjelasannya detail terkait layanan yang diberikan.
@@ -55,7 +60,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Software Engineer, Ex-PPTI 12</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Kerjasama dengan Tim Metrokil sangat memuaskan!
                             Timnya responsif,
                             detail, dan memastikan setiap kebutuhan saya terpenuhi. Metrokil adalah pilihan terbaik
@@ -68,7 +73,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Product Manager, Ex-PPTI 13</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Metrokil memberikan pengalaman layanan yang
                             luar biasa!
                             Hasil kerja yang profesional dan tim yang sangat kooperatif. Tidak ragu untuk
@@ -81,7 +86,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
                             Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
                             memenuhi ekspektasi pelanggan.</p>
@@ -93,7 +98,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
                             Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
                             memenuhi ekspektasi pelanggan.</p>
@@ -107,7 +112,7 @@
         <div class="py-24 w-full">
             <div class="px-8 lg:px-14 xl:px-44 relative">
                 <span
-                    class="text-9xl text-primary opacity-60 absolute z-1 top-[-20px] left-0 lg:left-6 xl:left-36">“</span>
+                    class="text-9xl text-primary opacity-60 absolute z-1 top-[-20px] left-0 lg:left-6 xl:left-36">"</span>
                 <h1 class="text-4xl lg:text-5xl font-semibold z-2">Testimoni <span class="text-primary">Metrokil</span>
                 </h1>
                 <div class="flex gap-3 text-white">
@@ -115,7 +120,12 @@
                         width="20">
                 </div>
             </div>
-            <div class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full" data-aos="fade-left">
+            <div class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full cursor-grab select-none"
+                id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"
+                onmousedown="startTestimonialsDrag(event)" onmousemove="testimonialsDragMove(event)"
+                onmouseup="endTestimonialsDrag()" onmouseleave="endTestimonialsDrag()"
+                ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsDragMove(event)"
+                ontouchend="endTestimonialsDrag()" data-aos="fade-left">
                 <div
                     class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44 shadow-soft">
                     <div class="identity">
@@ -123,7 +133,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Terimakasih kepada Tim Metrokil, kerjanya
                             sangat profesional,
                             transparan kepada customer dan penjelasannya detail terkait layanan yang diberikan.
@@ -136,7 +146,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Software Engineer, Ex-PPTI 12</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Kerjasama dengan Tim Metrokil sangat memuaskan!
                             Timnya responsif,
                             detail, dan memastikan setiap kebutuhan saya terpenuhi. Metrokil adalah pilihan terbaik
@@ -149,7 +159,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Product Manager, Ex-PPTI 13</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Metrokil memberikan pengalaman layanan yang
                             luar biasa!
                             Hasil kerja yang profesional dan tim yang sangat kooperatif. Tidak ragu untuk
@@ -162,7 +172,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
                             Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
                             memenuhi ekspektasi pelanggan.</p>
@@ -174,7 +184,7 @@
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
                     </div>
                     <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">“</span>
+                        <span class="text-5xl text-primary font-bold">"</span>
                         <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
                             Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
                             memenuhi ekspektasi pelanggan.</p>
@@ -240,4 +250,78 @@
 
         </div>
     </div>
+
+    <style>
+        #testimonials-review-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        #testimonials-review-container.dragging {
+            cursor: grabbing !important;
+        }
+
+        #testimonials-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        #testimonials-container.dragging {
+            cursor: grabbing !important;
+        }
+    </style>
+
+    <script>
+        // Testimonials Review drag functionality
+        let isTestimonialsReviewDragging = false;
+        let testimonialsReviewStartX;
+        let testimonialsReviewScrollLeft;
+        let testimonialsReviewContainer = document.getElementById('testimonials-review-container');
+
+        function startTestimonialsReviewDrag(e) {
+            isTestimonialsReviewDragging = true;
+            testimonialsReviewContainer.classList.add('dragging');
+            testimonialsReviewStartX = (e.pageX || e.touches[0].pageX) - testimonialsReviewContainer.offsetLeft;
+            testimonialsReviewScrollLeft = testimonialsReviewContainer.scrollLeft;
+            e.preventDefault();
+        }
+
+        function testimonialsReviewDragMove(e) {
+            if (!isTestimonialsReviewDragging) return;
+            e.preventDefault();
+            const x = (e.pageX || e.touches[0].pageX) - testimonialsReviewContainer.offsetLeft;
+            const walk = (x - testimonialsReviewStartX) * 2;
+            testimonialsReviewContainer.scrollLeft = testimonialsReviewScrollLeft - walk;
+        }
+
+        function endTestimonialsReviewDrag() {
+            isTestimonialsReviewDragging = false;
+            testimonialsReviewContainer.classList.remove('dragging');
+        }
+
+        // Testimonials drag functionality
+        let isTestimonialsDragging = false;
+        let testimonialsStartX;
+        let testimonialsScrollLeft;
+        let testimonialsContainer = document.getElementById('testimonials-container');
+
+        function startTestimonialsDrag(e) {
+            isTestimonialsDragging = true;
+            testimonialsContainer.classList.add('dragging');
+            testimonialsStartX = (e.pageX || e.touches[0].pageX) - testimonialsContainer.offsetLeft;
+            testimonialsScrollLeft = testimonialsContainer.scrollLeft;
+            e.preventDefault();
+        }
+
+        function testimonialsDragMove(e) {
+            if (!isTestimonialsDragging) return;
+            e.preventDefault();
+            const x = (e.pageX || e.touches[0].pageX) - testimonialsContainer.offsetLeft;
+            const walk = (x - testimonialsStartX) * 2;
+            testimonialsContainer.scrollLeft = testimonialsScrollLeft - walk;
+        }
+
+        function endTestimonialsDrag() {
+            isTestimonialsDragging = false;
+            testimonialsContainer.classList.remove('dragging');
+        }
+    </script>
 </x-template>
