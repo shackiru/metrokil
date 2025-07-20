@@ -3,8 +3,8 @@
 <div
     class="blog-item shadow-soft rounded-xl min-w-[350px] @if ($isLimitWidth == 'true') max-w-[350px] @else w-full @ @endif relative bg-white">
     <div class="image">
-        {{-- <img src="http://localhost:8000/storage/{{ $image }}" class="rounded-t-xl h-56 w-full object-cover" alt=""> --}}
-        <img src="{{ $image }}" class="rounded-t-xl h-56 w-full object-cover" alt="">
+        <img src="http://localhost:8000/storage/{{ $image }}" class="rounded-t-xl h-56 w-full object-cover" alt="">
+        {{-- <img src="{{ $image }}" class="rounded-t-xl h-56 w-full object-cover" alt=""> --}}
     </div>
     <div class="px-6 pb-6 h-24">
         <div

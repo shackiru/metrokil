@@ -6,31 +6,28 @@
                     <a href="" class=""><img src="{{ asset('images/logo.png') }}" width="65"
                             class="bg-white p-2 rounded-2xl" alt="">
                     </a>
-                    <p class="text-xl text-white font-semibold">Metrokil</p>
+                    <div class="footer-navigation grid grid-rows-2" data-aos="fade-up">
+                        <p class="text-xl text-white font-semibold">Metrokil</p>
+                        <p class="text-white opacity-75">Jasa Pengendali Rayap Untuk Rumah & Bisnis</p>
+                    </div>
                 </div>
                 <div class="mt-6 footer-navigation grid grid-cols-4" data-aos="fade-up">
                     <div class="footer-about flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">About Us</h4>
                         <a href="/about" class="text-white opacity-55 hover:opacity-100 transition-all">Tentang
                             Metrokil</a>
-                        <a href="/about" class="text-white opacity-55 hover:opacity-100 transition-all">Sejarah
-                            Metrokil</a>
+                        <a href="/about#visi-metrokil" class="text-white opacity-55 hover:opacity-100 transition-all">Visi dan Misi</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Services</h4>
-                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Pembasmi
-                            Hama</a>
-                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Metode Drill
-                            Inject</a>
-                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Metode
-                            Pembasmi
-                            Semut</a>
+                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Layanan Metrokil</a>
+                        <a href="/services#pricing" class="text-white opacity-55 hover:opacity-100 transition-all">Harga layanan</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Testimonial</h4>
                         <a href="/testimonials" class="text-white opacity-55 hover:opacity-100 transition-all">Testimoni
                             Pelanggan</a>
-                        <a href="/testimonials#gallery"
+                        <a href="/testimonials/galleries"
                             class="text-white opacity-55 hover:opacity-100 transition-all">Gallery
                             Metrokil</a>
                     </div>
@@ -38,8 +35,7 @@
                         <h4 class="text-white font-semibold text-lg">Blog</h4>
                         <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Berita
                             Metrokil</a>
-                        <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Artikel
-                            Metrokil</a>
+                        <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Informasi Metrokil</a>
                     </div>
                 </div>
                 <div class="footer-socials mt-8 gap-6 opacity-65 hidden md:flex">

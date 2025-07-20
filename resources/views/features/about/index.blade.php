@@ -27,7 +27,7 @@
                 <div class="about-content p-12 flex flex-col justify-between text-center">
                     <div>
                         <h1 class="text-6xl font-semibold text-primary">30+</h1>
-                        <p class="text-lg mt-2">berdiri sejak tahun 1990 dan telah melayani anda selama 30 tahun.</p>
+                        <p class="text-lg mt-2">Berdiri dari tahun 1990 dan telah melayani Anda selama 30 tahun</p>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 <div class="about-content p-12 flex flex-col text-center">
                     <div>
                         <h1 class="text-6xl font-semibold text-primary">2600+</h1>
-                        <p class="text-lg mt-2">sebanyak lebih dari 2600 pelanggan yang telah mempercayai jasa kami</p>
+                        <p class="text-lg mt-2">Lebih dari 2600+ pelanggan yang telah mempercayai jasa kami</p>
                     </div>
                     <div class="w-100 flex justify-end">
                     </div>
@@ -45,14 +45,14 @@
                 <div class="about-content p-12 flex flex-col text-center">
                     <div>
                         <h1 class="text-6xl font-semibold text-primary">8</h1>
-                        <p class="text-lg mt-2 just">kami hadir di beberapa daerah mulai dari Jakarta, Malang, dan Bandung</p>
+                        <p class="text-lg mt-2 just">Hadir di Jakarta, Bandung, Malang, dan 5 kota lainnya.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8">
+    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8"  id="visi-metrokil">
         <h1 class="text-4xl font-semibold">Visi dari <span class="text-primary">Metrokil</span></h1>
         <div class="about-detail grid grid-rows-1 gap-4 mt-6">
             <div class="about-description flex justify-between shadow-smooth rounded-xl" data-aos="fade-right">
