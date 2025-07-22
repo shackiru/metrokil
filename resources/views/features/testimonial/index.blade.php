@@ -30,83 +30,73 @@
         </div>
     </div>
 
-    <div class="review-client mt-24 h-200 w-full">
-        <div class="py-16 lg:py-24 bg-primary h-200 w-full">
-            <div class="px-8 lg:px-14 xl:px-44 flex justify-between items-center">
-                <h1 class="text-4xl md:text-5xl font-semibold text-white">Apa kata mereka?</h1>
-            </div>
-            <div class="testimonials-review flex mt-8 gap-6 overflow-x-auto w-full cursor-grab select-none"
-                id="testimonials-review-container" style="scrollbar-width: none; -ms-overflow-style: none;"
-                onmousedown="startTestimonialsReviewDrag(event)" onmousemove="testimonialsReviewDragMove(event)"
-                onmouseup="endTestimonialsReviewDrag()" onmouseleave="endTestimonialsReviewDrag()"
-                ontouchstart="startTestimonialsReviewDrag(event)" ontouchmove="testimonialsReviewDragMove(event)"
-                ontouchend="endTestimonialsReviewDrag()" data-aos="fade-left">
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44">
-                    <div class="identity">
-                        <h1 class="text-primary font-bold text-3xl">Shaquille Ditama Putra</h1>
-                        <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
+    <div class="review-client grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
+        <div class="col-span-3">
+            <h1 class="text-4xl lg:text-5xl font-semibold z-2">Apa kata <span class="text-primary">mereka?</span></h1>
+            <div class="grid grid-cols-8 items-center w-full relative mt-12">
+                <!-- Arrow Left -->
+                <div class="min-w-full">
+                    <button onclick="scrollTestimonials(-1)" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary hover:text-white transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                    </button>
+                </div>
+                <!-- Review Slider -->
+                <div id="testimonials-slider" class="flex col-span-6 overflow-x-auto gap-6 scroll-smooth snap-x snap-mandatory"
+                style="scrollbar-width: none; -ms-overflow-style: none;">
+                
+                    <!-- Review Card 1 -->
+                    <div class="flex items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
+                        <div>
+                            <p class="text-lg text-gray-800 mb-4">“Tim Metrokil sangat profesional, transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”</p>
+                            <h3 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h3>
+                            <p class="text-sm text-gray-600">Magang BCA, Ex-PPTI 14</p>
+                        </div>
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 object-cover">
                     </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Terimakasih kepada Tim Metrokil, kerjanya
-                            sangat profesional,
-                            transparan kepada customer dan penjelasannya detail terkait layanan yang diberikan.
-                            Sukses selalu Metrokil!</p>
+
+                    <!-- Review Card 2 -->
+                    <div class="flex min-w-full snap-start bg-white rounded-xl p-6 items-start gap-6 h-[260px]">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 rounded-full object-cover">
+                        <div>
+                        <p class="text-lg text-gray-800 mb-4">“Kerja sama dengan tim Metrokil sangat memuaskan! Responsif, detail, dan kebutuhan saya dipenuhi.”</p>
+                        <h3 class="text-primary font-bold text-xl">Aurelia Natasha</h3>
+                        <p class="text-sm text-gray-600">Software Engineer, Ex-PPTI 12</p>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 3 -->
+                    <div class="flex min-w-full snap-start bg-white rounded-xl p-6 items-start gap-6 h-[260px]">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 rounded-full object-cover">
+                        <div>
+                        <p class="text-lg text-gray-800 mb-4">“Metrokil memberikan pengalaman layanan yang luar biasa! Tim kooperatif dan profesional.”</p>
+                        <h3 class="text-primary font-bold text-xl">Jonathan Fajar</h3>
+                        <p class="text-sm text-gray-600">Product Manager, Ex-PPTI 13</p>
+                        </div>
+                    </div>
+
+                    <!-- Review Card 4 -->
+                    <div class="flex min-w-full snap-start bg-white rounded-xl p-6 items-start gap-6 h-[260px]">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 rounded-full object-cover">
+                        <div>
+                        <p class="text-lg text-gray-800 mb-4">“Pelayanan cepat, transparan, dan sangat profesional. Tim mereka tahu cara memenuhi ekspektasi pelanggan.”</p>
+                        <h3 class="text-primary font-bold text-xl">Stephanie Wijaya</h3>
+                        <p class="text-sm text-gray-600">Data Scientist, Ex-PPTI 15</p>
+                        </div>
                     </div>
                 </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Aurelia Natasha</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Software Engineer, Ex-PPTI 12</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Kerjasama dengan Tim Metrokil sangat memuaskan!
-                            Timnya responsif,
-                            detail, dan memastikan setiap kebutuhan saya terpenuhi. Metrokil adalah pilihan terbaik
-                            untuk layanan profesional!</p>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Jonathan Fajar</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Product Manager, Ex-PPTI 13</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Metrokil memberikan pengalaman layanan yang
-                            luar biasa!
-                            Hasil kerja yang profesional dan tim yang sangat kooperatif. Tidak ragu untuk
-                            merekomendasikan mereka.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
-                            Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
-                            memenuhi ekspektasi pelanggan.</p>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] mr-44">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
-                            Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
-                            memenuhi ekspektasi pelanggan.</p>
-                    </div>
+                <div>
+                    <button onclick="scrollTestimonials(1)" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary hover:text-white transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div class="testimonial-client mt-24 w-full">
         <div class="py-24 w-full">
@@ -204,50 +194,15 @@
                     width="20">
             </div>
         </div>
-        <div class="about-detail grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-            <div class="gallery-pictures" data-aos="fade-up">
-                <a href="#">
-                    <div class="gallery-content flex flex-col justify-between text-center">
-                        <img src="{{ asset('images/gallery1.png') }}" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="gallery-pictures" data-aos="fade-up">
-                <a href="#">
-                    <div class="gallery-content flex flex-col justify-between text-center">
-                        <img src="{{ asset('images/gallery1.png') }}" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="gallery-pictures" data-aos="fade-up">
-                <a href="#">
-                    <div class="gallery-content flex flex-col justify-between text-center">
-                        <img src="{{ asset('images/gallery1.png') }}" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="gallery-pictures" data-aos="fade-up">
-                <a href="#">
-                    <div class="gallery-content flex flex-col justify-between text-center">
-                        <img src="{{ asset('images/gallery1.png') }}" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="gallery-pictures" data-aos="fade-up">
-                <a href="#">
-                    <div class="gallery-content flex flex-col justify-between text-center">
-                        <img src="{{ asset('images/gallery1.png') }}" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="gallery-pictures" data-aos="fade-up">
-                <a href="#">
-                    <div class="gallery-content flex flex-col justify-between text-center">
-                        <img src="{{ asset('images/gallery1.png') }}" alt="">
-                    </div>
-                </a>
-            </div>
-
+            <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
+            @foreach ($galleries as $item)
+                <div class="gallery-pictures cursor-pointer gap-6 mt-2 mb-12 lg:mb-12 grid-cols-3" 
+                     @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
+                    <img src="http://localhost:8080/storage/{{ $item->image_url }}" class="rounded-xl h-56 w-full object-cover" alt="">
+                    <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
+                </div>
+            @endforeach
+        </div>
         </div>
     </div>
 
@@ -322,6 +277,15 @@
         function endTestimonialsDrag() {
             isTestimonialsDragging = false;
             testimonialsContainer.classList.remove('dragging');
+        }
+
+        function scrollTestimonials(direction) {
+            const container = document.getElementById("testimonials-slider");
+            const scrollAmount = 620; // Sesuaikan sesuai min-width testimonial
+            container.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+            });
         }
     </script>
 </x-template>

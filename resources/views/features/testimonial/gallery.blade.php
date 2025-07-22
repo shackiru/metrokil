@@ -7,8 +7,8 @@
         <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
             @foreach ($gallery as $item)
                 <div class="gallery-pictures cursor-pointer gap-6 mt-6 mb-20 lg:mb-36 grid-cols-3" 
-                     @click="modalOpen = true; modalImage = 'http://localhost:8000/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ $item->description }}';">
-                    <img src="http://localhost:8000/storage/{{ $item->image_url }}" class="rounded-xl h-56 w-full object-cover" alt="">
+                     @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
+                    <img src="http://localhost:8080/storage/{{ $item->image_url }}" class="rounded-xl h-56 w-full object-cover" alt="">
                     <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
                 </div>
             @endforeach
