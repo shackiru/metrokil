@@ -1,10 +1,12 @@
-<x-template title="Testimonial" active="Testimonial"> 
+<x-template title="Gallery Metrokil" active="testimonial"> 
+    <div>
+        <img src="" alt="">
+    </div>
+
     <div class="mt-12 mx-44" x-data="{ modalOpen: false, modalImage: '', modalTitle: '', modalDescription: '' }">
         <div class="gallery-header flex justify-between items-center">
             <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
         </div>
-
-        
 
         <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
             @foreach ($gallery as $item)
