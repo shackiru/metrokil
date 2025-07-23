@@ -4,6 +4,8 @@
             <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
         </div>
 
+        
+
         <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
             @foreach ($gallery as $item)
                 <div class="gallery-pictures cursor-pointer gap-6 mt-6 mb-20 lg:mb-36 grid-cols-3" 
