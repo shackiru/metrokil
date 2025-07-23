@@ -45,45 +45,45 @@
                 <!-- Review Slider -->
                 <div id="testimonials-slider" class="flex col-span-6 overflow-x-auto gap-6 scroll-smooth snap-x snap-mandatory"
                 style="scrollbar-width: none; -ms-overflow-style: none;">
-                
-                    <!-- Review Card 1 -->
-                    <div class="flex items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
-                        <div>
-                            <p class="text-lg text-gray-800 mb-4">“Tim Metrokil sangat profesional, transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”</p>
-                            <h3 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h3>
-                            <p class="text-sm text-gray-600">Magang BCA, Ex-PPTI 14</p>
+                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
+                        <div class="grid grid-rows-4">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Tim Metrokil sangat profesional, transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”</p>
+                            <div>
+                                <h3 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h3>
+                                <p class="text-sm text-gray-600">CEO 10</p>
+                            </div>
                         </div>
                         <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 object-cover">
                     </div>
-
-                    <!-- Review Card 2 -->
-                    <div class="flex min-w-full snap-start bg-white rounded-xl p-6 items-start gap-6 h-[260px]">
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 rounded-full object-cover">
-                        <div>
-                        <p class="text-lg text-gray-800 mb-4">“Kerja sama dengan tim Metrokil sangat memuaskan! Responsif, detail, dan kebutuhan saya dipenuhi.”</p>
-                        <h3 class="text-primary font-bold text-xl">Aurelia Natasha</h3>
-                        <p class="text-sm text-gray-600">Software Engineer, Ex-PPTI 12</p>
+                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
+                        <div class="grid grid-rows-4">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Pelayanan yang sangat professional dari Metrokil. Metrokil dapat membasmi hama di Kantor saya yang seluas 2000 Hektar. Terima kasih dan saya akan kembali ke anda apabila saya memiliki gangguan terhadap anda!”</p>
+                            <div>
+                                <h3 class="text-primary font-bold text-xl">Evo Broken</h3>
+                                <p class="text-sm text-gray-600">CTO of Bank Saya</p>
+                            </div>
                         </div>
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 object-cover">
                     </div>
-
-                    <!-- Review Card 3 -->
-                    <div class="flex min-w-full snap-start bg-white rounded-xl p-6 items-start gap-6 h-[260px]">
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 rounded-full object-cover">
-                        <div>
-                        <p class="text-lg text-gray-800 mb-4">“Metrokil memberikan pengalaman layanan yang luar biasa! Tim kooperatif dan profesional.”</p>
-                        <h3 class="text-primary font-bold text-xl">Jonathan Fajar</h3>
-                        <p class="text-sm text-gray-600">Product Manager, Ex-PPTI 13</p>
+                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
+                        <div class="grid grid-rows-4">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Sebagai masyarakat Indonesia, saya sangat bangga dengan perusahaan ini karena telah berhasil melayani lebih dari ratusan ribu pelanggan dan 98% dari pelanggan tersebut puas dengan layanan Metrokil, terima kasih!”</p>
+                            <div>
+                                <h3 class="text-primary font-bold text-xl">Gagat the GOAT</h3>
+                                <p class="text-sm text-gray-600">CEO of Pembasmi Hama</p>
+                            </div>
                         </div>
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 object-cover">
                     </div>
-
-                    <!-- Review Card 4 -->
-                    <div class="flex min-w-full snap-start bg-white rounded-xl p-6 items-start gap-6 h-[260px]">
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 rounded-full object-cover">
-                        <div>
-                        <p class="text-lg text-gray-800 mb-4">“Pelayanan cepat, transparan, dan sangat profesional. Tim mereka tahu cara memenuhi ekspektasi pelanggan.”</p>
-                        <h3 class="text-primary font-bold text-xl">Stephanie Wijaya</h3>
-                        <p class="text-sm text-gray-600">Data Scientist, Ex-PPTI 15</p>
+                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
+                        <div class="grid grid-rows-4">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Saya dan istri saya selalu terganggu dengan rayap yang ada di kebun saya. Namun, saya sangat terharu dan tidak merasa terganggu lagi setelah Metrokil datang ke kebun saya. Kalian hebat, sukses selalu!”</p>
+                            <div>
+                                <h3 class="text-primary font-bold text-xl">Andreas Wirananda</h3>
+                                <p class="text-sm text-gray-600">Owner of Catering Olive Oil</p>
+                            </div>
                         </div>
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 object-cover">
                     </div>
                 </div>
                 <div>
