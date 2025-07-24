@@ -212,15 +212,45 @@
                     width="20">
             </div>
         </header>
-        <main class="gallery-content grid grid-cols-3 gap-4 mt-6">
-        @foreach ($galleries as $item)
-            <div class="gallery-pictures cursor-pointer gap-6 mt-2 mb-12 lg:mb-12 grid-cols-3" 
-                    @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
-                <img src="http://localhost:8080/storage/{{ $item->image_url }}" class="rounded-xl h-56 w-full object-cover" alt="">
-                <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
+        <div x-data="{ modalOpen: false, modalImage: '', modalTitle: '', modalDescription: '' }">
+            <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
+                @foreach ($galleries as $item)
+                    <div class="gallery-pictures cursor-pointer gap-6 mt-4 lg:mb-12 grid-cols-3" 
+                        @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
+                        <img src="http://localhost:8080/storage/{{ $item->image_url }}" class="rounded-xl h-56 w-full object-cover" alt="">
+                        <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
+                    </div>
+                @endforeach
             </div>
-        @endforeach
-        </main>
+         <div x-show="modalOpen"
+     class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+     x-cloak>
+
+            <!-- Click outside to close -->
+            <div @click.outside="modalOpen = false"
+                class="bg-white rounded-xl shadow-lg max-w-3xl w-full relative overflow-hidden">
+
+                <!-- Close Button -->
+                <button @click="modalOpen = false"
+                        class="
+                        absolute top-2 right-2 text-white bg-primary 
+                        bg-opacity-60 hover:bg-opacity-80 rounded-full 
+                        w-10 h-10 flex items-center justify-center text-2xl font-bold shadow-lg">
+                    &times;
+                </button>
+
+                <!-- Image -->
+                <img :src="modalImage" alt="Gallery Image" class="w-full max-h-[500px] object-cover">
+
+                <!-- Caption -->
+                <div class="p-6 bg-white">
+                    <h2 class="text-2xl font-bold text-left" x-text="modalTitle"></h2>
+                    <p class="text-gray-600 mt-2 text-left" x-text="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+
+        </div>
     </section>
 
 
