@@ -196,8 +196,8 @@
         </div>
     </div>
 
-    <section class="testimonial mt-12 lg:mt-24 w-full">
-        <main class="py-16 lg:py-24 bg-primary w-full">
+        <section class="testimonial-client mt-24 w-full bg-primary">
+        <main class="py-24 w-full">
             <header class="px-8 lg:px-14 xl:px-44 flex justify-between items-center">
                 <h1 class="text-3xl lg:text-4xl font-semibold text-white"><span class="opacity-55">Testimoni</span>
                     Metrokil
@@ -211,13 +211,17 @@
                     </div>
                 </a>
             </header>
-            <article class="testimonials flex mt-8 gap-6 overflow-x-auto w-full cursor-grab select-none"
-                id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"
-                onmousedown="startDrag(event)" onmousemove="dragMove(event)" onmouseup="endDrag()"
-                onmouseleave="endDrag()" ontouchstart="startDrag(event)" ontouchmove="dragMove(event)"
-                ontouchend="endDrag()">
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44"
-                    data-aos="fade-left">
+
+            <article 
+            class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full cursor-grab select-none"
+            id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"
+            onmousedown="startTestimonialsDrag(event)" onmousemove="testimonialsDragMove(event)"
+            onmouseup="endTestimonialsDrag()" onmouseleave="endTestimonialsDrag()"
+            ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsDragMove(event)"
+            ontouchend="endTestimonialsDrag()" data-aos="fade-left">
+
+                <div
+                    class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44 shadow-soft">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
@@ -230,7 +234,8 @@
                             Sukses selalu Metrokil!</p>
                     </div>
                 </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]" data-aos="fade-left">
+
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Aurelia Natasha</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Software Engineer, Ex-PPTI 12</p>
@@ -243,7 +248,8 @@
                             untuk layanan profesional!</p>
                     </div>
                 </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]" data-aos="fade-left">
+
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Jonathan Fajar</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Product Manager, Ex-PPTI 13</p>
@@ -256,7 +262,8 @@
                             merekomendasikan mereka.</p>
                     </div>
                 </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px]" data-aos="fade-left">
+
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
@@ -268,7 +275,8 @@
                             memenuhi ekspektasi pelanggan.</p>
                     </div>
                 </div>
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] mr-44" data-aos="fade-left">
+
+                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] mr-44 shadow-soft">
                     <div class="identity">
                         <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
                         <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
@@ -280,17 +288,23 @@
                             memenuhi ekspektasi pelanggan.</p>
                     </div>
                 </div>
-                
+
             </article>
-            
-            <div>
-                <button onclick="scrollTestimonials(1)" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        </main>
+
+        <footer class="flex flex-row-reverse gap-8">
+            <button onclick="scrollReview('right')" class="border border-white rounded-full p-4 shadow-md transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-                </button>
-            </div>
-        </main>
+            </button>
+            <button onclick="scrollReview('left')" class="border border-white rounded-full p-4 shadow-md  transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+        </footer>
+
     </section>
 
     <!-- Move the blog section here -->
