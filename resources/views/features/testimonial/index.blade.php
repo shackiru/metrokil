@@ -30,12 +30,12 @@
 
     <section class="review-client grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <main class="col-span-3">
-            <h1 class="text-4xl lg:text-5xl font-semibold z-2">Apa kata <span class="text-primary">mereka?</span></h1>
+            <h1 class="text-4xl lg:text-4xl font-semibold z-2">Apa kata <span class="text-primary">mereka?</span></h1>
             <article class="grid grid-cols-8 items-center w-full relative mt-12">
 
                 <div class="min-w-full">
-                    <button onclick="scrollTestimonials(-1)" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary hover:text-white transition duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button onclick="scrollTestimonials(-1)" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary  transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
                     </button>
@@ -87,8 +87,8 @@
                 </div>
 
                 <div>
-                    <button onclick="scrollTestimonials(1)" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary hover:text-white transition duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button onclick="scrollTestimonials(1)" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                     </svg>
                     </button>
@@ -104,7 +104,7 @@
             <header class="px-8 lg:px-14 xl:px-44 relative">
                 <span
                     class="text-9xl text-primary opacity-60 absolute z-1 top-[-20px] left-0 lg:left-6 xl:left-36">"</span>
-                <h1 class="text-4xl lg:text-5xl font-semibold z-2 text-white">Testimoni Metrokil</h1>
+                <h1 class="text-4xl lg:text-4xl font-semibold z-2 text-white">Testimoni Metrokil</h1>
             </header>
 
             <article 
@@ -204,7 +204,7 @@
 
     <section class="mt-12 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36" id="gallery">
         <header class="gallery-header flex justify-between items-center">
-            <h1 class="text-4xl lg:text-5xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
+            <h1 class="text-4xl lg:text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
             <div class="gallery-more flex gap-3">
                 <p class="font-medium text-lg text-primary"><a href="testimonials/galleries">Pelajari selengkapnya</a>
                 </p>
