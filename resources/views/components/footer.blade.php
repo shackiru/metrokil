@@ -16,12 +16,15 @@
                         <h4 class="text-white font-semibold text-lg">About Us</h4>
                         <a href="/about" class="text-white opacity-55 hover:opacity-100 transition-all">Tentang
                             Metrokil</a>
-                        <a href="/about#visi-metrokil" class="text-white opacity-55 hover:opacity-100 transition-all">Visi dan Misi</a>
+                        <a href="/about#visi-metrokil"
+                            class="text-white opacity-55 hover:opacity-100 transition-all">Visi dan Misi</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Services</h4>
-                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Layanan Metrokil</a>
-                        <a href="/services#pricing" class="text-white opacity-55 hover:opacity-100 transition-all">Harga layanan</a>
+                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Layanan
+                            Metrokil</a>
+                        <a href="/services#pricing" class="text-white opacity-55 hover:opacity-100 transition-all">Harga
+                            layanan</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Testimonial</h4>
@@ -35,7 +38,8 @@
                         <h4 class="text-white font-semibold text-lg">Blog</h4>
                         <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Berita
                             Metrokil</a>
-                        <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Informasi Metrokil</a>
+                        <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Informasi
+                            Metrokil</a>
                     </div>
                 </div>
                 <div class="footer-socials mt-8 gap-6 opacity-65 hidden md:flex">

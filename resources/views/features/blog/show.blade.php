@@ -19,7 +19,8 @@
                 <hr class="opacity-70">
                 <div class="flex justify-between mx-6">
                     <div class="flex items-center gap-3">
-                        <img src="{{ asset('images/logo.png') }}" class="w-10 h-10 rounded-full" alt="">
+                        <img src="{{ asset('blog->image_urls/logo.png') }}" class="w-10 h-10 rounded-full"
+                            alt="">
                         <div class="flex flex-col ml-4">
                             <p class="font-semibold">{{ $blog->user->name }}</p>
                             <p class="opacity-70"></p>
@@ -38,8 +39,9 @@
                 <hr class="opacity-70">
             </article>
             <div class="mt-8 flex justify-center">
-                <img src="http://localhost:8000/storage/{{ $blog->image_url }}" class="rounded-xl" width="1000"
-                    alt="">
+                {{-- <img src="{{ $blog->image_url }}" class="rounded-xl min-h-80 max-h-132.5" alt=""> --}}
+                <img src="{{ Storage::disk('public')->exists($blog->image_url) ? Storage::url($blog->image_url) : $blog->image_url }}"
+                    class="rounded-xl min-h-80 max-h-132.5" width="1000" alt="">
             </div>
             <div class="mt-8 prose max-w-max text-justify">
                 <p class="">{!! $blog->description !!}</p>

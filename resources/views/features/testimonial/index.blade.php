@@ -34,63 +34,79 @@
             <article class="grid grid-cols-8 items-center w-full relative mt-12">
 
                 <div class="min-w-full">
-                    <button onclick="scrollTestimonials(-1)" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary  transition duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                    </svg>
+                    <button onclick="scrollTestimonials(-1)"
+                        class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary  transition duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
                     </button>
                 </div>
 
                 {{-- Slider --}}
-                <div id="testimonials-slider" class="flex col-span-6 overflow-x-auto gap-6 scroll-smooth snap-x snap-mandatory"
-                style="scrollbar-width: none; -ms-overflow-style: none;">
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
-                        <div class="grid grid-rows-4">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Tim Metrokil sangat profesional, transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”</p>
+                <div id="testimonials-slider"
+                    class="flex col-span-6 overflow-x-auto gap-6 scroll-smooth snap-x snap-mandatory"
+                    style="scrollbar-width: none; -ms-overflow-style: none;">
+                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
+                        <div class="grid grid-rows-4 py-20 pl-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Tim Metrokil sangat profesional,
+                                transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”
+                            </p>
                             <div>
                                 <h3 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h3>
                                 <p class="text-sm text-gray-600">CEO 10</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 object-cover">
+                        <img src="{{ asset('images/person-example.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
-                        <div class="grid grid-rows-4">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Pelayanan yang sangat professional dari Metrokil. Metrokil dapat membasmi hama di Kantor saya yang seluas 2000 Hektar. Terima kasih dan saya akan kembali ke anda apabila saya memiliki gangguan terhadap anda!”</p>
+                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
+                        <div class="grid grid-rows-4 py-20 pl-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Pelayanan yang sangat
+                                professional dari Metrokil. Metrokil dapat membasmi hama di Kantor saya yang seluas 2000
+                                Hektar. Terima kasih dan saya akan kembali ke anda apabila saya memiliki gangguan
+                                terhadap anda!”</p>
                             <div>
                                 <h3 class="text-primary font-bold text-xl">Evo Broken</h3>
                                 <p class="text-sm text-gray-600">CTO of Bank Saya</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 object-cover">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
-                        <div class="grid grid-rows-4">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Sebagai masyarakat Indonesia, saya sangat bangga dengan perusahaan ini karena telah berhasil melayani lebih dari ratusan ribu pelanggan dan 98% dari pelanggan tersebut puas dengan layanan Metrokil, terima kasih!”</p>
+                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
+                        <div class="grid grid-rows-4 py-20 pl-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Sebagai masyarakat Indonesia,
+                                saya sangat bangga dengan perusahaan ini karena telah berhasil melayani lebih dari
+                                ratusan ribu pelanggan dan 98% dari pelanggan tersebut puas dengan layanan Metrokil,
+                                terima kasih!”</p>
                             <div>
                                 <h3 class="text-primary font-bold text-xl">Gagat the GOAT</h3>
                                 <p class="text-sm text-gray-600">CEO of Pembasmi Hama</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 object-cover">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl p-6 items-start gap-6 h-[400px]">
-                        <div class="grid grid-rows-4">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Saya dan istri saya selalu terganggu dengan rayap yang ada di kebun saya. Namun, saya sangat terharu dan tidak merasa terganggu lagi setelah Metrokil datang ke kebun saya. Kalian hebat, sukses selalu!”</p>
+                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
+                        <div class="grid grid-rows-4 py-20 pl-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Saya dan istri saya selalu
+                                terganggu dengan rayap yang ada di kebun saya. Namun, saya sangat terharu dan tidak
+                                merasa terganggu lagi setelah Metrokil datang ke kebun saya. Kalian hebat, sukses
+                                selalu!”</p>
                             <div>
                                 <h3 class="text-primary font-bold text-xl">Andreas Wirananda</h3>
                                 <p class="text-sm text-gray-600">Owner of Catering Olive Oil</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="w-28 h-28 object-cover">
+                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
                 </div>
 
                 <div>
-                    <button onclick="scrollTestimonials(1)" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
+                    <button onclick="scrollTestimonials(1)"
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
                     </button>
                 </div>
 
@@ -100,20 +116,19 @@
 
 
     <section class="testimonial-client mt-24 w-full bg-primary">
-        <main class="py-24 w-full">
+        <main class="py-20 pl-8 w-full">
             <header class="px-8 lg:px-14 xl:px-44 relative">
                 <span
                     class="text-9xl text-primary opacity-60 absolute z-1 top-[-20px] left-0 lg:left-6 xl:left-36">"</span>
                 <h1 class="text-4xl lg:text-4xl font-semibold z-2 text-white">Testimoni Metrokil</h1>
             </header>
 
-            <article 
-            class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full cursor-grab select-none"
-            id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"
-            onmousedown="startTestimonialsDrag(event)" onmousemove="testimonialsDragMove(event)"
-            onmouseup="endTestimonialsDrag()" onmouseleave="endTestimonialsDrag()"
-            ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsDragMove(event)"
-            ontouchend="endTestimonialsDrag()" data-aos="fade-left">
+            <article class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full cursor-grab select-none"
+                id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"
+                onmousedown="startTestimonialsDrag(event)" onmousemove="testimonialsDragMove(event)"
+                onmouseup="endTestimonialsDrag()" onmouseleave="endTestimonialsDrag()"
+                ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsDragMove(event)"
+                ontouchend="endTestimonialsDrag()" data-aos="fade-left">
 
                 <div
                     class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44 shadow-soft">
@@ -185,20 +200,24 @@
                 </div>
 
             </article>
+            <footer class="flex flex-row-reverse gap-6 px-8 lg:px-14 xl:px-44 relative mt-4">
+                <button onclick="scrollReview('right')"
+                    class="border border-white rounded-full p-4 shadow-md transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+                <button onclick="scrollReview('left')"
+                    class="border border-white rounded-full p-4 shadow-md  transition duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+            </footer>
         </main>
 
-        <footer class="flex flex-row-reverse gap-8">
-            <button onclick="scrollReview('right')" class="border border-white rounded-full p-4 shadow-md transition duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </button>
-            <button onclick="scrollReview('left')" class="border border-white rounded-full p-4 shadow-md  transition duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-            </button>
-        </footer>
 
     </section>
 
@@ -215,46 +234,46 @@
         <div x-data="{ modalOpen: false, modalImage: '', modalTitle: '', modalDescription: '' }">
             <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
                 @foreach ($galleries as $item)
-                    <div class="gallery-pictures cursor-pointer gap-6 mt-4 lg:mb-12 grid-cols-3" 
+                    <div class="gallery-pictures cursor-pointer gap-6 mt-4 lg:mb-12 grid-cols-3"
                         @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
-                        <img src="http://localhost:8080/storage/{{ $item->image_url }}" class="rounded-xl h-56 w-full object-cover" alt="">
+                        <img src="http://localhost:8080/storage/{{ $item->image_url }}"
+                            class="rounded-xl h-56 w-full object-cover" alt="">
                         <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
                     </div>
                 @endforeach
             </div>
-         <div x-show="modalOpen"
-     class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-     x-cloak>
+            <div x-show="modalOpen" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+                x-cloak>
 
-            <!-- Click outside to close -->
-            <div @click.outside="modalOpen = false"
-                class="bg-white rounded-xl shadow-lg max-w-3xl w-full relative overflow-hidden">
+                <!-- Click outside to close -->
+                <div @click.outside="modalOpen = false"
+                    class="bg-white rounded-xl shadow-lg max-w-3xl w-full relative overflow-hidden">
 
-                <!-- Close Button -->
-                <button @click="modalOpen = false"
+                    <!-- Close Button -->
+                    <button @click="modalOpen = false"
                         class="
                         absolute top-2 right-2 text-white bg-primary 
                         bg-opacity-60 hover:bg-opacity-80 rounded-full 
                         w-10 h-10 flex items-center justify-center text-2xl font-bold shadow-lg">
-                    &times;
-                </button>
+                        &times;
+                    </button>
 
-                <!-- Image -->
-                <img :src="modalImage" alt="Gallery Image" class="w-full max-h-[500px] object-cover">
+                    <!-- Image -->
+                    <img :src="modalImage" alt="Gallery Image" class="w-full max-h-[500px] object-cover">
 
-                <!-- Caption -->
-                <div class="p-6 bg-white">
-                    <h2 class="text-2xl font-bold text-left" x-text="modalTitle"></h2>
-                    <p class="text-gray-600 mt-2 text-left" x-text="modalDescription"></p>
+                    <!-- Caption -->
+                    <div class="p-6 bg-white">
+                        <h2 class="text-2xl font-bold text-left" x-text="modalTitle"></h2>
+                        <p class="text-gray-600 mt-2 text-left" x-text="modalDescription"></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
         </div>
     </section>
 
 
-<style>
+    <style>
         #testimonials-review-container::-webkit-scrollbar {
             display: none;
         }
@@ -331,8 +350,8 @@
             const container = document.getElementById("testimonials-slider");
             const scrollAmount = 620; // Sesuaikan sesuai min-width testimonial
             container.scrollBy({
-            left: direction * scrollAmount,
-            behavior: 'smooth'
+                left: direction * scrollAmount,
+                behavior: 'smooth'
             });
         }
 
@@ -340,10 +359,16 @@
             const container = document.getElementById('testimonials-container');
             const scrollAmount = 300; // Atur sesuai kebutuhan
             if (direction === 'left') {
-                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
             } else {
-            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
         }
-    }
     </script>
 </x-template>

@@ -196,7 +196,7 @@
         </div>
     </div>
 
-        <section class="testimonial-client mt-24 w-full bg-primary">
+    <section class="testimonial-client mt-24 w-full bg-primary">
         <main class="py-24 w-full">
             <header class="px-8 lg:px-14 xl:px-44 flex justify-between items-center">
                 <h1 class="text-3xl lg:text-4xl font-semibold text-white"><span class="opacity-55">Testimoni</span>
@@ -212,13 +212,12 @@
                 </a>
             </header>
 
-            <article 
-            class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full cursor-grab select-none"
-            id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"
-            onmousedown="startTestimonialsDrag(event)" onmousemove="testimonialsDragMove(event)"
-            onmouseup="endTestimonialsDrag()" onmouseleave="endTestimonialsDrag()"
-            ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsDragMove(event)"
-            ontouchend="endTestimonialsDrag()" data-aos="fade-left">
+            <article class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full cursor-grab select-none"
+                id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"
+                onmousedown="startTestimonialsDrag(event)" onmousemove="testimonialsDragMove(event)"
+                onmouseup="endTestimonialsDrag()" onmouseleave="endTestimonialsDrag()"
+                ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsDragMove(event)"
+                ontouchend="endTestimonialsDrag()" data-aos="fade-left">
 
                 <div
                     class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44 shadow-soft">
@@ -293,13 +292,17 @@
         </main>
 
         <footer class="flex flex-row-reverse gap-8">
-            <button onclick="scrollReview('right')" class="border border-white rounded-full p-4 shadow-md transition duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button onclick="scrollReview('right')"
+                class="border border-white rounded-full p-4 shadow-md transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
-            <button onclick="scrollReview('left')" class="border border-white rounded-full p-4 shadow-md  transition duration-200">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button onclick="scrollReview('left')"
+                class="border border-white rounded-full p-4 shadow-md  transition duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
             </button>
@@ -412,14 +415,20 @@
             blogContainer.classList.remove('dragging');
         }
 
-            function scrollReview(direction) {
+        function scrollReview(direction) {
             const container = document.getElementById('testimonials-container');
             const scrollAmount = 300; // Atur sesuai kebutuhan
             if (direction === 'left') {
-                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
             } else {
-            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
         }
-    }
     </script>
 </x-template>
