@@ -11,7 +11,7 @@
                         <p class="text-white opacity-75">Jasa Pengendali Rayap Untuk Rumah & Bisnis</p>
                     </div>
                 </div>
-                <div class="mt-6 footer-navigation grid grid-cols-4" data-aos="fade-up">
+                <div class="mt-6 footer-navigation grid grid-cols-2 lg:grid-cols-4" data-aos="fade-up">
                     <div class="footer-about flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">About Us</h4>
                         <a href="/about" class="text-white opacity-55 hover:opacity-100 transition-all">Tentang
@@ -48,7 +48,7 @@
                     <img src="{{ asset('icons/socials/mdi_instagram.svg') }}" alt="">
                     <img src="{{ asset('icons/socials/ant-design_x-outlined.svg') }}" alt="">
                 </div>
-                <hr class="my-1">
+                <hr class="my-3 md:my-1">
                 <p class="text-lg text-white font-semibold opacity-55">Copyright © Metrokil 2025</p>
             </div>
             <div class="footer-info col-span-5 mt-6 md:col-span-2 flex flex-col gap-8">

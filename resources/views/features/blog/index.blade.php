@@ -1,10 +1,10 @@
 <x-template title="Blog" active="blog">
     <div class="mt-20 lg:mx-14 xl:mx-44 mx-8">
-        <div class="blog-header flex justify-between items-center gap-8">
+        <div class="blog-header flex justify-between flex-wrap lg:flex-none items-center gap-8">
             <h2 class="font-semibold inline-flex text-3xl lg:text-4xl">Blog&nbsp;<span
                     class="text-primary">Metrokil</span>
             </h2>
-            <div class="ring-primary ring-2 rounded-lg align-center px-4 py-2 gap-4 w-96">
+            <div class="ring-primary ring-2 rounded-lg align-center px-4 py-2 gap-4 w-full md:w-96">
                 <form action="" class="flex">
                     <input type="text"
                         class="w-full outline-none placeholder:text-primary placeholder:opacity-65 text-primary font-semibold flex items-center border-0 focus:border-0 focus:ring-0"
