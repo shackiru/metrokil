@@ -35,7 +35,8 @@
 
             <article class="pricing-content">
                 <div class="flex flex-col xl:grid xl:grid-cols-7 mt-8 gap-6">
-                    <div class="col-span-4 flex flex-col justify-between h-[455px] overflow-y-auto space-y-4 pr-2 py-1" data-aos="fade-right">
+                    <div class="col-span-4 flex flex-col justify-between h-full md:h-[455px] overflow-y-auto space-y-4 pr-2 py-1"
+                        data-aos="fade-right">
                         @foreach ($services as $service)
                             <x-pricing-card :active="false" :id="$service->id" :value="$service->name" :price="$service->price">
                                 {{ $service->name }}
@@ -44,7 +45,8 @@
                     </div>
 
                     <div class="col-span-3 flex flex-col h-full" data-aos="fade-left">
-                        <div class="pricing-detail ring-1 ring-black ring-opacity-20 w-full rounded-xl p-6 flex-grow h-[455px] overflow-y-auto">
+                        <div
+                            class="pricing-detail ring-1 ring-black ring-opacity-20 w-full rounded-xl p-6 flex-grow h-[455px] overflow-y-auto">
                             <div class="pricing-description">
                                 <h2 class="text-xl font-semibold">Rincian Layanan</h2>
                                 <p class="text-md mt-2">Penyemprotan Pondasi adalah paket yang dapat anda pilih untuk
@@ -102,7 +104,9 @@
             <h2 class="font-semibold text-3xl lg:text-4xl">Benefit Layanan <span class="text-primary">Metrokil</span>
             </h2>
         </header>
-        <main class="benefit-content grid md:grid-cols-2 xl:grid-cols-4 mt-10 md:gap-20 lg:gap-24 gap-y-6 xl:gap-y-0 xl:gap-36" data-aos="fade-up">
+        <main
+            class="benefit-content grid md:grid-cols-2 xl:grid-cols-4 mt-10 md:gap-20 lg:gap-24 gap-y-6 xl:gap-y-0 xl:gap-36"
+            data-aos="fade-up">
             <div class="benefit-card flex flex-col items-start gap-4">
                 <div class="badge-img rounded-xl p-4 shadow-soft">
                     <img src="{{ asset('icons/Iconsax/Svg/All/linear/verify-primary.svg') }}" width="35"

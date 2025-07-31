@@ -47,8 +47,9 @@
                 <div id="testimonials-slider"
                     class="flex col-span-6 overflow-x-auto gap-6 scroll-smooth snap-x snap-mandatory"
                     style="scrollbar-width: none; -ms-overflow-style: none;">
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
-                        <div class="grid grid-rows-4 py-20 pl-8">
+                    <div
+                        class="flex flex-col-reverse md:grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl md:gap-6 h-fit md:h-full">
+                        <div class="grid grid-rows-4 py-12 md:py-20 pl-8">
                             <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Tim Metrokil sangat profesional,
                                 transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”
                             </p>
@@ -57,7 +58,8 @@
                                 <p class="text-sm text-gray-600">CEO 10</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/person-example.png') }}" alt="Foto" class="h-full object-cover">
+                        <img src="{{ asset('images/person-example.png') }}" alt="Foto"
+                            class="h-full object-cover max-h-64 md:max-h-full">
                     </div>
                     <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
                         <div class="grid grid-rows-4 py-20 pl-8">
@@ -232,7 +234,7 @@
             </div>
         </header>
         <div x-data="{ modalOpen: false, modalImage: '', modalTitle: '', modalDescription: '' }">
-            <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
+            <div class="gallery-content grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
                 @foreach ($galleries as $item)
                     <div class="gallery-pictures cursor-pointer gap-6 mt-4 lg:mb-12 grid-cols-3"
                         @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
