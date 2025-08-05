@@ -23,7 +23,7 @@
                             href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0"><button
                                 class="hover:shadow-regular transition button bg-primary text-white px-6 py-3 text-sm md:px-6 md:py-4 md:h-full rounded-lg font-semibold">Hubungi
                                 Kami</button></a>
-                        <a href="/services#pricing"><button
+                        <a href="/public/services#pricing"><button
                                 class="hover:shadow-regular transition button ring-primary ring-2 inner text-primary px-6 py-3 text-sm md:px-6 md:py-4 md:h-full rounded-lg font-semibold hover:bg-primary hover:text-white">Daftar
                                 Harga</button></a>
                     </div>
@@ -64,7 +64,7 @@
                     lingkungan Anda menjadi <span class="text-primary">nyaman dan
                         aman</span> bersama <span class="text-primary">Metrokil</span>.
                 </p>
-                <a href="/about" class="group about-history cursor-pointer mt-6">
+                <a href="/public/about" class="group about-history cursor-pointer mt-6">
                     <div class="flex justify-between">
                         <p class="text-lg group-hover:text-primary transition">Lihat sejarah Metrokil</p>
                         <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right.svg') }}" alt=""
@@ -79,7 +79,7 @@
     <div class="mt-12 lg:mt-28 lg:mx-14 xl:mx-44 mx-8">
         <div class="service-header flex justify-between items-center">
             <h1 class="text-3xl lg:text-4xl font-semibold">Layanan <span class="text-primary">Metrokil</span></h1>
-            <a href="/services">
+            <a href="/public/services">
                 <div class="service-more flex gap-3">
                     <p class="font-medium lg:text-lg text-primary hover:underline transition">Pelajari selengkapnya
                     </p>
@@ -101,7 +101,7 @@
                             pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
-                        <a href="/contact"><button
+                        <a href="/public/contact"><button
                                 class="flex ring-primary ring-[1.5px] text-primary items-center px-3 py-1 font-semibold rounded-lg group hover:bg-primary hover:text-white transition text-sm md:text-md">Pesan
                                 layanan
                                 <svg class="text-primary group-hover:text-white transition"
@@ -127,7 +127,7 @@
                             pasca treatment menjadi tanggung jawab kami. </p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
-                        <a href="/contact"><button
+                        <a href="/public/contact"><button
                                 class="flex ring-primary ring-[1.5px] text-primary items-center px-3 py-1 font-semibold rounded-lg group hover:bg-primary hover:text-white transition text-sm md:text-md">Pesan
                                 layanan
                                 <svg class="text-primary group-hover:text-white transition"
@@ -153,7 +153,7 @@
                             pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
-                        <a href="/contact"><button
+                        <a href="/public/contact"><button
                                 class="flex ring-primary ring-[1.5px] text-primary items-center px-3 py-1 font-semibold rounded-lg group hover:bg-primary hover:text-white transition text-sm md:text-md">Pesan
                                 layanan
                                 <svg class="text-primary group-hover:text-white transition"
@@ -179,7 +179,7 @@
                             Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
-                        <a href="/contact"><button
+                        <a href="/public/contact"><button
                                 class="flex ring-primary ring-[1.5px] text-primary items-center px-3 py-1 font-semibold rounded-lg group hover:bg-primary hover:text-white transition text-sm md:text-md">Pesan
                                 layanan
                                 <svg class="text-primary group-hover:text-white transition"
@@ -202,7 +202,7 @@
                 <h1 class="text-3xl lg:text-4xl font-semibold text-white"><span class="opacity-55">Testimoni</span>
                     Metrokil
                 </h1>
-                <a href="/testimonials">
+                <a href="/public/testimonials">
                     <div class="flex gap-3 text-white">
                         <p class="font-medium lg:text-lg hover:underline transition">Pelajari selengkapnya
                         </p>
@@ -316,7 +316,7 @@
             <div class="px-8 lg:px-14 xl:px-44 flex justify-between items-center">
                 <h1 class="text-3xl lg:text-4xl font-semibold text-black">Blog <span
                         class="text-primary">Metrokil</span></h1>
-                <a href="/blogs">
+                <a href="/public/blogs">
                     <div class="flex gap-3">
                         <p class="font-medium lg:text-lg text-primary hover:underline transition">Pelajari selengkapnya
                         </p>
@@ -331,7 +331,7 @@
                 onmouseleave="endBlogDrag()" ontouchstart="startBlogDrag(event)" ontouchmove="blogDragMove(event)"
                 ontouchend="endBlogDrag()">
                 @foreach ($blogs as $blog)
-                    <a href="/blogs/{{ $blog->id }}" data-aos="fade-left">
+                    <a href="/public/blogs/{{ $blog->id }}" data-aos="fade-left">
                         <x-blog-card date="{{ $blog->created_at }}" category="{{ $blog->category }}"
                             image="{{ $blog->image_url }}" author="{{ $blog->user->name }}" isLimitWidth="true">
                             {{ \Str::limit($blog->title, 50) }}
