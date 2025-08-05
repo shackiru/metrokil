@@ -1,6 +1,6 @@
 <x-template title="Blog" active="blog">
     <div class="mt-20 lg:mx-14 xl:mx-44 mx-8">
-        <div class="blog-header flex justify-between flex-wrap lg:flex-none items-center gap-8">
+        <div class="blog-header flex justify-between flex-wrap lg:flex-nowrap items-center gap-8">
             <h2 class="font-semibold inline-flex text-3xl lg:text-4xl">Blog&nbsp;<span
                     class="text-primary">Metrokil</span>
             </h2>

@@ -32,7 +32,7 @@
         </div>
         <div class="hidden lg:block col-span-1 lg:col-span-2 xl:col-span-1" data-aos="fade-left">
             <div class="hero-image">
-                <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
+                <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSEtz/Wi5qcGc"
                     class="rounded-lg" alt="">
                 {{-- <img src="{{ asset('images/home_banner.png') }}" alt=""> --}}
             </div>
@@ -214,9 +214,9 @@
 
             <article class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full cursor-grab select-none"
                 id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"
-                onmousedown="startTestimonialsDrag(event)" onmousemove="testimonialsDragMove(event)"
+                onmousedown="startTestimonialsDrag(event)" onmousemove="testimonialsMove(event)"
                 onmouseup="endTestimonialsDrag()" onmouseleave="endTestimonialsDrag()"
-                ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsDragMove(event)"
+                ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsMove(event)"
                 ontouchend="endTestimonialsDrag()" data-aos="fade-left">
 
                 <div
@@ -306,8 +306,6 @@
                 </button>
             </footer>
         </main>
-
-
     </section>
 
     <!-- Move the blog section here -->
@@ -327,8 +325,8 @@
             </div>
             <div class="blogs px-8 lg:px-14 xl:px-44 flex mt-4 gap-4 overflow-visible w-full overflow-x-auto py-4 cursor-grab select-none"
                 id="blogs-container" style="scrollbar-width: none; -ms-overflow-style: none;"
-                onmousedown="startBlogDrag(event)" onmousemove="blogDragMove(event)" onmouseup="endBlogDrag()"
-                onmouseleave="endBlogDrag()" ontouchstart="startBlogDrag(event)" ontouchmove="blogDragMove(event)"
+                onmousedown="startBlogDrag(event)" onmousemove="blogMove(event)" onmouseup="endBlogDrag()"
+                onmouseleave="endBlogDrag()" ontouchstart="startBlogDrag(event)" ontouchmove="blogMove(event)"
                 ontouchend="endBlogDrag()">
                 @foreach ($blogs as $blog)
                     <a href="/public/blogs/{{ $blog->id }}" data-aos="fade-left">
@@ -339,7 +337,6 @@
                     </a>
                 @endforeach
             </div>
-
         </div>
     </div>
 
@@ -362,48 +359,49 @@
     </style>
 
     <script>
-        let isDragging = false;
-        let startX;
-        let scrollLeft;
-        let container = document.getElementById('testimonials-container');
+        // Testimonials drag functionality
+        let testimonialsIsDragging = false;
+        let testimonialsStartX;
+        let testimonialsScrollLeft;
+        let testimonialsContainer = document.getElementById('testimonials-container');
 
-        function startDrag(e) {
-            isDragging = true;
-            container.classList.add('dragging');
-            startX = (e.pageX || e.touches[0].pageX) - container.offsetLeft;
-            scrollLeft = container.scrollLeft;
+        function startTestimonialsDrag(e) {
+            testimonialsIsDragging = true;
+            testimonialsContainer.classList.add('dragging');
+            testimonialsStartX = (e.pageX || e.touches[0].pageX) - testimonialsContainer.offsetLeft;
+            testimonialsScrollLeft = testimonialsContainer.scrollLeft;
             e.preventDefault();
         }
 
-        function dragMove(e) {
-            if (!isDragging) return;
+        function testimonialsMove(e) {
+            if (!testimonialsIsDragging) return;
             e.preventDefault();
-            const x = (e.pageX || e.touches[0].pageX) - container.offsetLeft;
-            const walk = (x - startX) * 2;
-            container.scrollLeft = scrollLeft - walk;
+            const x = (e.pageX || e.touches[0].pageX) - testimonialsContainer.offsetLeft;
+            const walk = (x - testimonialsStartX) * 2;
+            testimonialsContainer.scrollLeft = testimonialsScrollLeft - walk;
         }
 
-        function endDrag() {
-            isDragging = false;
-            container.classList.remove('dragging');
+        function endTestimonialsDrag() {
+            testimonialsIsDragging = false;
+            testimonialsContainer.classList.remove('dragging');
         }
 
         // Blog drag functionality
-        let isBlogDragging = false;
+        let blogIsDragging = false;
         let blogStartX;
         let blogScrollLeft;
         let blogContainer = document.getElementById('blogs-container');
 
         function startBlogDrag(e) {
-            isBlogDragging = true;
+            blogIsDragging = true;
             blogContainer.classList.add('dragging');
             blogStartX = (e.pageX || e.touches[0].pageX) - blogContainer.offsetLeft;
             blogScrollLeft = blogContainer.scrollLeft;
             e.preventDefault();
         }
 
-        function blogDragMove(e) {
-            if (!isBlogDragging) return;
+        function blogMove(e) {
+            if (!blogIsDragging) return;
             e.preventDefault();
             const x = (e.pageX || e.touches[0].pageX) - blogContainer.offsetLeft;
             const walk = (x - blogStartX) * 2;
@@ -411,13 +409,14 @@
         }
 
         function endBlogDrag() {
-            isBlogDragging = false;
+            blogIsDragging = false;
             blogContainer.classList.remove('dragging');
         }
 
+        // Scroll button functionality for testimonials
         function scrollReview(direction) {
             const container = document.getElementById('testimonials-container');
-            const scrollAmount = 300; // Atur sesuai kebutuhan
+            const scrollAmount = 400; // Adjust as needed
             if (direction === 'left') {
                 container.scrollBy({
                     left: -scrollAmount,
@@ -430,5 +429,22 @@
                 });
             }
         }
+
+        // Add event listeners when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Prevent default drag behavior on images
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('dragstart', e => e.preventDefault());
+            });
+
+            // Add smooth scrolling behavior
+            const containers = [testimonialsContainer, blogContainer];
+            containers.forEach(container => {
+                if (container) {
+                    container.style.scrollBehavior = 'smooth';
+                }
+            });
+        });
     </script>
 </x-template>

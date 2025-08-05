@@ -9,35 +9,31 @@
                 <div class="contact-form shadow-soft rounded-xl p-6 flex flex-col" data-aos="fade-right">
                     <h3 class="text-2xl font-semibold">Tertarik dengan jasa <span class="text-primary">Metrokil</span>?
                     </h3>
-                    <form action="" method="GET" class="mt-6 flex flex-col flex-grow">
+                    <form id="complaintForm" class="mt-6 flex flex-col flex-grow">
                         <div class="input-name mb-4">
                             <label for="name" class="font-semibold">Nama</label>
                             <input type="text" class="w-full rounded-xl border-2 border-gray-200 py-3 px-4 mt-1"
-                                name="name" id="name" placeholder="Masukkan nama...">
+                                name="name" id="name" placeholder="Masukkan nama..." required>
                         </div>
                         <div class="input-email mb-4">
-                            <label for="email" class="font-semibold">Nomor Whatsapp</label>
+                            <label for="whatsapp" class="font-semibold">Nomor Whatsapp</label>
                             <input type="text" class="w-full rounded-xl border-2 border-gray-200 py-3 px-4 mt-1"
-                                name="email" id="email" placeholder="Masukkan nomor whatsapp...">
+                                name="whatsapp" id="whatsapp" placeholder="Masukkan nomor whatsapp..." required>
                         </div>
                         <div class="input-address mb-4">
                             <label for="address" class="font-semibold">Alamat Lokasi Keluhan</label>
-                            <textarea type="text" class="w-full rounded-xl border-2 border-gray-200 py-3 px-4 mt-1" name="address" id="address"
-                                rows="5" placeholder="Masukkan alamat lokasi keluhan..."></textarea>
+                            <textarea class="w-full rounded-xl border-2 border-gray-200 py-3 px-4 mt-1" name="address" id="address" rows="5"
+                                placeholder="Masukkan alamat lokasi keluhan..." required></textarea>
                         </div>
                         <div class="input-complaint mb-4">
                             <label for="complaint" class="font-semibold">Keluhan</label>
-                            <select name="complaint" id="complaint"
-                                class="w-full rounded-xl border-2 border-gray-200 py-3 px-4 mt-1">
-                                <option value="1">Pilih Keluhan</option>
-                                <option value="2">Pelayanan</option>
-                                <option value="3">Produk</option>
-                                <option value="4">Lainnya</option>
-                            </select>
+                            <textarea class="w-full rounded-xl border-2 border-gray-200 py-3 px-4 mt-1" name="complaint" id="complaint"
+                                rows="5" placeholder="Masukkan keluhan anda..." required></textarea>
                         </div>
-                        <a
-                            href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0"><button
-                                class="mt-auto bg-primary text-white font-semibold w-full py-3 text-lg rounded-xl">Kirim</button></a>
+                        <button type="submit"
+                            class="mt-auto bg-primary text-white font-semibold w-full py-3 text-lg rounded-xl hover:bg-green-600 transition-colors">
+                            Kirim
+                        </button>
                     </form>
                 </div>
 
@@ -154,3 +150,41 @@
         </div>
     </div>
 </x-template>
+
+<script>
+    document.getElementById('complaintForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const whatsapp = document.getElementById('whatsapp').value.trim();
+        const address = document.getElementById('address').value.trim();
+        const complaint = document.getElementById('complaint').value;
+
+        if (!name || !whatsapp || !address || !complaint) {
+            alert('Mohon lengkapi semua field!');
+            return;
+        }
+
+        const message = `Halo! Saya ingin menyampaikan keluhan:
+
+*Nama:* ${name}
+*Nomor WhatsApp:* ${whatsapp}
+*Alamat Lokasi Keluhan:* ${address}
+*Jenis Keluhan:* ${complaint}
+
+Terima kasih`;
+
+        const encodedMessage = encodeURIComponent(message);
+        const targetPhone = '6281998405395';
+        const whatsappURL =
+            `https://api.whatsapp.com/send/?phone=${targetPhone}&text=${encodedMessage}&type=phone_number&app_absent=0`;
+
+        window.open(whatsappURL, '_blank');
+    });
+
+    document.getElementById('whatsapp').addEventListener('input', function(e) {
+        let value = e.target.value.replace(/\D/g, ''); // Hapus karakter non-digit
+
+        e.target.value = value;
+    });
+</script>
