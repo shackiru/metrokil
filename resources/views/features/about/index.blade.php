@@ -28,7 +28,7 @@
         </div>
         <div class="md:col-span-1 hidden md:block" data-aos="fade-left">
             <div class="hero-image">
-                <img src="{{ asset('images/About-img.png') }}" class="rounded-lg" alt="">
+                <img src="{{ asset('images/About.jpg') }}" class="rounded-lg" alt="">
             </div>
         </div>
     </div>

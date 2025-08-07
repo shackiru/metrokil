@@ -23,7 +23,7 @@
         </main>
         <aside class="md:col-span-1 hidden md:block" data-aos="fade-left">
             <div class="hero-image">
-                <img src="{{ asset('images/About-img.png') }}" class="rounded-lg" alt="">
+                <img src="{{ asset('images/Testimoni.jpg') }}" class="rounded-lg" alt="">
             </div>
         </aside>
     </section>
@@ -234,11 +234,18 @@
                     width="20">
             </div>
         </header>
-        <div x-data="{ modalOpen: false, modalImage: '', modalTitle: '', modalDescription: '' }">
+        <div x-data="{ 
+        modalOpen: false, 
+        modalImage: '', 
+        modalTitle: '', 
+        modalDescription: '' }">
             <div class="gallery-content grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
                 @foreach ($galleries as $item)
                     <div class="gallery-pictures cursor-pointer gap-6 mt-4 lg:mb-12 grid-cols-3"
-                        @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
+                        @click="modalOpen = true; 
+                        modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; 
+                        modalTitle = '{{ strip_tags($item->name) }}'; 
+                        modalDescription = '{{ strip_tags($item->description) }}';">
                         <img src="http://localhost:8080/storage/{{ $item->image_url }}"
                             class="rounded-xl h-56 w-full object-cover" alt="">
                         <p class="font-semibold text-center mt-2">{{ $item->name }}</p>

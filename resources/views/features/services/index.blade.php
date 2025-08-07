@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="col-span-2 justify-self-end lg:block hidden" data-aos="fade-left">
-                <img src="https://imgs.search.brave.com/ewPePM7Kfpgek378czv-hge_4Uwp5ZuXfErEjPHH55Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTYy/MzUyODczL3Bob3Rv/L3Blc3QtY29udHJv/bC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9emg5UkNvajBj/cktOQTgwSG5RUnpB/UTRfeTlRMDNKaHBY/N1JmOHpwa2dUcz0"
+                <img src="{{ asset('images/Service.jpg') }}"
                     width="400" class="rounded-xl" alt="">
             </div>
         </div>

@@ -32,7 +32,7 @@
         </div>
         <div class="hidden lg:block col-span-1 lg:col-span-2 xl:col-span-1" data-aos="fade-left">
             <div class="hero-image">
-                <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSEtz/Wi5qcGc"
+                <img src="{{ asset('images/Home.jpg') }}"
                     class="rounded-lg" alt="">
                 {{-- <img src="{{ asset('images/home_banner.png') }}" alt=""> --}}
             </div>
@@ -40,9 +40,8 @@
     </div>
 
     <div class="mt-12 lg:mt-48 grid grid-cols-3 gap-10 lg:mx-14 xl:mx-44 mx-8">
-        <div class="hidden lg:block col-span-1" data-aos="fade-right">
-            <img src="https://imgs.search.brave.com/tDwDKckiFCktmSVZfLfjAHN6huS-ZrbafSC3MMxVAvU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI1/MDQzNjg1NS9waG90/by9ob3VzZS1wZXN0/LWNvbnRyb2wuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTkx/Nl81TTA0MlVMenlJ/YmoxOUswQXZieVpE/UEhOWl94SEJuUnR0/QTZwaXc9"
-                class="rounded-lg" alt="">
+        <div class="hero-image" data-aos="fade-right">
+            <img src="{{ asset('images/About.jpg') }}" class="rounded-lg h-[400px] object-fill" alt="">
         </div>
         <div class="col-span-3 lg:col-span-2" data-aos="fade-left">
             <div class="about-content flex flex-col justify-between h-full">
@@ -89,9 +88,9 @@
             </a>
         </div>
         <div class="service-content grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4 mt-6">
-            <div class="service-item flex justify-between shadow-soft rounded-xl" data-aos="fade-right">
+            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-right">
                 <div class="service-image min-w-40">
-                    <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
+                    <img src="{{ asset('images/About.jpg') }}"
                         class="rounded-l-xl h-full object-cover" alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
@@ -115,9 +114,9 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl" data-aos="fade-left">
+            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-left">
                 <div class="service-image min-w-40">
-                    <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
+                    <img src="{{ asset('images/Home.jpg') }}"
                         class="rounded-l-xl h-full object-cover" alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
@@ -141,9 +140,9 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl" data-aos="fade-right">
+            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-right">
                 <div class="service-image min-w-40">
-                    <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
+                    <img src="{{ asset('images/Service.jpg') }}"
                         class="rounded-l-xl h-full object-cover" alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
@@ -167,9 +166,9 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl" data-aos="fade-left">
+            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-left">
                 <div class="service-image min-w-40">
-                    <img src="https://imgs.search.brave.com/MBt_dnud49bX710Y3LVo7B6LsuGZsFnKTC0wdWrqsKc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzcwLzIzLzQ0/LzM2MF9GXzM3MDIz/NDQ5Ml9SVXBtNTBz/dmZmbm92RHRQNjdP/dDJNbnF6TkRvSGtz/Wi5qcGc"
+                    <img src="{{ asset('images/Testimoni.jpg') }}"
                         class="rounded-l-xl h-full object-cover" alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
