@@ -367,7 +367,7 @@
 
         function scrollReview(direction) {
             const container = document.getElementById('testimonials-container');
-            const scrollAmount = 300; // Atur sesuai kebutuhan
+            const scrollAmount = 600; // Atur sesuai kebutuhan
             if (direction === 'left') {
                 container.scrollBy({
                     left: -scrollAmount,

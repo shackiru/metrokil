@@ -1,18 +1,26 @@
 <x-template title="Gallery Metrokil" active="testimonial"> 
-    <div>
-        <img src="" alt="">
+    <div x-data="{ selectedImage: 'http://localhost:8080/storage/{{ $gallery->first()->image_url ?? '' }}' }">
+            <div class="gallery-header flex justify-between items-center">
+                <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
+            </div>
+            <!-- Gambar besar -->
+            <div class="mb-6">
+                <img :src="selectedImage" class="rounded-xl w-full h-96 object-cover" alt="">
+            </div>
+
+            <!-- Grid gambar -->
+            <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
+                @foreach ($gallery->take(3) as $item)
+                    <div class="gallery-pictures cursor-pointer gap-6"
+                        @click="selectedImage = 'http://localhost:8080/storage/{{ $item->image_url }}'">
+                        <img src="http://localhost:8080/storage/{{ $item->image_url }}"
+                            class="rounded-xl h-56 w-full object-cover" alt="">
+                        <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
+                    </div>
+                @endforeach
+            </div>
+
     </div>
-
-        <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
-            @foreach ($gallery->take(3) as $item)
-                <div class="gallery-pictures cursor-pointer gap-6 mt-6 mb-20 lg:mb-36 grid-cols-3" 
-                     @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
-                    <img src="http://localhost:8080/storage/{{ $item->image_url }}" class="rounded-xl h-56 w-full object-cover" alt="">
-                    <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
-                </div>
-            @endforeach
-        </div>
-
     <div class="mt-12 mx-44" x-data="{ modalOpen: false, modalImage: '', modalTitle: '', modalDescription: '' }">
         <div class="gallery-header flex justify-between items-center">
             <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>

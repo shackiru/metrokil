@@ -19,7 +19,7 @@
                     <p class="text-lg mt-4 opacity-55 font-medium text-justify">Kami mengajak Anda untuk menjelajahi
                         layanan kami dan bermitra dengan kami dalam upaya menjaga keseimbangan lingkungan sambil
                         memberikan perlindungan terhadap hama dan gangguan lainnya. Bersama-sama, mari kita menciptakan
-                        masa depan yang lebih sehat. Terima kasih atas kunjungan Anda ke website PT Metrokil, dan jangan
+                        masa depan yang lebih sehat. Terima kasih atas kunjungan Anda ke website PT Metropolitan Agrokimia Lestari (Metrokil), dan jangan
                         ragu untuk menghubungi kami jika Anda memerlukan layanan pest control berkualitas atau memiliki
                         pertanyaan lebih lanjut.
                     </p>
@@ -38,16 +38,16 @@
             <div class="about-description flex justify-between shadow-smooth rounded-xl">
                 <div class="about-content p-12 flex flex-col justify-between text-center">
                     <div>
-                        <h1 class="text-6xl font-semibold text-primary">30+</h1>
-                        <p class="text-lg mt-2">Berdiri dari tahun 1990 dan telah melayani Anda selama 30 tahun</p>
+                        <h1 class="text-6xl font-semibold text-primary">25+</h1>
+                        <p class="text-lg mt-2">Berdiri dari tahun 1997 dan telah melayani Anda lebih dari 25 tahun</p>
                     </div>
                 </div>
             </div>
             <div class="about-description flex justify-between shadow-smooth rounded-xl">
                 <div class="about-content p-12 flex flex-col text-center">
                     <div>
-                        <h1 class="text-6xl font-semibold text-primary">2600+</h1>
-                        <p class="text-lg mt-2">Lebih dari 2600+ pelanggan yang telah mempercayai jasa kami</p>
+                        <h1 class="text-6xl font-semibold text-primary">5000+</h1>
+                        <p class="text-lg mt-2">Lebih dari 5000+ pelanggan yang telah mempercayai jasa kami</p>
                     </div>
                     <div class="w-100 flex justify-end">
                     </div>
@@ -78,7 +78,7 @@
                             <h1 class="text-2xl font-semibold">Visi Kami</h1>
                             <p class="text-lg font-medium mt-2 text-justify"><span class="text-primary">Metrokil</span>
                                 adalah salah satu merek terkenal di Indonesia
-                                yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama dikenal
+                                yang bergerak dalam industri pengendalian hama. Sebagai brand yang sudah cukup lama dikenal
                                 oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan
                                 kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan
                                 masalah kesehatan dan kerusakan.</p>
@@ -104,7 +104,7 @@
                                     class="text-primary">pelanggan</span> </h1>
                             <p class="text-lg font-medium mt-2 text-justify"><span class="text-primary">Metrokil</span>
                                 adalah salah satu merek terkenal di Indonesia
-                                yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama dikenal
+                                yang bergerak dalam industri pengendalian hama. Sebagai brand yang sudah cukup lama dikenal
                                 oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan
                                 kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan
                                 masalah kesehatan dan kerusakan.</p>
@@ -124,7 +124,7 @@
                                     class="text-primary">kesempurnaan</span> </h1>
                             <p class="text-lg font-medium mt-2 text-justify"><span class="text-primary">Metrokil</span>
                                 adalah salah
-                                satu merek terkenal di Indonesia yang bergerak dalam industri pembasmi hama. Sebagai
+                                satu merek terkenal di Indonesia yang bergerak dalam industri pengendalian hama. Sebagai
                                 brand yang sudah cukup lama dikenal oleh masyarakat, Metrokil memiliki peran penting
                                 dalam membantu menjaga kenyamanan dan kesehatan rumah tangga dengan mengendalikan
                                 berbagai jenis hama yang dapat menimbulkan masalah kesehatan dan kerusakan. </p>
@@ -144,7 +144,7 @@
                                     class="text-primary">pelanggan</span></h1>
                             <p class="text-lg font-medium mt-2 text-justify"><span class="text-primary">Metrokil</span>
                                 adalah salah satu merek terkenal di Indonesia
-                                yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama dikenal
+                                yang bergerak dalam industri pengendalian hama. Sebagai brand yang sudah cukup lama dikenal
                                 oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan
                                 kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan
                                 masalah kesehatan dan kerusakan. </p>
@@ -164,7 +164,7 @@
                                     class="text-primary">diandalkan</span></h1>
                             <p class="text-lg font-medium mt-2 text-justify"><span
                                     class="text-primary">Metrokil</span> adalah salah satu merek terkenal di Indonesia
-                                yang bergerak dalam industri pembasmi hama. Sebagai brand yang sudah cukup lama dikenal
+                                yang bergerak dalam industri pengendali hama. Sebagai brand yang sudah cukup lama dikenal
                                 oleh masyarakat, Metrokil memiliki peran penting dalam membantu menjaga kenyamanan dan
                                 kesehatan rumah tangga dengan mengendalikan berbagai jenis hama yang dapat menimbulkan
                                 masalah kesehatan dan kerusakan. </p>

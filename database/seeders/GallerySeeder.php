@@ -24,7 +24,7 @@ class GallerySeeder extends Seeder
             ],
             [
                 'name' => 'Penyuntikan Anti Rayap Kusen Pintu',
-                'category' => 'Layanan Anti Rayap',
+                'category' => 'Pembas',
                 'description' => 'Telah dipercaya oleh banyak developer perumahan',
                 'image_url' => 'galleries/p2.jpg',
                 'created_at' => now(),
