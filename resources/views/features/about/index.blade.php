@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <div class="mt-12 lg:mx-14 xl:mx-44 mx-8" data-aos="fade-up">
+    <div class="mt-32 lg:mx-14 xl:mx-44 mx-8" data-aos="fade-up">
         <div class="about-detail grid md:grid-cols-3 gap-y-6 md:gap-y-0 gap-4 mt-6">
             <div class="about-description flex justify-between shadow-smooth rounded-xl">
                 <div class="about-content p-12 flex flex-col justify-between text-center">

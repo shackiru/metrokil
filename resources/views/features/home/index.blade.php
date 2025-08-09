@@ -8,7 +8,8 @@
                         Rayap
                         Untuk Rumah & Bisnis
                     </p>
-                    <p class="text-md xl:text-lg mt-6 lg:mt-6 opacity-55 font-medium text-justify">Selamat datang di
+                    <p class="text-md xl:text-lg mt-6 lg:mt-10 opacity-55 font-medium text-justify">Selamat
+                        datang di
                         website PT Metropolitan Agro Kimia Lestari <span
                             class="text-primary font-semibold">Metrokil</span>, perusahaan pest control yang telah
                         menjadi
@@ -18,7 +19,7 @@
                         kami. Tujuan utama kami adalah untuk menjadikan lingkungan sekitar lebih bersih, aman, dan
                         nyaman. Kami sangat peduli terhadap kepuasan pelanggan, dan itulah mengapa pelayanan terbaik
                         merupakan prioritas utama kami.</p>
-                    <div class="flex gap-6 mt-6 lg:mt-6">
+                    <div class="flex gap-6 mt-6 lg:mt-10">
                         <a
                             href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0"><button
                                 class="hover:shadow-regular transition button bg-primary text-white px-6 py-3 text-sm md:px-6 md:py-4 md:h-full rounded-lg font-semibold">Hubungi
@@ -30,17 +31,16 @@
                 </div>
             </div>
         </div>
-        <div class="hidden lg:block col-span-1 lg:col-span-2 xl:col-span-1" data-aos="fade-left">
+        <div class="hidden lg:block col-span-1 lg:col-span-2 xl:col-span-1 max-w-[400px]" data-aos="fade-left">
             <div class="hero-image">
-                <img src="{{ asset('images/Home.jpg') }}"
-                    class="rounded-lg" alt="">
+                <img src="{{ asset('images/Home.jpg') }}" class="rounded-lg" alt="">
                 {{-- <img src="{{ asset('images/home_banner.png') }}" alt=""> --}}
             </div>
         </div>
     </div>
 
-    <div class="mt-12 lg:mt-48 grid grid-cols-3 gap-10 lg:mx-14 xl:mx-44 mx-8">
-        <div class="hero-image" data-aos="fade-right">
+    <div class="mt-16 lg:mt-36 grid grid-cols-3 gap-10 lg:mx-14 xl:mx-44 mx-8">
+        <div class="hero-image hidden lg:block" data-aos="fade-right">
             <img src="{{ asset('images/About.jpg') }}" class="rounded-lg h-[400px] object-fill" alt="">
         </div>
         <div class="col-span-3 lg:col-span-2" data-aos="fade-left">
@@ -90,8 +90,7 @@
         <div class="service-content grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4 mt-6">
             <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-right">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/About.jpg') }}"
-                        class="rounded-l-xl h-full object-cover" alt="">
+                    <img src="{{ asset('images/About.jpg') }}" class="rounded-l-xl h-full object-cover" alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
@@ -116,8 +115,7 @@
             </div>
             <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-left">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/Home.jpg') }}"
-                        class="rounded-l-xl h-full object-cover" alt="">
+                    <img src="{{ asset('images/Home.jpg') }}" class="rounded-l-xl h-full object-cover" alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
@@ -142,8 +140,8 @@
             </div>
             <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-right">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/Service.jpg') }}"
-                        class="rounded-l-xl h-full object-cover" alt="">
+                    <img src="{{ asset('images/Service.jpg') }}" class="rounded-l-xl h-full object-cover"
+                        alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
@@ -168,8 +166,8 @@
             </div>
             <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-left">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/Testimoni.jpg') }}"
-                        class="rounded-l-xl h-full object-cover" alt="">
+                    <img src="{{ asset('images/Testimoni.jpg') }}" class="rounded-l-xl h-full object-cover"
+                        alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
@@ -218,74 +216,19 @@
                 ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsMove(event)"
                 ontouchend="endTestimonialsDrag()" data-aos="fade-left">
 
-                <div
-                    class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44 shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
+                @foreach ($testimonials as $index => $testimonial)
+                    <div
+                        class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] {{ $index === 0 ? 'ml-8 lg:ml-14 xl:ml-44' : ($index === count($testimonials) - 1 ? 'mr-44' : '') }} shadow-soft">
+                        <div class="identity">
+                            <h4 class="text-primary font-bold text-xl">{{ $testimonial->name }}</h4>
+                            <p class="text-md opacity-70 font-semibold mt-1">{{ $testimonial->bio }}</p>
+                        </div>
+                        <div class="content mt-5">
+                            <span class="text-5xl text-primary font-bold">"</span>
+                            <p class="text-lg mt-[-15px] font-semibold">{{ $testimonial->review }}</p>
+                        </div>
                     </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Terimakasih kepada Tim Metrokil, kerjanya
-                            sangat profesional,
-                            transparan kepada customer dan penjelasannya detail terkait layanan yang diberikan.
-                            Sukses selalu Metrokil!</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Aurelia Natasha</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Software Engineer, Ex-PPTI 12</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Kerjasama dengan Tim Metrokil sangat memuaskan!
-                            Timnya responsif,
-                            detail, dan memastikan setiap kebutuhan saya terpenuhi. Metrokil adalah pilihan terbaik
-                            untuk layanan profesional!</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Jonathan Fajar</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Product Manager, Ex-PPTI 13</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Metrokil memberikan pengalaman layanan yang
-                            luar biasa!
-                            Hasil kerja yang profesional dan tim yang sangat kooperatif. Tidak ragu untuk
-                            merekomendasikan mereka.</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
-                            Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
-                            memenuhi ekspektasi pelanggan.</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] mr-44 shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
-                            Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
-                            memenuhi ekspektasi pelanggan.</p>
-                    </div>
-                </div>
+                @endforeach
 
             </article>
             <footer class="flex flex-row-reverse gap-6 px-8 lg:px-14 xl:px-44 relative mt-4">

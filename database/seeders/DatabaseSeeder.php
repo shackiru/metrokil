@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
             BlogSeeder::class,
             ServiceSeeder::class,
             GallerySeeder::class,
+            TestimonialSeeder::class,
         ]);
     }
 }
