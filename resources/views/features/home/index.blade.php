@@ -47,11 +47,11 @@
             <div class="about-content flex flex-col justify-between h-full">
                 <h1 class="text-3xl lg:text-4xl font-semibold">Tentang <span class="text-primary">Metrokil</span></h1>
                 <p class="lg:text-lg opacity-70 mt-6 text-justify">Kami adalah <span class="text-primary">perusahaan
-                        pembasmi
+                    pengendalian
                         hama</span>
                     yang
                     berbasis di Jakarta,
-                    Indonesia. Kami telah dipercaya lebih dari <span class="text-primary">500+ klien</span> yang
+                    Indonesia. Kami telah dipercaya lebih dari <span class="text-primary">5000+ klien</span> yang
                     telah bekerja sama dengan kami.
                     <br><br>
                     Kami telah memiliki beberapa cabang dari <span class="text-primary">Jakarta, Bandung,
