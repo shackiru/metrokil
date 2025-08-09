@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Gallery;
+use App\Models\Testimonial;
 use Dotenv\Util\Str;
 
 class GalleryController extends Controller
@@ -14,7 +15,8 @@ class GalleryController extends Controller
     public function index()
     {
         $galleries = Gallery::take(9)->get();
-        return view('features.testimonial.index', compact('galleries'));
+        $testimonials = Testimonial::latest()->take(6)->get();
+        return view('features.testimonial.index', compact('galleries', 'testimonials'));
     }
 
     /**

@@ -132,74 +132,19 @@
                 ontouchstart="startTestimonialsDrag(event)" ontouchmove="testimonialsDragMove(event)"
                 ontouchend="endTestimonialsDrag()" data-aos="fade-left">
 
-                <div
-                    class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] ml-8 lg:ml-14 xl:ml-44 shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Magang BCA, Ex-PPTI 14</p>
+                @foreach ($testimonials as $index => $testimonial)
+                    <div
+                        class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] {{ $index === 0 ? 'ml-8 lg:ml-14 xl:ml-44' : ($index === count($testimonials) - 1 ? 'mr-44' : '') }} shadow-soft">
+                        <div class="identity">
+                            <h4 class="text-primary font-bold text-xl">{{ $testimonial->name }}</h4>
+                            <p class="text-md opacity-70 font-semibold mt-1">{{ $testimonial->bio }}</p>
+                        </div>
+                        <div class="content mt-5">
+                            <span class="text-5xl text-primary font-bold">"</span>
+                            <p class="text-lg mt-[-15px] font-semibold">{{ $testimonial->review }}</p>
+                        </div>
                     </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Terimakasih kepada Tim Metrokil, kerjanya
-                            sangat profesional,
-                            transparan kepada customer dan penjelasannya detail terkait layanan yang diberikan.
-                            Sukses selalu Metrokil!</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Aurelia Natasha</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Software Engineer, Ex-PPTI 12</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Kerjasama dengan Tim Metrokil sangat memuaskan!
-                            Timnya responsif,
-                            detail, dan memastikan setiap kebutuhan saya terpenuhi. Metrokil adalah pilihan terbaik
-                            untuk layanan profesional!</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Jonathan Fajar</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Product Manager, Ex-PPTI 13</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Metrokil memberikan pengalaman layanan yang
-                            luar biasa!
-                            Hasil kerja yang profesional dan tim yang sangat kooperatif. Tidak ragu untuk
-                            merekomendasikan mereka.</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
-                            Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
-                            memenuhi ekspektasi pelanggan.</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item bg-white px-8 py-6 rounded-xl min-w-[500px] mr-44 shadow-soft">
-                    <div class="identity">
-                        <h4 class="text-primary font-bold text-xl">Stephanie Wijaya</h4>
-                        <p class="text-md opacity-70 font-semibold mt-1">Data Scientist, Ex-PPTI 15</p>
-                    </div>
-                    <div class="content mt-5">
-                        <span class="text-5xl text-primary font-bold">"</span>
-                        <p class="text-lg mt-[-15px] font-semibold">Kerja sama dengan Metrokil sangat mengesankan.
-                            Pelayanan cepat, transparan, dan sangat profesional. Tim mereka benar-benar tahu cara
-                            memenuhi ekspektasi pelanggan.</p>
-                    </div>
-                </div>
+                @endforeach
 
             </article>
             <footer class="flex flex-row-reverse gap-6 px-8 lg:px-14 xl:px-44 relative mt-4">
@@ -234,11 +179,12 @@
                     width="20">
             </div>
         </header>
-        <div x-data="{ 
-        modalOpen: false, 
-        modalImage: '', 
-        modalTitle: '', 
-        modalDescription: '' }">
+        <div x-data="{
+            modalOpen: false,
+            modalImage: '',
+            modalTitle: '',
+            modalDescription: ''
+        }">
             <div class="gallery-content grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
                 @foreach ($galleries as $item)
                     <div class="gallery-pictures cursor-pointer gap-6 mt-4 lg:mb-12 grid-cols-3"
