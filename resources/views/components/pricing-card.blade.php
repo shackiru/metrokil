@@ -1,9 +1,9 @@
-@props(['active'])
+@props(['active', 'price'])
 
 <div data-id="{{ $attributes->get('id') }}"
-    class="pricing-card px-6 py-9 flex items-center ring-1 ring-black ring-opacity-20 rounded-xl justify-between cursor-pointer ml-1 @if ($active) bg-primary text-white @endif">
+    class="pricing-card px-6 py-9 flex md:items-center ring-1 ring-black ring-opacity-20 rounded-xl justify-between flex-col items-start md:flex-row cursor-pointer ml-1 @if ($active) bg-primary text-white @endif">
     <div class="pricing-type flex gap-4">
-        <div class="pricing-radio">
+        <div class="pricing-radio mt-2 md:mt-0">
             <input type="radio" name="pricing" id="pricingRadio{{ $attributes->get('id') }}"
                 value="{{ $attributes->get('value') }}" @if ($active) checked @endif
                 class="opacity-0 absolute h-6 w-6 cursor-pointer" />
@@ -22,10 +22,14 @@
         </div>
         <p class="font-semibold text-lg">{{ $slot }}</p>
     </div>
-    <div class="pricing-price text-right">
+    <div class="pricing-price text-right ml-12 md:ml-0">
         <p class="font-semibold">
-            <span class="opacity-50">Mulai dari</span>
-            <span class="opacity-100 text-lg"> Rp. 35.000/m2<sup>2</sup></span>
+            @if ($price == 0)
+                <span class="opacity-50">Hubungi kami untuk harga</span>
+            @else
+                <span class="opacity-50">Mulai dari</span>
+                <span class="opacity-100 text-lg"> Rp. {{ $price }}</span>
+            @endif
         </p>
     </div>
 </div>

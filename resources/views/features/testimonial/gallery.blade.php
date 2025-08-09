@@ -1,114 +1,57 @@
-<x-template title="Testimonial" active="Testimonial"> 
- 
-    <div class="mt-12 mx-44">
-         <div class="gallery-header flex justify-between items-center">
+<x-template title="Gallery Metrokil" active="testimonial"> 
+    <div x-data="{ selectedImage: 'http://localhost:8080/storage/{{ $gallery->first()->image_url ?? '' }}' }">
+            <div class="gallery-header flex justify-between items-center">
+                <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
+            </div>
+            <!-- Gambar besar -->
+            <div class="mb-6">
+                <img :src="selectedImage" class="rounded-xl w-full h-96 object-cover" alt="">
+            </div>
+
+            <!-- Grid gambar -->
+            <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
+                @foreach ($gallery->take(3) as $item)
+                    <div class="gallery-pictures cursor-pointer gap-6"
+                        @click="selectedImage = 'http://localhost:8080/storage/{{ $item->image_url }}'">
+                        <img src="http://localhost:8080/storage/{{ $item->image_url }}"
+                            class="rounded-xl h-56 w-full object-cover" alt="">
+                        <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
+                    </div>
+                @endforeach
+            </div>
+
+    </div>
+    <div class="mt-12 mx-44" x-data="{ modalOpen: false, modalImage: '', modalTitle: '', modalDescription: '' }">
+        <div class="gallery-header flex justify-between items-center">
             <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
         </div>
-        <div class="about-detail grid grid-cols-3 gap-4 mt-6">
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
+
+        <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
+            @foreach ($gallery as $item)
+                <div class="gallery-pictures cursor-pointer gap-6 mt-6 mb-20 lg:mb-36 grid-cols-3" 
+                     @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
+                    <img src="http://localhost:8080/storage/{{ $item->image_url }}" class="rounded-xl h-56 w-full object-cover" alt="">
+                    <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
                 </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
+            @endforeach
+        </div>
+
+        <!-- Modal -->
+        <div x-show="modalOpen" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" x-cloak>
+            <div class="bg-white rounded-xl shadow-lg max-w-3xl w-full relative overflow-hidden">
+                <!-- Close Button -->
+                <button @click="modalOpen = false" class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl">
+                    &times;
+                </button>
+
+                <!-- Image -->
+                <img :src="modalImage" alt="Gallery Image" class="w-full max-h-[500px] object-cover">
+
+                <!-- Caption -->
+                <div class="p-6 bg-white">
+                    <h2 class="text-2xl font-bold text-left" x-text="modalTitle"></h2>
+                    <p class="text-gray-600 mt-2 text-left" x-text="modalDescription"></p>
                 </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
-            </div>
-            <div class="gallery-pictures">
-                <a href="#">
-                <div class="gallery-content flex flex-col justify-between text-center">
-                    <img src="{{ asset('images/gallery1.png') }}" alt="">
-                </div>
-            </a>
             </div>
         </div>
     </div>

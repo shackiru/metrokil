@@ -10,7 +10,8 @@ class Testimonial extends Model
 
     const RULES = [
         'name' => ['required', 'string', 'max:255'],
-        'job' => ['required', 'string', 'max:255'],
-        'content' => ['required', 'string'],
+        'title' => ['required', 'string', 'max:255'],
+        'review' => ['required', 'string'],
+        'rate' => ['required', 'string', 'max:5'],
     ];
 }
