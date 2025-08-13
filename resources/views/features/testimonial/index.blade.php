@@ -1,5 +1,5 @@
 <x-template title="Testimonial" active="testimonial">
-    <section class="grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    {{-- <section class="grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <main class="md:col-span-2 col-span-3" data-aos="fade-right">
             <div class="hero">
                 <h3 class="text-2xl font-semibold mb-2">Testimonial <span class="text-primary">Metrokil</span></h3>
@@ -26,11 +26,23 @@
                 <img src="{{ asset('images/Testimoni.jpg') }}" class="rounded-lg" alt="">
             </div>
         </aside>
-    </section>
+    </section> --}}
 
-    <section class="review-client grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <section class="review-client grid grid-cols-3 w-100 mt-18 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <main class="col-span-3">
-            <h1 class="text-4xl lg:text-4xl font-semibold z-2">Apa kata <span class="text-primary">mereka?</span></h1>
+            {{-- <h1 class="text-4xl lg:text-4xl font-semibold z-2">Apa kata <span class="text-primary">mereka?</span></h1> --}}
+            <h3 class="text-2xl font-semibold mb-2">Testimonial <span class="text-primary">Metrokil</span></h3>
+            <div class="flex justify-between items-end">
+                <h1 class="text-5xl font-semibold">Apa kata <span class="text-primary">Mereka</span> ?
+                </h1>
+                <div class="gallery-more flex gap-3">
+                    <p class="font-medium text-lg text-primary"><a href="/public/testimonials/galleries">Pelajari
+                            selengkapnya</a>
+                    </p>
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-red.svg') }}" alt=""
+                        width="20">
+                </div>
+            </div>
             <article class="grid grid-cols-8 items-center w-full relative mt-12">
 
                 <div class="min-w-full">
@@ -198,8 +210,8 @@
                     </div>
                 @endforeach
             </div>
-            <div x-show="modalOpen" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-                x-cloak>
+            <div x-show="modalOpen"
+                class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
 
                 <!-- Click outside to close -->
                 <div @click.outside="modalOpen = false"

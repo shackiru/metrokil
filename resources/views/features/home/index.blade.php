@@ -47,7 +47,7 @@
             <div class="about-content flex flex-col justify-between h-full">
                 <h1 class="text-3xl lg:text-4xl font-semibold">Tentang <span class="text-primary">Metrokil</span></h1>
                 <p class="lg:text-lg opacity-70 mt-6 text-justify">Kami adalah <span class="text-primary">perusahaan
-                    pengendalian
+                        pengendalian
                         hama</span>
                     yang
                     berbasis di Jakarta,
@@ -88,14 +88,18 @@
             </a>
         </div>
         <div class="service-content grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4 mt-6">
-            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-right">
+            <div class="service-item flex flex-col md:flex-row justify-between shadow-soft rounded-xl md:h-52 h-full"
+                data-aos="fade-right">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/About.jpg') }}" class="rounded-l-xl h-full object-cover" alt="">
+                    <img src="{{ asset('images/About.jpg') }}"
+                        class="rounded-t-xl md:rounded-tr-none md:rounded-l-xl md:h-full h-64 w-full md:w-fit object-cover"
+                        alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Anti Rayap Imidaclorprid (Import)</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan
+                        <p class="md:text-sm text-md xl:text-lg mt-2">Menggunakan metode drill injection dan power
+                            spraying. Kebersihan
                             pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
@@ -113,14 +117,18 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-left">
+            <div class="service-item flex flex-col md:flex-row justify-between shadow-soft rounded-xl md:h-52 h-full"
+                data-aos="fade-left">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/Home.jpg') }}" class="rounded-l-xl h-full object-cover" alt="">
+                    <img src="{{ asset('images/Home.jpg') }}"
+                        class="rounded-t-xl md:rounded-tr-none md:rounded-l-xl md:h-full h-64 w-full md:w-fit object-cover"
+                        alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Anti Rayap Imidaclorprid (Lokal)</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan
+                        <p class="lg:text-sm text-md xl:text-lg mt-2">Menggunakan metode drill injection dan power
+                            spraying. Kebersihan
                             pasca treatment menjadi tanggung jawab kami. </p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
@@ -138,15 +146,18 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-right">
+            <div class="service-item flex flex-col md:flex-row justify-between shadow-soft rounded-xl md:h-52 h-full"
+                data-aos="fade-right">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/Service.jpg') }}" class="rounded-l-xl h-full object-cover"
+                    <img src="{{ asset('images/Service.jpg') }}"
+                        class="rounded-t-xl md:rounded-tr-none md:rounded-l-xl md:h-full h-64 w-full md:w-fit object-cover"
                         alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Anti Rayap Cypermethrin (Lokal)</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan
+                        <p class="lg:text-sm text-md xl:text-lg mt-2">Menggunakan metode drill injection dan power
+                            spraying. Kebersihan
                             pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
@@ -164,15 +175,18 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-left">
+            <div class="service-item flex flex-col md:flex-row justify-between shadow-soft rounded-xl md:h-52 h-full"
+                data-aos="fade-left">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/Testimoni.jpg') }}" class="rounded-l-xl h-full object-cover"
+                    <img src="{{ asset('images/Testimoni.jpg') }}"
+                        class="rounded-t-xl md:rounded-tr-none md:rounded-l-xl md:h-full h-64 w-full md:w-fit object-cover"
                         alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Paket Pengendalian Hama Tikus</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode perangkap hidup, perangkap mati, dan racun.
+                        <p class="lg:text-sm text-md xl:text-lg mt-2">Menggunakan metode perangkap hidup, perangkap
+                            mati, dan racun.
                             Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">

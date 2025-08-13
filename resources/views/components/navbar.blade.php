@@ -2,7 +2,7 @@
 
 <nav
     class="sticky w-full top-0 lg:top-5 left-0 z-50 bg-white lg:bg-transparent shadow-md lg:shadow-none flex flex-row justify-between tracking-wide lg:px-14 lg:text-sm xl:gap-0 xl:text-md xl:px-44 py-4 px-8">
-    <div class="nav-logo">
+    <div class="nav-logo p-2 bg-white rounded-full cursor-pointer">
         <a href="/public/"><img src="{{ asset('images/logo.png') }}" alt=""></a>
     </div>
 

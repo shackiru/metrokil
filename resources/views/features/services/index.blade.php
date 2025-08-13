@@ -4,25 +4,21 @@
             <div class="lg:col-span-3 col-span-5" data-aos="fade-right">
                 <div class="flex flex-col">
                     <h4 class="text-xl font-semibold">Layanan <span class="text-primary">Metrokil</span></h4>
-                    <h2 class="text-4xl xl:text-5xl font-semibold mt-3">Kenapa harus <span
+                    <h2 class="text-4xl xl:text-5xl font-semibold mt-3">Kenapa pilih <span
                             class="text-primary">Metrokil</span>?</h2>
-                    <p class="xl:text-lg lg:text-md opacity-55 font-semibold mt-5">Kenapa Harus Metrokil? Metrokil telah
-                        dipercaya selama lebih dari dua dekade dalam mengendalikan hama bergaransi. Mulai dari
-                        pengendalian hama rayap, tikus, kecoak, nyamuk, lalat, kutu, tawon/lebah, fumigasi, desinfeksi
-                        dan pengendalian hama lainnya.
-                        <br><br>
-                        Tikus adalah hewan pengerat yang terkenal karena kemampuannya beradaptasi dengan lingkungan
-                        manusia. Mereka dapat ditemukan di berbagai tempat, mulai dari rumah tinggal, gudang, hingga
-                        area pertanian.
-                        <br><br>
-                        Ada berbagai cara yang dapat digunakan untuk membasmi tikus, dari yang tradisional hingga
-                        teknologi modern. Berikut adalah beberapa metode yang umum digunakan:
+                    <p class="xl:text-lg lg:text-md opacity-55 font-semibold mt-5">Bayangkan rumah atau tempat usaha
+                        Anda bebas dari gangguan hama, tanpa bau menyengat, tanpa khawatir pada kesehatan keluarga,
+                        hewan peliharaan, atau tanaman di sekitar. Itulah yang Metrokil hadirkan. <br><br>Kami bukan
+                        sekadar
+                        membasmi, tetapi memastikan hama tidak kembali dengan metode pengendalian terpadu yang aman dan
+                        ramah lingkungan. Tim kami berisi tenaga profesional berpengalaman yang selalu bekerja cepat,
+                        rapi, dan jujur, dengan komitmen penuh pada garansi layanan. Bersama Metrokil, Anda tidak hanya
+                        mendapatkan solusi pest control—Anda mendapatkan ketenangan pikiran.
                     </p>
                 </div>
             </div>
             <div class="col-span-2 justify-self-end lg:block hidden" data-aos="fade-left">
-                <img src="{{ asset('images/Service.jpg') }}"
-                    width="400" class="rounded-xl" alt="">
+                <img src="{{ asset('images/Service.jpg') }}" width="400" class="rounded-xl" alt="">
             </div>
         </div>
     </section>
