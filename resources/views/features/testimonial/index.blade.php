@@ -205,13 +205,13 @@
                         modalTitle = '{{ strip_tags($item->name) }}'; 
                         modalDescription = '{{ strip_tags($item->description) }}';">
                         <img src="http://localhost:8080/storage/{{ $item->image_url }}"
-                            class="rounded-xl h-56 w-full object-cover" alt="">
+                            class="rounded-xl h-96 w-full object-cover" alt="">
                         <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
                     </div>
                 @endforeach
             </div>
             <div x-show="modalOpen"
-                class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-6">
 
                 <!-- Click outside to close -->
                 <div @click.outside="modalOpen = false"
