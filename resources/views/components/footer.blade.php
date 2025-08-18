@@ -2,11 +2,11 @@
     <div class="lg:mx-14 xl:mx-44 mx-8">
         <div class="grid grid-cols-5 gap-12">
             <div class="footer-menu col-span-5 md:col-span-3 grid-rows-3 flex flex-col justify-between">
-                <div class="footer-logo  w-fit flex items-center gap-4">
+                <div class="footer-logo w-fit flex items-center gap-4">
                     <a href="/" class=""><img src="{{ asset('images/logo.png') }}" width="65"
                             class="bg-white p-2 rounded-2xl" alt="">
                     </a>
-                    <div class="footer-navigation grid grid-rows-2" data-aos="fade-up">
+                    <div class="flex flex-col data-aos="fade-up">
                         <p class="text-xl text-white font-semibold">Metrokil</p>
                         <p class="text-white opacity-75">Jasa Pengendali Rayap Untuk Rumah & Bisnis</p>
                     </div>
