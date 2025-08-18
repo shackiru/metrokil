@@ -291,7 +291,7 @@
                     <a href="/blogs/{{ $blog->id }}" data-aos="fade-left">
                         <x-blog-card date="{{ $blog->created_at }}" category="{{ $blog->category }}"
                             image="{{ $blog->image_url }}" author="{{ $blog->user->name }}" isLimitWidth="true">
-                            {{ \Str::limit($blog->title, 50) }}
+                            {{ \Str::limit($blog->title, 49) }}
                         </x-blog-card>
                     </a>
                 @endforeach

@@ -2,7 +2,7 @@
     <div class="lg:mx-14 xl:mx-44 mx-8">
         <div class="grid grid-cols-5 gap-12">
             <div class="footer-menu col-span-5 md:col-span-3 grid-rows-3 flex flex-col justify-between">
-                <div class="footer-logo w-fit flex items-center gap-4">
+                <div class="footer-logo w-fit flex flex-col sm:flex-row items-start sm:items-center gap-4">
                     <a href="/" class=""><img src="{{ asset('images/logo.png') }}" width="65"
                             class="bg-white p-2 rounded-2xl" alt="">
                     </a>
@@ -11,7 +11,8 @@
                         <p class="text-white opacity-75">Jasa Pengendali Rayap Untuk Rumah & Bisnis</p>
                     </div>
                 </div>
-                <div class="mt-6 footer-navigation grid grid-cols-2 lg:grid-cols-4" data-aos="fade-up">
+                <div class="mt-6 footer-navigation grid grid-cols-2 gap-y-6 lg:gap-y-0 lg:grid-cols-4"
+                    data-aos="fade-up">
                     <div class="footer-about flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">About Us</h4>
                         <a href="/about" class="text-white opacity-55 hover:opacity-100 transition-all">Tentang
