@@ -59,31 +59,6 @@
                                         <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
                                             alt="">
                                     </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Mencegah serangga masuk ke dalam rumah</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Membuat pondasi rumah anda lebih kuat</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Menjaga kesehatan keluarga anda</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Memberikan jaminan garansi</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Memberikan pelayanan terbaik</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
                                 </ul>
                             </div>
 
@@ -145,6 +120,11 @@
             </div>
         </main>
     </section>
+
+        @foreach ($services as $service)
+        {{ $service->benefits }}
+
+        @endforeach
 </x-template>
 
 <script>
@@ -152,11 +132,19 @@
     const servicesData = document.querySelector('[data-services]').getAttribute('data-services');
     let services = JSON.parse(servicesData);
 
-    console.log(services);
-
     let rincianLayananList = services.map(service => service.description);
-
-    let manfaatLayananList = services.map(service => service.benefit);
+    let manfaatLayananList = services.map(service => {
+        if (Array.isArray(service.benefits)) {
+            // Kalau sudah array langsung return
+            return service.benefits;
+        } else if (typeof service.benefits === "string" && service.benefits.trim() !== "") {
+            // Kalau string JSON → parse
+            return JSON.parse(service.benefits);
+        } else {
+            // Kalau null, kosong, atau invalid → return array kosong
+            return [];
+        }
+    });
 
     // Scroll to the #pricing section if the URL contains #pricing
     document.addEventListener('DOMContentLoaded', () => {
@@ -192,20 +180,25 @@
                 rincianLayananElement.innerHTML = rincianLayananList[index];
 
                 // Update manfaat layanan list
-                // First clear the existing list
-                manfaatLayananContainer.innerHTML =
-                    '(Dapat menghubungi admin untuk detail manfaat layanan)';
+                manfaatLayananContainer.innerHTML = '';
 
-                // Then add each benefit as a list item
-                manfaatLayananList[index].forEach(benefit => {
-                    console.log(benefit);
-                    manfaatLayananContainer.innerHTML += `
-                    <li class="text-lg font-semibold flex justify-between">
-                        <span>${benefit}</span>
-                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}" alt="">
-                    </li>
-                `;
-                });
+                if (!manfaatLayananList[index] || manfaatLayananList[index].length === 0) {
+                    manfaatLayananContainer.innerHTML = `
+                        <li class="text-lg">
+                            (Dapat menghubungi admin untuk detail manfaat layanan)
+                        </li>
+                    `;
+                } else {
+                    manfaatLayananList[index].forEach(benefit => {
+                        manfaatLayananContainer.innerHTML += `
+                            <li class="text-lg font-medium flex justify-between">
+                                <span>${benefit}</span>
+                                <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}" alt="">
+                            </li>
+                        `;
+                    });
+                }
+
             });
         });
 
