@@ -1,6 +1,6 @@
 <x-template title="Testimonial" active="testimonial">
 
-    <section class="review-client grid grid-cols-3 w-100 mt-18 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <section class="review-client grid grid-cols-3 w-100 mt-4 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <main class="col-span-3">
             {{-- <h1 class="text-4xl lg:text-4xl font-semibold z-2">Apa kata <span class="text-primary">mereka?</span></h1> --}}
             <h3 class="text-2xl font-semibold mb-2">Testimonial <span class="text-primary">Metrokil</span></h3>
@@ -38,12 +38,10 @@
                                 transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”
                             </p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h3>
-                                <p class="text-sm text-gray-600">CEO 10</p>
+                                <h3 class="text-primary font-bold text-xl">Heru Sanjaya</h3>
+                                <p class="text-sm text-gray-600">Ketua RT</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/person-example.png') }}" alt="Foto"
-                            class="h-full object-cover max-h-64 md:max-h-full">
                     </div>
                     <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
                         <div class="grid grid-rows-4 py-20 pl-8">
@@ -53,11 +51,10 @@
                                 Hektar. Terima kasih dan saya akan kembali ke anda apabila saya memiliki gangguan
                                 terhadap anda!”</p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Evo Broken</h3>
-                                <p class="text-sm text-gray-600">CTO of Bank Saya</p>
+                                <h3 class="text-primary font-bold text-xl">Evangeline</h3>
+                                <p class="text-sm text-gray-600">Agent Property</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
                     <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
                         <div class="grid grid-rows-4 py-20 pl-8">
@@ -66,11 +63,10 @@
                                 ratusan ribu pelanggan dan 98% dari pelanggan tersebut puas dengan layanan Metrokil,
                                 terima kasih!”</p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Gagat the GOAT</h3>
-                                <p class="text-sm text-gray-600">CEO of Pembasmi Hama</p>
+                                <h3 class="text-primary font-bold text-xl">Andreas Wirananda</h3>
+                                <p class="text-sm text-gray-600">Kontraktor</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
                     <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
                         <div class="grid grid-rows-4 py-20 pl-8">
@@ -79,11 +75,10 @@
                                 merasa terganggu lagi setelah Metrokil datang ke kebun saya. Kalian hebat, sukses
                                 selalu!”</p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Andreas Wirananda</h3>
-                                <p class="text-sm text-gray-600">Owner of Catering Olive Oil</p>
+                                <h3 class="text-primary font-bold text-xl">Kevin Lee</h3>
+                                <p class="text-sm text-gray-600">Pemilik Catering</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
                 </div>
 
