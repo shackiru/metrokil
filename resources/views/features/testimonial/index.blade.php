@@ -36,7 +36,7 @@
                 <h1 class="text-5xl font-semibold">Apa kata <span class="text-primary">Mereka</span> ?
                 </h1>
                 <div class="gallery-more flex gap-3">
-                    <p class="font-medium text-lg text-primary"><a href="/public/testimonials/galleries">Pelajari
+                    <p class="font-medium text-lg text-primary"><a href="/testimonials/galleries">Pelajari
                             selengkapnya</a>
                     </p>
                     <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-red.svg') }}" alt=""
@@ -184,7 +184,7 @@
         <header class="gallery-header flex justify-between items-center">
             <h1 class="text-4xl lg:text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
             <div class="gallery-more flex gap-3">
-                <p class="font-medium text-lg text-primary"><a href="/public/testimonials/galleries">Pelajari
+                <p class="font-medium text-lg text-primary"><a href="/testimonials/galleries">Pelajari
                         selengkapnya</a>
                 </p>
                 <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-red.svg') }}" alt=""

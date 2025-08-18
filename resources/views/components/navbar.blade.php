@@ -21,19 +21,18 @@
         class="hidden lg:flex flex-col lg:flex-row items-center absolute top-full left-0 w-full lg:w-auto bg-white shadow-lg lg:shadow-soft rounded-lg px-8 lg:px-8 xl:px-12 py-6 lg:py-0 lg:static transition-all duration-300 z-[-1] lg:z-auto">
         <ul
             class="flex flex-col lg:flex-row gap-8 lg:gap-8 xl:gap-12 items-center justify-center font-semibold text-md xl:text-md">
-            <li class="@if ($active == 'home') active @endif hover:active"><a href="/public/">Beranda</a></li>
-            <li class="@if ($active == 'about') active @endif hover:active"><a href="/public/about">Tentang</a>
+            <li class="@if ($active == 'home') active @endif hover:active"><a href="/">Beranda</a></li>
+            <li class="@if ($active == 'about') active @endif hover:active"><a href="/about">Tentang</a>
             </li>
-            <li class="@if ($active == 'services') active @endif hover:active"><a
-                    href="/public/services">Layanan</a>
+            <li class="@if ($active == 'services') active @endif hover:active"><a href="/services">Layanan</a>
             </li>
             <li class="@if ($active == 'pricing') active @endif hover:active"><a
-                    href="/public/services#pricing">Harga</a></li>
+                    href="/services#pricing">Harga</a></li>
             <li class="@if ($active == 'testimonial') active @endif hover:active"><a
-                    href="/public/testimonials">Testimoni</a></li>
-            <li class="@if ($active == 'blog') active @endif hover:active"><a href="/public/blogs">Blog</a>
+                    href="/testimonials">Testimoni</a></li>
+            <li class="@if ($active == 'blog') active @endif hover:active"><a href="/blogs">Blog</a>
             </li>
-            <li class="@if ($active == 'contact') active @endif hover:active"><a href="/public/contact">Kontak
+            <li class="@if ($active == 'contact') active @endif hover:active"><a href="/contact">Kontak
                     Kami</a>
             </li>
         </ul>
@@ -41,7 +40,7 @@
 
     <div class="nav-button h-100 tracking-normal hover:shadow-regular transition hidden lg:block">
         <a
-            href="/publichttps://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0">
+            href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0">
             <button class="button bg-primary text-white px-5 h-full rounded-lg font-semibold">Hubungi Kami</button>
         </a>
     </div>

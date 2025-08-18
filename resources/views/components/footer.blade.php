@@ -3,7 +3,7 @@
         <div class="grid grid-cols-5 gap-12">
             <div class="footer-menu col-span-5 md:col-span-3 grid-rows-3 flex flex-col justify-between">
                 <div class="footer-logo  w-fit flex items-center gap-4">
-                    <a href="/public" class=""><img src="{{ asset('images/logo.png') }}" width="65"
+                    <a href="/" class=""><img src="{{ asset('images/logo.png') }}" width="65"
                             class="bg-white p-2 rounded-2xl" alt="">
                     </a>
                     <div class="footer-navigation grid grid-rows-2" data-aos="fade-up">
@@ -14,34 +14,31 @@
                 <div class="mt-6 footer-navigation grid grid-cols-2 lg:grid-cols-4" data-aos="fade-up">
                     <div class="footer-about flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">About Us</h4>
-                        <a href="/public/about" class="text-white opacity-55 hover:opacity-100 transition-all">Tentang
+                        <a href="/about" class="text-white opacity-55 hover:opacity-100 transition-all">Tentang
                             Metrokil</a>
-                        <a href="/public/about#visi-metrokil"
+                        <a href="/about#visi-metrokil"
                             class="text-white opacity-55 hover:opacity-100 transition-all">Visi dan Misi</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Services</h4>
-                        <a href="/public/services"
-                            class="text-white opacity-55 hover:opacity-100 transition-all">Layanan
+                        <a href="/services" class="text-white opacity-55 hover:opacity-100 transition-all">Layanan
                             Metrokil</a>
-                        <a href="/public/services#pricing"
-                            class="text-white opacity-55 hover:opacity-100 transition-all">Harga
+                        <a href="/services#pricing" class="text-white opacity-55 hover:opacity-100 transition-all">Harga
                             layanan</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Testimonial</h4>
-                        <a href="/public/testimonials"
-                            class="text-white opacity-55 hover:opacity-100 transition-all">Testimoni
+                        <a href="/testimonials" class="text-white opacity-55 hover:opacity-100 transition-all">Testimoni
                             Pelanggan</a>
-                        <a href="/public/testimonials/galleries"
+                        <a href="/testimonials/galleries"
                             class="text-white opacity-55 hover:opacity-100 transition-all">Gallery
                             Metrokil</a>
                     </div>
                     <div class="footer-service flex flex-col gap-2">
                         <h4 class="text-white font-semibold text-lg">Blog</h4>
-                        <a href="/public/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Berita
+                        <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Berita
                             Metrokil</a>
-                        <a href="/public/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Informasi
+                        <a href="/blogs" class="text-white opacity-55 hover:opacity-100 transition-all">Informasi
                             Metrokil</a>
                     </div>
                 </div>
