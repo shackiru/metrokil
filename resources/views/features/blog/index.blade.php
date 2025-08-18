@@ -21,8 +21,7 @@
     <div class="mt-12 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36">
         <div class="flex flex-wrap -mx-2" data-aos="fade-up">
             @foreach ($blogs as $blog)
-                <a href="/public/blogs/{{ $blog->id }}"
-                    class="w-full md:w-1/3 xl:w-1/3 2xl:w-1/4 flex-shrink-0 px-2 mb-4">
+                <a href="/blogs/{{ $blog->id }}" class="w-full md:w-1/3 xl:w-1/3 2xl:w-1/4 flex-shrink-0 px-2 mb-4">
                     <x-blog-card date="{{ $blog->created_at }}" category="{{ $blog->category }}"
                         image="{{ $blog->image_url }}" author="{{ $blog->user->name }}" isLimitWidth="false">
                         {{ \Str::limit($blog->title, 60) }}
