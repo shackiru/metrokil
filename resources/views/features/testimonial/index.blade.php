@@ -287,11 +287,23 @@
         function scrollTestimonials(direction) {
             const slider = document.getElementById('testimonials-slider');
             const cardWidth = slider.offsetWidth; 
-            slider.scrollBy({
-                left: direction * cardWidth,
+            const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+            let newScrollLeft = slider.scrollLeft + direction * cardWidth;
+
+            if (newScrollLeft > maxScroll) {
+                // kalau sudah di ujung kanan → balik ke awal
+                newScrollLeft = 0;
+            } else if (newScrollLeft < 0) {
+                // kalau sudah di ujung kiri → lompat ke akhir
+                newScrollLeft = maxScroll;
+            }
+
+            slider.scrollTo({
+                left: newScrollLeft,
                 behavior: 'smooth'
             });
-    }
+        }
 
         function scrollReview(direction) {
             const container = document.getElementById('testimonials-container');
