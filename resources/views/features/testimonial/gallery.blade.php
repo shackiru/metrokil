@@ -12,8 +12,8 @@
         <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
             @foreach ($gallery->take(3) as $item)
                 <div class="gallery-pictures cursor-pointer gap-6"
-                    @click="selectedImage = 'http://localhost:8080/storage/{{ $item->image_url }}'">
-                    <img src="http://localhost:8080/storage/{{ $item->image_url }}"
+                    @click="selectedImage = '{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}'">
+                    <img src="{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}"
                         class="rounded-xl h-56 w-full object-cover" alt="">
                     <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
                 </div>
@@ -29,8 +29,12 @@
         <div class="gallery-content grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
             @foreach ($gallery as $item)
                 <div class="gallery-pictures cursor-pointer gap-6 mb-6 lg:mb-12 grid-cols-3"
-                    @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
-                    <img src="http://localhost:8080/storage/{{ $item->image_url }}"
+                   @click="
+                    modalOpen = true;
+                    modalImage = '{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}';
+                    modalTitle = '{{ strip_tags($item->name) }}'; 
+                    modalDescription = '{{ strip_tags($item->description) }}';">
+                    <img src="{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}"
                         class="rounded-xl h-96 w-full object-cover" alt="">
                     <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
                 </div>

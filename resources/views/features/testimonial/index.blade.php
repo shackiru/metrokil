@@ -1,19 +1,12 @@
 <x-template title="Testimonial" active="testimonial">
 
-    <section class="review-client grid grid-cols-3 w-100 mt-18 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <section class="review-client grid grid-cols-3 w-100 mt-4 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <main class="col-span-3">
             {{-- <h1 class="text-4xl lg:text-4xl font-semibold z-2">Apa kata <span class="text-primary">mereka?</span></h1> --}}
             <h3 class="text-2xl font-semibold mb-2">Testimonial <span class="text-primary">Metrokil</span></h3>
             <div class="flex justify-between items-end">
                 <h1 class="text-5xl font-semibold">Apa kata <span class="text-primary">Mereka</span> ?
                 </h1>
-                <div class="gallery-more flex gap-3">
-                    <p class="font-medium text-lg text-primary"><a href="/public/testimonials/galleries">Pelajari
-                            selengkapnya</a>
-                    </p>
-                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-red.svg') }}" alt=""
-                        width="20">
-                </div>
             </div>
             <article class="grid grid-cols-8 items-center w-full relative mt-12">
 
@@ -42,8 +35,6 @@
                                 <p class="text-sm text-gray-600">CEO 10</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/person-example.png') }}" alt="Foto"
-                            class="h-full object-cover max-h-64 md:max-h-full">
                     </div>
                     <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
                         <div class="grid grid-rows-4 py-20 pl-8">
@@ -56,7 +47,6 @@
                                 <p class="text-sm text-gray-600">CTO of Bank Saya</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
                     <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
                         <div class="grid grid-rows-4 py-20 pl-8">
@@ -69,7 +59,6 @@
                                 <p class="text-sm text-gray-600">CEO of Pembasmi Hama</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
                     <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
                         <div class="grid grid-rows-4 py-20 pl-8">
@@ -82,7 +71,6 @@
                                 <p class="text-sm text-gray-600">Owner of Catering Olive Oil</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
                 </div>
 
