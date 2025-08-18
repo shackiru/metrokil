@@ -1,5 +1,5 @@
 <x-template title="Service" active="services">
-    <section class="mt-24 lg:mx-14 xl:mx-44 mx-8" data-services="{{ json_encode($services) }}">
+    <section class="mt-10 md:mt-20 lg:mt-32 lg:mx-14 xl:mx-44 mx-8" data-services="{{ json_encode($services) }}">
         <div class="grid grid-cols-5 justify-between lg:gap-6">
             <div class="lg:col-span-3 col-span-5" data-aos="fade-right">
                 <div class="flex flex-col">
@@ -23,8 +23,8 @@
         </div>
     </section>
 
-    <section class="mt-16 lg:mt-24 lg:mx-14 xl:mx-44 mx-8">
-        <main class="pricing" id="pricing">
+    <section class="pt-16 lg:pt-36 lg:mx-14 xl:mx-44 mx-8" id="pricing">
+        <main class="pricing">
             <header class="pricing-header">
                 <h2 class="font-semibold text-3xl xl:text-4xl">Pricelist <span class="text-primary">Metrokil</span></h2>
             </header>
@@ -193,10 +193,12 @@
 
                 // Update manfaat layanan list
                 // First clear the existing list
-                manfaatLayananContainer.innerHTML = '';
+                manfaatLayananContainer.innerHTML =
+                    '(Dapat menghubungi admin untuk detail manfaat layanan)';
 
                 // Then add each benefit as a list item
                 manfaatLayananList[index].forEach(benefit => {
+                    console.log(benefit);
                     manfaatLayananContainer.innerHTML += `
                     <li class="text-lg font-semibold flex justify-between">
                         <span>${benefit}</span>
@@ -206,5 +208,7 @@
                 });
             });
         });
+
+        pricingCards[0].click();
     });
 </script>

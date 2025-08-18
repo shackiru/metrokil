@@ -1,5 +1,6 @@
 <x-template title="Homepage" active="home">
-    <div class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-20 lg:mt-32 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <div
+        class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-10 md:mt-20 lg:mt-32 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <div class="col-span-3 lg:col-span-3 xl:col-span-2" data-aos="fade-right">
             <div class="hero">
                 <div class="hero-content">
@@ -11,7 +12,9 @@
                     <p class="text-md xl:text-lg mt-6 lg:mt-10 opacity-55 font-medium text-justify">Selamat
                         datang di
                         website PT Metropolitan Agro Kimia Lestari <span
-                            class="text-primary font-semibold">Metrokil</span>, perusahaan pest control yang telah
+                            class="text-primary font-semibold opacity-100!">Metrokil</span>, perusahaan pest control
+                        yang
+                        telah
                         menjadi
                         salah satu pemimpin dalam
                         industri ini sejak tahun 1997. Dengan pengalaman dan dedikasi kami selama lebih dari dua dekade,
@@ -57,7 +60,7 @@
                     Kami telah memiliki beberapa cabang dari <span class="text-primary">Jakarta, Bandung,
                         Jogja</span>, hingga <span class="text-primary">Malang</span>.
                     <br><br>
-                    Metrokil memiliki beberapa layanan termasuk <span class="text-primary">pembasmian tikus</span>,
+                    Metrokil memiliki beberapa layanan termasuk <span class="text-primary">pengendalian tikus</span>,
                     <span class="text-primary">serangga berkaki sepuluh</span>, dan
                     <span class="text-primary">rayap</span>. Mulai gunakan layanan Metrokil sekarang, dengan begitu
                     lingkungan Anda menjadi <span class="text-primary">nyaman dan

@@ -1,7 +1,7 @@
 <x-template title="Contact" active="contact">
-    <div class="mt-24 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36">
+    <div class=" mt-10 md:mt-20 lg:mt-32 lg:mx-14 xl:mx-44 mx-8 mb-20 lg:mb-36">
         <div class="contact-header">
-            <h2 class="font-semibold text-4xl">Contact <span class="text-primary">Us</span></h2>
+            <h2 class="font-semibold text-4xl">Hubungi <span class="text-primary">Kami</span></h2>
         </div>
         <div class="contact-content mt-6">
             <div class="grid lg:grid-cols-2 gap-8 items-stretch">
@@ -42,7 +42,7 @@
                     <!-- Contact Info -->
                     <div class="contact-call mb-2">
                         <h3 class="font-semibold text-3xl">Hubungi <span class="text-primary">Metrokil</span></h3>
-                        <div class="contacts grid grid-cols-2 mt-4 gap-6">
+                        <div class="contacts grid md:grid-cols-2 mt-4 gap-6">
                             <!-- Jabodetabek Section -->
                             <div class="contact-location">
                                 <h3 class="text-xl font-bold mb-4 text-primary">Jabodetabek</h3>
@@ -84,7 +84,7 @@
                                 <div class="contact-item flex gap-4 items-center mb-3">
                                     <img src="{{ asset('icons/Iconsax/Svg/All/linear/call-primary.svg') }}"
                                         alt="">
-                                    <p class="font-semibold">085716944933</p>
+                                    <p class="font-semibold">081283955670</p>
                                 </div>
                             </div>
 
@@ -100,42 +100,9 @@
                                 <div class="contact-item flex gap-4 items-center mb-3">
                                     <img src="{{ asset('icons/Iconsax/Svg/All/linear/call-primary.svg') }}"
                                         alt="">
-                                    <p class="font-semibold">085716944933</p>
+                                    <p class="font-semibold">081283955670</p>
                                 </div>
                             </div>
-                            {{-- <div class="flex flex-col gap-4">
-                                <div class="contact-item flex gap-4 items-center">
-                                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/call-primary.svg') }}"
-                                        alt="">
-                                    <p class="font-semibold">+62 812 3456 7890</p>
-                                </div>
-                                <div class="contact-item flex gap-4 items-center">
-                                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/directbox-notif-primary.svg') }}"
-                                        alt="">
-                                    <p class="font-semibold">contact.admin@metrokil.co.id</p>
-                                </div>
-                                <div class="contact-item flex gap-4 items-center">
-                                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/clock-primary.svg') }}"
-                                        alt="">
-                                    <p class="font-semibold">Senin - Jumat, 09:00 - 17:00 (WIB)</p>
-                                </div>
-                            </div>
-                            <div class="flex flex-col">
-                                <div class="contact-item flex gap-4 items-start">
-                                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/location-primary.svg') }}"
-                                        class="mt-1" alt="">
-                                    <div>
-                                        <p class="font-semibold">Jabodetabek</p>
-                                        <p class="font-semibold">Bandung Raya</p>
-                                        <p class="font-semibold">Surabaya Raya</p>
-                                        <p class="font-semibold">Malang Raya</p>
-                                        <p class="font-semibold">Semarang Raya</p>
-                                        <p class="font-semibold">Yogyakarta-Solo Raya</p>
-                                        <p class="font-semibold">Jambi</p>
-                                        <p class="font-semibold">Palembang</p>
-                                    </div>
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
 

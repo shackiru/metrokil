@@ -1,7 +1,7 @@
 @props(['active', 'price'])
 
 <div data-id="{{ $attributes->get('id') }}"
-    class="pricing-card px-6 py-9 flex md:items-center ring-1 ring-black ring-opacity-20 rounded-xl justify-between flex-col items-start md:flex-row cursor-pointer ml-1 @if ($active) bg-primary text-white @endif">
+    class="pricing-card px-4 md:px-6 py-5 md:py-9 flex md:items-center ring-1 ring-black ring-opacity-20 rounded-xl justify-between flex-col items-start md:flex-row cursor-pointer ml-1 @if ($active) bg-primary text-white @endif">
     <div class="pricing-type flex gap-4">
         <div class="pricing-radio mt-2 md:mt-0">
             <input type="radio" name="pricing" id="pricingRadio{{ $attributes->get('id') }}"
@@ -22,7 +22,7 @@
         </div>
         <p class="font-semibold text-lg">{{ $slot }}</p>
     </div>
-    <div class="pricing-price text-right ml-12 md:ml-0">
+    <div class="pricing-price sm:text-right ml-12 md:ml-0 mt-2 sm:mt-0">
         <p class="font-semibold">
             @if ($price == 0)
                 <span class="opacity-50">Hubungi kami untuk harga</span>
