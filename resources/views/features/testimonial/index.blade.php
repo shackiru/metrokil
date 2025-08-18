@@ -1,17 +1,17 @@
 <x-template title="Testimonial" active="testimonial">
 
-    <section class="review-client grid grid-cols-3 w-100 mt-2 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <section class="review-client grid grid-cols-3 lg:w-100 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <main class="col-span-3">
-            {{-- <h1 class="text-4xl lg:text-4xl font-semibold z-2">Apa kata <span class="text-primary">mereka?</span></h1> --}}
             <h3 class="text-2xl font-medium mb-2">Testimonial <span class="text-primary">Metrokil</span></h3>
             <div class="flex justify-between items-end">
-                <h1 class="text-5xl lg:text-5xl font-semibold text-justify">Apa kata <span class="text-primary">Mereka</span> ?</h1>
+                <h1 class="text-4xl lg:text-5xl font-semibold">Apa kata <span class="text-primary">Mereka</span> ?</h1>
             </div>
-            <article class="grid grid-cols-8 items-center w-full relative mt-12">
-
-                <div class="min-w-full">
+            
+           <article class="grid grid-cols-6 items-center w-full relative mt-8">
+                {{-- Tombol Prev (desktop/laptop) --}}
+                <div>
                     <button onclick="scrollTestimonials(-1)"
-                        class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary  transition duration-200">
+                        class="hidden lg:flex absolute lg:-left-12 xl:-left-24 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -23,11 +23,12 @@
                 <div id="testimonials-slider"
                     class="flex col-span-6 overflow-x-auto gap-6 scroll-smooth snap-x snap-mandatory"
                     style="scrollbar-width: none; -ms-overflow-style: none;">
-                    <div
-                        class="flex flex-col-reverse md:grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl md:gap-6 h-fit md:h-full">
-                        <div class="grid grid-rows-4 py-12 md:py-20 pl-8">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Tim Metrokil sangat profesional,
-                                transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”
+                    
+                    {{-- Card 1 --}}
+                    <div class="flex flex-col-reverse items-center min-w-full snap-start bg-white border-2 rounded-xl md:gap-6 h-fit md:h-full">
+                        <div class="py-12 md:py-20 px-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84 text-justify">
+                                “Tim Metrokil sangat profesional, transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”
                             </p>
                             <div>
                                 <h3 class="text-primary font-bold text-xl">Heru Sanjaya</h3>
@@ -35,48 +36,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
-                        <div class="grid grid-rows-4 py-20 pl-8">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Pelayanan yang sangat
-                                professional dari Metrokil. Metrokil dapat mengendalikan hama di Kantor saya yang seluas
-                                2000
-                                Hektar. Terima kasih dan saya akan kembali ke anda apabila saya memiliki gangguan
-                                terhadap anda!”</p>
+
+                    {{-- Card 2 --}}
+                    <div class="flex flex-col-reverse items-center min-w-full snap-start bg-white border-2 rounded-xl md:gap-6 h-fit md:h-full">
+                        <div class="py-12 md:py-20 px-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84 text-justify">
+                                “Layanan sangat memuaskan, pekerjaannya rapi dan hasilnya benar-benar terasa. Properti saya jadi lebih aman.”
+                            </p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Evangeline</h3>
-                                <p class="text-sm text-gray-600">Agent Property</p>
+                                <h3 class="text-primary font-bold text-xl">Slamet Raharjo</h3>
+                                <p class="text-sm text-gray-600">Pemilik Kebun</p>
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
-                        <div class="grid grid-rows-4 py-20 pl-8">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Sebagai masyarakat Indonesia,
-                                saya sangat bangga dengan perusahaan ini karena telah berhasil melayani lebih dari
-                                ratusan ribu pelanggan dan 98% dari pelanggan tersebut puas dengan layanan Metrokil,
-                                terima kasih!”</p>
+
+                    {{-- Card 3 --}}
+                    <div class="flex flex-col-reverse items-center min-w-full snap-start bg-white border-2 rounded-xl md:gap-6 h-fit md:h-full">
+                        <div class="py-12 md:py-20 px-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84 text-justify">
+                                “Harga bersaing dan pelayanan ramah. Saya rekomendasikan Metrokil untuk siapa pun yang butuh jasa anti rayap.”
+                            </p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Andreas Wirananda</h3>
-                                <p class="text-sm text-gray-600">Kontraktor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
-                        <div class="grid grid-rows-4 py-20 pl-8">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Saya dan istri saya selalu
-                                terganggu dengan rayap yang ada di kebun saya. Namun, saya sangat terharu dan tidak
-                                merasa terganggu lagi setelah Metrokil datang ke kebun saya. Kalian hebat, sukses
-                                selalu!”</p>
-                            <div>
-                                <h3 class="text-primary font-bold text-xl">Kevin Lee</h3>
-                                <p class="text-sm text-gray-600">Pemilik Catering</p>
+                                <h3 class="text-primary font-bold text-xl">Budi Santoso</h3>
+                                <p class="text-sm text-gray-600">Pengelola Peternakan</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                {{-- Tombol Next (desktop/laptop) --}}
                 <div>
                     <button onclick="scrollTestimonials(1)"
-                        class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
+                        class="hidden lg:flex absolute lg:-right-12 xl:-right-24 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -84,12 +75,30 @@
                     </button>
                 </div>
 
+                {{-- Tombol Prev/Next (tablet & mobile → tampil di bawah card) --}}
+                <div class="flex justify-center gap-6 mt-6 col-span-6 lg:hidden">
+                    <button onclick="scrollTestimonials(-1)"
+                        class="bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button onclick="scrollTestimonials(1)"
+                        class="bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
             </article>
+
         </main>
     </section>
 
 
-    <section class="testimonial-client mt-24 w-full bg-primary">
+    <section class="testimonial-client mt-12 lg:mt-24 w-full bg-primary">
         <main class="py-20 pl-8 w-full">
             <header class="px-8 lg:px-14 xl:px-44 relative">
                 <span
@@ -276,17 +285,17 @@
         }
 
         function scrollTestimonials(direction) {
-            const container = document.getElementById("testimonials-slider");
-            const scrollAmount = 620; // Sesuaikan sesuai min-width testimonial
-            container.scrollBy({
-                left: direction * scrollAmount,
+            const slider = document.getElementById('testimonials-slider');
+            const cardWidth = slider.offsetWidth; 
+            slider.scrollBy({
+                left: direction * cardWidth,
                 behavior: 'smooth'
             });
-        }
+    }
 
         function scrollReview(direction) {
             const container = document.getElementById('testimonials-container');
-            const scrollAmount = 600; // Atur sesuai kebutuhan
+            const scrollAmount = 600;
             if (direction === 'left') {
                 container.scrollBy({
                     left: -scrollAmount,
