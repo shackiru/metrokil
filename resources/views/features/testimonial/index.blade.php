@@ -38,8 +38,8 @@
                                 transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”
                             </p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h3>
-                                <p class="text-sm text-gray-600">CEO 10</p>
+                                <h3 class="text-primary font-bold text-xl">Heru Sanjaya</h3>
+                                <p class="text-sm text-gray-600">Ketua RT</p>
                             </div>
                         </div>
                     </div>
@@ -50,8 +50,8 @@
                                 Hektar. Terima kasih dan saya akan kembali ke anda apabila saya memiliki gangguan
                                 terhadap anda!”</p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Evo Broken</h3>
-                                <p class="text-sm text-gray-600">CTO of Bank Saya</p>
+                                <h3 class="text-primary font-bold text-xl">Evangeline</h3>
+                                <p class="text-sm text-gray-600">Agent Property</p>
                             </div>
                         </div>
                     </div>
@@ -62,8 +62,8 @@
                                 ratusan ribu pelanggan dan 98% dari pelanggan tersebut puas dengan layanan Metrokil,
                                 terima kasih!”</p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Gagat the GOAT</h3>
-                                <p class="text-sm text-gray-600">CEO of Pembasmi Hama</p>
+                                <h3 class="text-primary font-bold text-xl">Andreas Wirananda</h3>
+                                <p class="text-sm text-gray-600">Kontraktor</p>
                             </div>
                         </div>
                     </div>
@@ -74,8 +74,8 @@
                                 merasa terganggu lagi setelah Metrokil datang ke kebun saya. Kalian hebat, sukses
                                 selalu!”</p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Andreas Wirananda</h3>
-                                <p class="text-sm text-gray-600">Owner of Catering Olive Oil</p>
+                                <h3 class="text-primary font-bold text-xl">Kevin Lee</h3>
+                                <p class="text-sm text-gray-600">Pemilik Catering</p>
                             </div>
                         </div>
                     </div>
