@@ -38,7 +38,8 @@
                     <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
                         <div class="grid grid-rows-4 py-20 pl-8">
                             <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Pelayanan yang sangat
-                                professional dari Metrokil. Metrokil dapat membasmi hama di Kantor saya yang seluas 2000
+                                professional dari Metrokil. Metrokil dapat mengendalikan hama di Kantor saya yang seluas
+                                2000
                                 Hektar. Terima kasih dan saya akan kembali ke anda apabila saya memiliki gangguan
                                 terhadap anda!”</p>
                             <div>
@@ -159,7 +160,7 @@
             <div class="gallery-content grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
                 @foreach ($galleries as $item)
                     <div class="gallery-pictures cursor-pointer gap-6 mt-4 lg:mb-12 grid-cols-3"
-                       @click="
+                        @click="
                         modalOpen = true;
                         modalImage = '{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}';
                         modalTitle = '{{ strip_tags($item->name) }}'; 

@@ -39,7 +39,7 @@
     <div class="w-100 lg:mt-10 font-raleway overflow-x-clip">
         <x-navbar :active="$active"></x-navbar>
 
-        <div class="mt-36">
+        <div class="mt-10 md:mt-20 lg:mt-36">
             {{ $slot }}
         </div>
 

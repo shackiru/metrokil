@@ -3,7 +3,7 @@
 <nav
     class="sticky w-full top-0 lg:top-5 left-0 z-50 bg-white lg:bg-transparent shadow-md lg:shadow-none flex flex-row justify-between tracking-wide lg:px-14 lg:text-sm xl:gap-0 xl:text-md xl:px-44 py-4 px-8">
     <div class="nav-logo p-2 bg-white rounded-full cursor-pointer">
-        <a href="/public/"><img src="{{ asset('images/logo.png') }}" alt=""></a>
+        <a href="/"><img src="{{ asset('images/logo.png') }}" alt=""></a>
     </div>
 
     <button id="menu-toggle" class="lg:hidden focus:outline-none z-50 relative">
@@ -32,15 +32,15 @@
                     href="/testimonials">Testimoni</a></li>
             <li class="@if ($active == 'blog') active @endif hover:active"><a href="/blogs">Blog</a>
             </li>
-            <li class="@if ($active == 'contact') active @endif hover:active"><a href="/contact">Kontak
-                    Kami</a>
+            <li class="@if ($active == 'contact') active @endif hover:active"><a href="/contact">Kontak</a>
             </li>
         </ul>
     </div>
 
     <div class="nav-button h-100 tracking-normal hover:shadow-regular transition hidden lg:block">
-        <a
-            href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0">
+        {{-- <a
+            href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0"> --}}
+        <a href="/contact">
             <button class="button bg-primary text-white px-5 h-full rounded-lg font-semibold">Hubungi Kami</button>
         </a>
     </div>
