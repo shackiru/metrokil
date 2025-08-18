@@ -1,32 +1,4 @@
 <x-template title="Testimonial" active="testimonial">
-    {{-- <section class="grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
-        <main class="md:col-span-2 col-span-3" data-aos="fade-right">
-            <div class="hero">
-                <h3 class="text-2xl font-semibold mb-2">Testimonial <span class="text-primary">Metrokil</span></h3>
-                <h1 class="text-5xl font-semibold">An <span class="text-primary">Innovation</span> for Your
-                    Environment
-                </h1>
-                <p class="text-lg mt-4 opacity-55 font-medium">Tikus merupakan salah satu hama yang dapat
-                    menimbulkan masalah serius di lingkungan rumah, pertanian, maupun industri. Kehadiran tikus
-                    tidak hanya mengganggu kenyamanan, tetapi juga berisiko bagi kesehatan dan merusak barang-barang
-                    berharga.
-                </p>
-                <p class="text-lg mt-4 opacity-55 font-medium">Tikus adalah hewan pengerat yang terkenal karena
-                    kemampuannya beradaptasi dengan lingkungan manusia. Mereka dapat ditemukan di berbagai tempat,
-                    mulai dari rumah tinggal, gudang, hingga area pertanian.
-                </p>
-                <p class="text-lg mt-4 opacity-55 font-medium">Ada berbagai cara yang dapat digunakan untuk membasmi
-                    tikus, dari yang tradisional hingga teknologi modern. Berikut adalah beberapa metode yang umum
-                    digunakan:
-                </p>
-            </div>
-        </main>
-        <aside class="md:col-span-1 hidden md:block" data-aos="fade-left">
-            <div class="hero-image">
-                <img src="{{ asset('images/Testimoni.jpg') }}" class="rounded-lg" alt="">
-            </div>
-        </aside>
-    </section> --}}
 
     <section class="review-client grid grid-cols-3 w-100 mt-18 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <main class="col-span-3">
@@ -200,11 +172,12 @@
             <div class="gallery-content grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
                 @foreach ($galleries as $item)
                     <div class="gallery-pictures cursor-pointer gap-6 mt-4 lg:mb-12 grid-cols-3"
-                        @click="modalOpen = true; 
-                        modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; 
+                       @click="
+                        modalOpen = true;
+                        modalImage = '{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}';
                         modalTitle = '{{ strip_tags($item->name) }}'; 
                         modalDescription = '{{ strip_tags($item->description) }}';">
-                        <img src="http://localhost:8080/storage/{{ $item->image_url }}"
+                        <img src="{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}"
                             class="rounded-xl h-96 w-full object-cover" alt="">
                         <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
                     </div>
