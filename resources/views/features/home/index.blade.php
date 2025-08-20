@@ -23,8 +23,7 @@
                         nyaman. Kami sangat peduli terhadap kepuasan pelanggan, dan itulah mengapa pelayanan terbaik
                         merupakan prioritas utama kami.</p>
                     <div class="flex gap-6 mt-6 lg:mt-10">
-                        <a
-                            href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0"><button
+                        <a href="/contact"><button
                                 class="hover:shadow-regular transition button bg-primary text-white px-6 py-3 text-sm md:px-6 md:py-4 md:h-full rounded-lg font-semibold">Hubungi
                                 Kami</button></a>
                         <a href="/services#pricing"><button

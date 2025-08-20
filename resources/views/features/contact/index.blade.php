@@ -142,7 +142,7 @@
 Terima kasih`;
 
         const encodedMessage = encodeURIComponent(message);
-        const targetPhone = '6285716944933';
+        const targetPhone = '6281283955670';
         const whatsappURL =
             `https://api.whatsapp.com/send/?phone=${targetPhone}&text=${encodedMessage}&type=phone_number&app_absent=0`;
 
