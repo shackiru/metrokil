@@ -123,23 +123,32 @@
 </x-template>
 
 <script>
-    // Get services data from a data attribute
-    const servicesData = document.querySelector('[data-services]').getAttribute('data-services');
-    let services = JSON.parse(servicesData);
+    const servicesData = document.querySelector('[data-services]').getAttribute('data-services') || "[]";
+    let services = [];
+
+    try {
+        services = JSON.parse(servicesData);
+    } catch (e) {
+        console.error("Invalid JSON in data-services:", e);
+        services = [];
+    }
 
     let rincianLayananList = services.map(service => service.description);
     let manfaatLayananList = services.map(service => {
-        if (Array.isArray(service.benefits)) {
-            // Kalau sudah array langsung return
-            return service.benefits;
-        } else if (typeof service.benefits === "string" && service.benefits.trim() !== "") {
-            // Kalau string JSON → parse
-            return JSON.parse(service.benefits);
-        } else {
-            // Kalau null, kosong, atau invalid → return array kosong
+        try {
+            if (Array.isArray(service.benefits)) {
+                return service.benefits;
+            } else if (typeof service.benefits === "string" && service.benefits.trim() !== "") {
+                return JSON.parse(service.benefits);
+            } else {
+                return [];
+            }
+        } catch (e) {
+            console.error("Error parsing benefits:", service.benefits, e);
             return [];
         }
     });
+
 
     // Scroll to the #pricing section if the URL contains #pricing
     document.addEventListener('DOMContentLoaded', () => {
