@@ -1,9 +1,9 @@
 @props(['active'])
 
 <nav
-    class="sticky w-full top-0 lg:top-5 left-0 z-50 bg-white lg:bg-transparent shadow-md lg:shadow-none flex flex-row justify-between tracking-wide lg:px-14 lg:text-sm xl:gap-0 xl:text-md xl:px-44 py-4 px-8">
-    <div class="nav-logo">
-        <a href="/public/"><img src="{{ asset('images/logo.png') }}" alt=""></a>
+    class="sticky w-full top-0 lg:top-5 left-0 z-50 bg-white lg:bg-transparent shadow-md lg:shadow-none flex flex-row justify-between tracking-wide lg:px-14 lg:text-sm xl:gap-0 xl:text-md xl:px-44 py-2 sm:py-4 px-8">
+    <div class="nav-logo p-2 bg-white rounded-full cursor-pointer w-14 sm:w-fit">
+        <a href="/"><img src="{{ asset('images/logo.png') }}" alt=""></a>
     </div>
 
     <button id="menu-toggle" class="lg:hidden focus:outline-none z-50 relative">
@@ -21,27 +21,26 @@
         class="hidden lg:flex flex-col lg:flex-row items-center absolute top-full left-0 w-full lg:w-auto bg-white shadow-lg lg:shadow-soft rounded-lg px-8 lg:px-8 xl:px-12 py-6 lg:py-0 lg:static transition-all duration-300 z-[-1] lg:z-auto">
         <ul
             class="flex flex-col lg:flex-row gap-8 lg:gap-8 xl:gap-12 items-center justify-center font-semibold text-md xl:text-md">
-            <li class="@if ($active == 'home') active @endif hover:active"><a href="/public/">Beranda</a></li>
-            <li class="@if ($active == 'about') active @endif hover:active"><a href="/public/about">Tentang</a>
+            <li class="@if ($active == 'home') active @endif hover:active"><a href="/">Beranda</a></li>
+            <li class="@if ($active == 'about') active @endif hover:active"><a href="/about">Tentang</a>
             </li>
-            <li class="@if ($active == 'services') active @endif hover:active"><a
-                    href="/public/services">Layanan</a>
+            <li class="@if ($active == 'services') active @endif hover:active"><a href="/services">Layanan</a>
             </li>
             <li class="@if ($active == 'pricing') active @endif hover:active"><a
-                    href="/public/services#pricing">Harga</a></li>
+                    href="/services#pricing">Harga</a></li>
             <li class="@if ($active == 'testimonial') active @endif hover:active"><a
-                    href="/public/testimonials">Testimoni</a></li>
-            <li class="@if ($active == 'blog') active @endif hover:active"><a href="/public/blogs">Blog</a>
+                    href="/testimonials">Testimoni</a></li>
+            <li class="@if ($active == 'blog') active @endif hover:active"><a href="/blogs">Blog</a>
             </li>
-            <li class="@if ($active == 'contact') active @endif hover:active"><a href="/public/contact">Kontak
-                    Kami</a>
+            <li class="@if ($active == 'contact') active @endif hover:active"><a href="/contact">Kontak</a>
             </li>
         </ul>
     </div>
 
     <div class="nav-button h-100 tracking-normal hover:shadow-regular transition hidden lg:block">
-        <a
-            href="/publichttps://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0">
+        {{-- <a
+            href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0"> --}}
+        <a href="/contact">
             <button class="button bg-primary text-white px-5 h-full rounded-lg font-semibold">Hubungi Kami</button>
         </a>
     </div>

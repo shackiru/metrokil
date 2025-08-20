@@ -1,41 +1,17 @@
 <x-template title="Testimonial" active="testimonial">
-    <section class="grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
-        <main class="md:col-span-2 col-span-3" data-aos="fade-right">
-            <div class="hero">
-                <h3 class="text-2xl font-semibold mb-2">Testimonial <span class="text-primary">Metrokil</span></h3>
-                <h1 class="text-5xl font-semibold">An <span class="text-primary">Innovation</span> for Your
-                    Environment
-                </h1>
-                <p class="text-lg mt-4 opacity-55 font-medium">Tikus merupakan salah satu hama yang dapat
-                    menimbulkan masalah serius di lingkungan rumah, pertanian, maupun industri. Kehadiran tikus
-                    tidak hanya mengganggu kenyamanan, tetapi juga berisiko bagi kesehatan dan merusak barang-barang
-                    berharga.
-                </p>
-                <p class="text-lg mt-4 opacity-55 font-medium">Tikus adalah hewan pengerat yang terkenal karena
-                    kemampuannya beradaptasi dengan lingkungan manusia. Mereka dapat ditemukan di berbagai tempat,
-                    mulai dari rumah tinggal, gudang, hingga area pertanian.
-                </p>
-                <p class="text-lg mt-4 opacity-55 font-medium">Ada berbagai cara yang dapat digunakan untuk membasmi
-                    tikus, dari yang tradisional hingga teknologi modern. Berikut adalah beberapa metode yang umum
-                    digunakan:
-                </p>
-            </div>
-        </main>
-        <aside class="md:col-span-1 hidden md:block" data-aos="fade-left">
-            <div class="hero-image">
-                <img src="{{ asset('images/Testimoni.jpg') }}" class="rounded-lg" alt="">
-            </div>
-        </aside>
-    </section>
 
-    <section class="review-client grid grid-cols-3 w-100 mt-24 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <section class="review-client grid grid-cols-3 lg:w-100 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <main class="col-span-3">
-            <h1 class="text-4xl lg:text-4xl font-semibold z-2">Apa kata <span class="text-primary">mereka?</span></h1>
-            <article class="grid grid-cols-8 items-center w-full relative mt-12">
-
-                <div class="min-w-full">
+            <h3 class="text-2xl font-medium mb-2">Testimonial <span class="text-primary">Metrokil</span></h3>
+            <div class="flex justify-between items-end">
+                <h1 class="text-4xl lg:text-5xl font-semibold">Apa kata <span class="text-primary">Mereka</span> ?</h1>
+            </div>
+            
+           <article class="grid grid-cols-6 items-center w-full relative mt-8">
+                {{-- Tombol Prev (desktop/laptop) --}}
+                <div>
                     <button onclick="scrollTestimonials(-1)"
-                        class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary  transition duration-200">
+                        class="hidden lg:flex absolute lg:-left-12 xl:-left-24 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -47,64 +23,51 @@
                 <div id="testimonials-slider"
                     class="flex col-span-6 overflow-x-auto gap-6 scroll-smooth snap-x snap-mandatory"
                     style="scrollbar-width: none; -ms-overflow-style: none;">
-                    <div
-                        class="flex flex-col-reverse md:grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl md:gap-6 h-fit md:h-full">
-                        <div class="grid grid-rows-4 py-12 md:py-20 pl-8">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Tim Metrokil sangat profesional,
-                                transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”
+                    
+                    {{-- Card 1 --}}
+                    <div class="flex flex-col-reverse items-center min-w-full snap-start bg-white border-2 rounded-xl md:gap-6 h-fit md:h-full">
+                        <div class="py-12 md:py-20 px-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84 text-justify">
+                                “Tim Metrokil sangat profesional, transparan kepada customer, dan penjelasannya sangat detail. Sukses selalu Metrokil!”
                             </p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Shaquille Ditama Putra</h3>
-                                <p class="text-sm text-gray-600">CEO 10</p>
+                                <h3 class="text-primary font-bold text-xl">Heru Sanjaya</h3>
+                                <p class="text-sm text-gray-600">Ketua RT</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/person-example.png') }}" alt="Foto"
-                            class="h-full object-cover max-h-64 md:max-h-full">
                     </div>
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
-                        <div class="grid grid-rows-4 py-20 pl-8">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Pelayanan yang sangat
-                                professional dari Metrokil. Metrokil dapat membasmi hama di Kantor saya yang seluas 2000
-                                Hektar. Terima kasih dan saya akan kembali ke anda apabila saya memiliki gangguan
-                                terhadap anda!”</p>
+
+                    {{-- Card 2 --}}
+                    <div class="flex flex-col-reverse items-center min-w-full snap-start bg-white border-2 rounded-xl md:gap-6 h-fit md:h-full">
+                        <div class="py-12 md:py-20 px-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84 text-justify">
+                                “Layanan sangat memuaskan, pekerjaannya rapi dan hasilnya benar-benar terasa. Properti saya jadi lebih aman.”
+                            </p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Evo Broken</h3>
-                                <p class="text-sm text-gray-600">CTO of Bank Saya</p>
+                                <h3 class="text-primary font-bold text-xl">Slamet Raharjo</h3>
+                                <p class="text-sm text-gray-600">Pemilik Kebun</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
-                        <div class="grid grid-rows-4 py-20 pl-8">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Sebagai masyarakat Indonesia,
-                                saya sangat bangga dengan perusahaan ini karena telah berhasil melayani lebih dari
-                                ratusan ribu pelanggan dan 98% dari pelanggan tersebut puas dengan layanan Metrokil,
-                                terima kasih!”</p>
+
+                    {{-- Card 3 --}}
+                    <div class="flex flex-col-reverse items-center min-w-full snap-start bg-white border-2 rounded-xl md:gap-6 h-fit md:h-full">
+                        <div class="py-12 md:py-20 px-8">
+                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84 text-justify">
+                                “Harga bersaing dan pelayanan ramah. Saya rekomendasikan Metrokil untuk siapa pun yang butuh jasa anti rayap.”
+                            </p>
                             <div>
-                                <h3 class="text-primary font-bold text-xl">Gagat the GOAT</h3>
-                                <p class="text-sm text-gray-600">CEO of Pembasmi Hama</p>
+                                <h3 class="text-primary font-bold text-xl">Budi Santoso</h3>
+                                <p class="text-sm text-gray-600">Pengelola Peternakan</p>
                             </div>
                         </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
-                    </div>
-                    <div class="grid grid-cols-2 items-center min-w-full snap-start bg-white border-2 rounded-xl gap-6">
-                        <div class="grid grid-rows-4 py-20 pl-8">
-                            <p class="text-lg text-gray-800 mb-4 row-span-3 max-w-84">“Saya dan istri saya selalu
-                                terganggu dengan rayap yang ada di kebun saya. Namun, saya sangat terharu dan tidak
-                                merasa terganggu lagi setelah Metrokil datang ke kebun saya. Kalian hebat, sukses
-                                selalu!”</p>
-                            <div>
-                                <h3 class="text-primary font-bold text-xl">Andreas Wirananda</h3>
-                                <p class="text-sm text-gray-600">Owner of Catering Olive Oil</p>
-                            </div>
-                        </div>
-                        <img src="{{ asset('images/gallery1.png') }}" alt="Foto" class="h-full object-cover">
                     </div>
                 </div>
 
+                {{-- Tombol Next (desktop/laptop) --}}
                 <div>
                     <button onclick="scrollTestimonials(1)"
-                        class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
+                        class="hidden lg:flex absolute lg:-right-12 xl:-right-24 top-1/2 transform -translate-y-1/2 z-10 bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -112,12 +75,30 @@
                     </button>
                 </div>
 
+                {{-- Tombol Prev/Next (tablet & mobile → tampil di bawah card) --}}
+                <div class="flex justify-center gap-6 mt-6 col-span-6 lg:hidden">
+                    <button onclick="scrollTestimonials(-1)"
+                        class="bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button onclick="scrollTestimonials(1)"
+                        class="bg-white border border-primary rounded-full p-2 shadow-md hover:bg-primary transition duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary hover:text-white"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
             </article>
+
         </main>
     </section>
 
 
-    <section class="testimonial-client mt-24 w-full bg-primary">
+    <section class="testimonial-client mt-12 lg:mt-24 w-full bg-primary">
         <main class="py-20 pl-8 w-full">
             <header class="px-8 lg:px-14 xl:px-44 relative">
                 <span
@@ -172,7 +153,7 @@
         <header class="gallery-header flex justify-between items-center">
             <h1 class="text-4xl lg:text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
             <div class="gallery-more flex gap-3">
-                <p class="font-medium text-lg text-primary"><a href="/public/testimonials/galleries">Pelajari
+                <p class="font-medium text-lg text-primary"><a href="/testimonials/galleries">Pelajari
                         selengkapnya</a>
                 </p>
                 <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-red.svg') }}" alt=""
@@ -188,18 +169,19 @@
             <div class="gallery-content grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
                 @foreach ($galleries as $item)
                     <div class="gallery-pictures cursor-pointer gap-6 mt-4 lg:mb-12 grid-cols-3"
-                        @click="modalOpen = true; 
-                        modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; 
+                        @click="
+                        modalOpen = true;
+                        modalImage = '{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}';
                         modalTitle = '{{ strip_tags($item->name) }}'; 
                         modalDescription = '{{ strip_tags($item->description) }}';">
-                        <img src="http://localhost:8080/storage/{{ $item->image_url }}"
-                            class="rounded-xl h-56 w-full object-cover" alt="">
+                        <img src="{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}"
+                            class="rounded-xl h-96 w-full object-cover" alt="">
                         <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
                     </div>
                 @endforeach
             </div>
-            <div x-show="modalOpen" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-                x-cloak>
+            <div x-show="modalOpen"
+                class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 px-6">
 
                 <!-- Click outside to close -->
                 <div @click.outside="modalOpen = false"
@@ -303,17 +285,29 @@
         }
 
         function scrollTestimonials(direction) {
-            const container = document.getElementById("testimonials-slider");
-            const scrollAmount = 620; // Sesuaikan sesuai min-width testimonial
-            container.scrollBy({
-                left: direction * scrollAmount,
+            const slider = document.getElementById('testimonials-slider');
+            const cardWidth = slider.offsetWidth; 
+            const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+            let newScrollLeft = slider.scrollLeft + direction * cardWidth;
+
+            if (newScrollLeft > maxScroll) {
+                // kalau sudah di ujung kanan → balik ke awal
+                newScrollLeft = 0;
+            } else if (newScrollLeft < 0) {
+                // kalau sudah di ujung kiri → lompat ke akhir
+                newScrollLeft = maxScroll;
+            }
+
+            slider.scrollTo({
+                left: newScrollLeft,
                 behavior: 'smooth'
             });
         }
 
         function scrollReview(direction) {
             const container = document.getElementById('testimonials-container');
-            const scrollAmount = 600; // Atur sesuai kebutuhan
+            const scrollAmount = 600;
             if (direction === 'left') {
                 container.scrollBy({
                     left: -scrollAmount,

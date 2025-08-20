@@ -1,34 +1,30 @@
 <x-template title="Service" active="services">
-    <section class="mt-24 lg:mx-14 xl:mx-44 mx-8" data-services="{{ json_encode($services) }}">
+    <section class="mt-10 md:mt-20 lg:mt-32 lg:mx-14 xl:mx-44 mx-8" data-services="{{ json_encode($services) }}">
         <div class="grid grid-cols-5 justify-between lg:gap-6">
             <div class="lg:col-span-3 col-span-5" data-aos="fade-right">
                 <div class="flex flex-col">
                     <h4 class="text-xl font-semibold">Layanan <span class="text-primary">Metrokil</span></h4>
-                    <h2 class="text-4xl xl:text-5xl font-semibold mt-3">Kenapa harus <span
+                    <h2 class="text-4xl xl:text-5xl font-semibold mt-3">Kenapa pilih <span
                             class="text-primary">Metrokil</span>?</h2>
-                    <p class="xl:text-lg lg:text-md opacity-55 font-semibold mt-5">Kenapa Harus Metrokil? Metrokil telah
-                        dipercaya selama lebih dari dua dekade dalam mengendalikan hama bergaransi. Mulai dari
-                        pengendalian hama rayap, tikus, kecoak, nyamuk, lalat, kutu, tawon/lebah, fumigasi, desinfeksi
-                        dan pengendalian hama lainnya.
-                        <br><br>
-                        Tikus adalah hewan pengerat yang terkenal karena kemampuannya beradaptasi dengan lingkungan
-                        manusia. Mereka dapat ditemukan di berbagai tempat, mulai dari rumah tinggal, gudang, hingga
-                        area pertanian.
-                        <br><br>
-                        Ada berbagai cara yang dapat digunakan untuk membasmi tikus, dari yang tradisional hingga
-                        teknologi modern. Berikut adalah beberapa metode yang umum digunakan:
+                    <p class="xl:text-lg lg:text-md opacity-55 font-semibold mt-5">Bayangkan rumah atau tempat usaha
+                        Anda bebas dari gangguan hama, tanpa bau menyengat, tanpa khawatir pada kesehatan keluarga,
+                        hewan peliharaan, atau tanaman di sekitar. Itulah yang Metrokil hadirkan. <br><br>Kami bukan
+                        sekadar
+                        membasmi, tetapi memastikan hama tidak kembali dengan metode pengendalian terpadu yang aman dan
+                        ramah lingkungan. Tim kami berisi tenaga profesional berpengalaman yang selalu bekerja cepat,
+                        rapi, dan jujur, dengan komitmen penuh pada garansi layanan. Bersama Metrokil, Anda tidak hanya
+                        mendapatkan solusi pest control—Anda mendapatkan ketenangan pikiran.
                     </p>
                 </div>
             </div>
             <div class="col-span-2 justify-self-end lg:block hidden" data-aos="fade-left">
-                <img src="{{ asset('images/Service.jpg') }}"
-                    width="400" class="rounded-xl" alt="">
+                <img src="{{ asset('images/Service.jpg') }}" width="400" class="rounded-xl" alt="">
             </div>
         </div>
     </section>
 
-    <section class="mt-16 lg:mt-24 lg:mx-14 xl:mx-44 mx-8">
-        <main class="pricing" id="pricing">
+    <section class="pt-16 lg:pt-36 lg:mx-14 xl:mx-44 mx-8" id="pricing">
+        <main class="pricing">
             <header class="pricing-header">
                 <h2 class="font-semibold text-3xl xl:text-4xl">Pricelist <span class="text-primary">Metrokil</span></h2>
             </header>
@@ -60,31 +56,6 @@
                                 <ul class="mt-4 flex flex-col gap-3">
                                     <li class="text-lg font-semibold flex justify-between">
                                         <span>Membunuh serangga yang ada di dalam pondasi</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Mencegah serangga masuk ke dalam rumah</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Membuat pondasi rumah anda lebih kuat</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Menjaga kesehatan keluarga anda</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Memberikan jaminan garansi</span>
-                                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
-                                            alt="">
-                                    </li>
-                                    <li class="text-lg font-semibold flex justify-between">
-                                        <span>Memberikan pelayanan terbaik</span>
                                         <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}"
                                             alt="">
                                     </li>
@@ -149,6 +120,11 @@
             </div>
         </main>
     </section>
+
+        @foreach ($services as $service)
+        {{ $service->benefits }}
+
+        @endforeach
 </x-template>
 
 <script>
@@ -156,11 +132,19 @@
     const servicesData = document.querySelector('[data-services]').getAttribute('data-services');
     let services = JSON.parse(servicesData);
 
-    console.log(services);
-
     let rincianLayananList = services.map(service => service.description);
-
-    let manfaatLayananList = services.map(service => service.benefit);
+    let manfaatLayananList = services.map(service => {
+        if (Array.isArray(service.benefits)) {
+            // Kalau sudah array langsung return
+            return service.benefits;
+        } else if (typeof service.benefits === "string" && service.benefits.trim() !== "") {
+            // Kalau string JSON → parse
+            return JSON.parse(service.benefits);
+        } else {
+            // Kalau null, kosong, atau invalid → return array kosong
+            return [];
+        }
+    });
 
     // Scroll to the #pricing section if the URL contains #pricing
     document.addEventListener('DOMContentLoaded', () => {
@@ -196,19 +180,28 @@
                 rincianLayananElement.innerHTML = rincianLayananList[index];
 
                 // Update manfaat layanan list
-                // First clear the existing list
                 manfaatLayananContainer.innerHTML = '';
 
-                // Then add each benefit as a list item
-                manfaatLayananList[index].forEach(benefit => {
-                    manfaatLayananContainer.innerHTML += `
-                    <li class="text-lg font-semibold flex justify-between">
-                        <span>${benefit}</span>
-                        <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}" alt="">
-                    </li>
-                `;
-                });
+                if (!manfaatLayananList[index] || manfaatLayananList[index].length === 0) {
+                    manfaatLayananContainer.innerHTML = `
+                        <li class="text-lg">
+                            (Dapat menghubungi admin untuk detail manfaat layanan)
+                        </li>
+                    `;
+                } else {
+                    manfaatLayananList[index].forEach(benefit => {
+                        manfaatLayananContainer.innerHTML += `
+                            <li class="text-lg font-medium flex justify-between">
+                                <span>${benefit}</span>
+                                <img src="{{ asset('icons/Iconsax/Svg/All/linear/check-primary.svg') }}" alt="">
+                            </li>
+                        `;
+                    });
+                }
+
             });
         });
+
+        pricingCards[0].click();
     });
 </script>

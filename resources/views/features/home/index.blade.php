@@ -1,5 +1,6 @@
 <x-template title="Homepage" active="home">
-    <div class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-20 lg:mt-32 gap-20 lg:mx-14 xl:mx-44 mx-8">
+    <div
+        class="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-3 lg w-100 mt-10 md:mt-20 lg:mt-32 gap-20 lg:mx-14 xl:mx-44 mx-8">
         <div class="col-span-3 lg:col-span-3 xl:col-span-2" data-aos="fade-right">
             <div class="hero">
                 <div class="hero-content">
@@ -11,7 +12,9 @@
                     <p class="text-md xl:text-lg mt-6 lg:mt-10 opacity-55 font-medium text-justify">Selamat
                         datang di
                         website PT Metropolitan Agro Kimia Lestari <span
-                            class="text-primary font-semibold">Metrokil</span>, perusahaan pest control yang telah
+                            class="text-primary font-semibold opacity-100!">Metrokil</span>, perusahaan pest control
+                        yang
+                        telah
                         menjadi
                         salah satu pemimpin dalam
                         industri ini sejak tahun 1997. Dengan pengalaman dan dedikasi kami selama lebih dari dua dekade,
@@ -24,7 +27,7 @@
                             href="https://api.whatsapp.com/send/?phone=6281998405395&text=Halo!,+Saya+tertarik+untuk+menyewa+jasa+Metrokil!&type=phone_number&app_absent=0"><button
                                 class="hover:shadow-regular transition button bg-primary text-white px-6 py-3 text-sm md:px-6 md:py-4 md:h-full rounded-lg font-semibold">Hubungi
                                 Kami</button></a>
-                        <a href="/public/services#pricing"><button
+                        <a href="/services#pricing"><button
                                 class="hover:shadow-regular transition button ring-primary ring-2 inner text-primary px-6 py-3 text-sm md:px-6 md:py-4 md:h-full rounded-lg font-semibold hover:bg-primary hover:text-white">Daftar
                                 Harga</button></a>
                     </div>
@@ -47,7 +50,7 @@
             <div class="about-content flex flex-col justify-between h-full">
                 <h1 class="text-3xl lg:text-4xl font-semibold">Tentang <span class="text-primary">Metrokil</span></h1>
                 <p class="lg:text-lg opacity-70 mt-6 text-justify">Kami adalah <span class="text-primary">perusahaan
-                    pengendalian
+                        pengendalian
                         hama</span>
                     yang
                     berbasis di Jakarta,
@@ -57,13 +60,13 @@
                     Kami telah memiliki beberapa cabang dari <span class="text-primary">Jakarta, Bandung,
                         Jogja</span>, hingga <span class="text-primary">Malang</span>.
                     <br><br>
-                    Metrokil memiliki beberapa layanan termasuk <span class="text-primary">pembasmian tikus</span>,
+                    Metrokil memiliki beberapa layanan termasuk <span class="text-primary">pengendalian tikus</span>,
                     <span class="text-primary">serangga berkaki sepuluh</span>, dan
                     <span class="text-primary">rayap</span>. Mulai gunakan layanan Metrokil sekarang, dengan begitu
                     lingkungan Anda menjadi <span class="text-primary">nyaman dan
                         aman</span> bersama <span class="text-primary">Metrokil</span>.
                 </p>
-                <a href="/public/about" class="group about-history cursor-pointer mt-6">
+                <a href="/about" class="group about-history cursor-pointer mt-6">
                     <div class="flex justify-between">
                         <p class="text-lg group-hover:text-primary transition">Lihat sejarah Metrokil</p>
                         <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right.svg') }}" alt=""
@@ -78,7 +81,7 @@
     <div class="mt-12 lg:mt-28 lg:mx-14 xl:mx-44 mx-8">
         <div class="service-header flex justify-between items-center">
             <h1 class="text-3xl lg:text-4xl font-semibold">Layanan <span class="text-primary">Metrokil</span></h1>
-            <a href="/public/services">
+            <a href="/services">
                 <div class="service-more flex gap-3">
                     <p class="font-medium lg:text-lg text-primary hover:underline transition">Pelajari selengkapnya
                     </p>
@@ -88,18 +91,22 @@
             </a>
         </div>
         <div class="service-content grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4 mt-6">
-            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-right">
+            <div class="service-item flex flex-col md:flex-row justify-between shadow-soft rounded-xl md:h-52 h-full"
+                data-aos="fade-right">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/About.jpg') }}" class="rounded-l-xl h-full object-cover" alt="">
+                    <img src="{{ asset('images/About.jpg') }}"
+                        class="rounded-t-xl md:rounded-tr-none md:rounded-l-xl md:h-full h-64 w-full md:w-fit object-cover"
+                        alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Anti Rayap Imidaclorprid (Import)</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan
+                        <p class="md:text-sm text-md xl:text-lg mt-2">Menggunakan metode drill injection dan power
+                            spraying. Kebersihan
                             pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
-                        <a href="/public/contact"><button
+                        <a href="/contact"><button
                                 class="flex ring-primary ring-[1.5px] text-primary items-center px-3 py-1 font-semibold rounded-lg group hover:bg-primary hover:text-white transition text-sm md:text-md">Pesan
                                 layanan
                                 <svg class="text-primary group-hover:text-white transition"
@@ -113,18 +120,22 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-left">
+            <div class="service-item flex flex-col md:flex-row justify-between shadow-soft rounded-xl md:h-52 h-full"
+                data-aos="fade-left">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/Home.jpg') }}" class="rounded-l-xl h-full object-cover" alt="">
+                    <img src="{{ asset('images/Home.jpg') }}"
+                        class="rounded-t-xl md:rounded-tr-none md:rounded-l-xl md:h-full h-64 w-full md:w-fit object-cover"
+                        alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Anti Rayap Imidaclorprid (Lokal)</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan
+                        <p class="lg:text-sm text-md xl:text-lg mt-2">Menggunakan metode drill injection dan power
+                            spraying. Kebersihan
                             pasca treatment menjadi tanggung jawab kami. </p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
-                        <a href="/public/contact"><button
+                        <a href="/contact"><button
                                 class="flex ring-primary ring-[1.5px] text-primary items-center px-3 py-1 font-semibold rounded-lg group hover:bg-primary hover:text-white transition text-sm md:text-md">Pesan
                                 layanan
                                 <svg class="text-primary group-hover:text-white transition"
@@ -138,19 +149,22 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-right">
+            <div class="service-item flex flex-col md:flex-row justify-between shadow-soft rounded-xl md:h-52 h-full"
+                data-aos="fade-right">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/Service.jpg') }}" class="rounded-l-xl h-full object-cover"
+                    <img src="{{ asset('images/Service.jpg') }}"
+                        class="rounded-t-xl md:rounded-tr-none md:rounded-l-xl md:h-full h-64 w-full md:w-fit object-cover"
                         alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Anti Rayap Cypermethrin (Lokal)</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode drill injection dan power spraying. Kebersihan
+                        <p class="lg:text-sm text-md xl:text-lg mt-2">Menggunakan metode drill injection dan power
+                            spraying. Kebersihan
                             pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
-                        <a href="/public/contact"><button
+                        <a href="/contact"><button
                                 class="flex ring-primary ring-[1.5px] text-primary items-center px-3 py-1 font-semibold rounded-lg group hover:bg-primary hover:text-white transition text-sm md:text-md">Pesan
                                 layanan
                                 <svg class="text-primary group-hover:text-white transition"
@@ -164,19 +178,22 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item flex justify-between shadow-soft rounded-xl h-48" data-aos="fade-left">
+            <div class="service-item flex flex-col md:flex-row justify-between shadow-soft rounded-xl md:h-52 h-full"
+                data-aos="fade-left">
                 <div class="service-image min-w-40">
-                    <img src="{{ asset('images/Testimoni.jpg') }}" class="rounded-l-xl h-full object-cover"
+                    <img src="{{ asset('images/Testimoni.jpg') }}"
+                        class="rounded-t-xl md:rounded-tr-none md:rounded-l-xl md:h-full h-64 w-full md:w-fit object-cover"
                         alt="">
                 </div>
                 <div class="service-description p-4 flex flex-col justify-between">
                     <div>
                         <h1 class="text-2xl font-semibold">Paket Pengendalian Hama Tikus</h1>
-                        <p class="lg:text-lg mt-2">Menggunakan metode perangkap hidup, perangkap mati, dan racun.
+                        <p class="lg:text-sm text-md xl:text-lg mt-2">Menggunakan metode perangkap hidup, perangkap
+                            mati, dan racun.
                             Kebersihan pasca treatment menjadi tanggung jawab kami.</p>
                     </div>
                     <div class="w-100 flex justify-end mt-4">
-                        <a href="/public/contact"><button
+                        <a href="/contact"><button
                                 class="flex ring-primary ring-[1.5px] text-primary items-center px-3 py-1 font-semibold rounded-lg group hover:bg-primary hover:text-white transition text-sm md:text-md">Pesan
                                 layanan
                                 <svg class="text-primary group-hover:text-white transition"
@@ -199,7 +216,7 @@
                 <h1 class="text-3xl lg:text-4xl font-semibold text-white"><span class="opacity-55">Testimoni</span>
                     Metrokil
                 </h1>
-                <a href="/public/testimonials">
+                <a href="/testimonials">
                     <div class="flex gap-3 text-white">
                         <p class="font-medium lg:text-lg hover:underline transition">Pelajari selengkapnya
                         </p>
@@ -256,7 +273,7 @@
             <div class="px-8 lg:px-14 xl:px-44 flex justify-between items-center">
                 <h1 class="text-3xl lg:text-4xl font-semibold text-black">Blog <span
                         class="text-primary">Metrokil</span></h1>
-                <a href="/public/blogs">
+                <a href="/blogs">
                     <div class="flex gap-3">
                         <p class="font-medium lg:text-lg text-primary hover:underline transition">Pelajari selengkapnya
                         </p>
@@ -271,10 +288,10 @@
                 onmouseleave="endBlogDrag()" ontouchstart="startBlogDrag(event)" ontouchmove="blogMove(event)"
                 ontouchend="endBlogDrag()">
                 @foreach ($blogs as $blog)
-                    <a href="/public/blogs/{{ $blog->id }}" data-aos="fade-left">
+                    <a href="/blogs/{{ $blog->id }}" data-aos="fade-left">
                         <x-blog-card date="{{ $blog->created_at }}" category="{{ $blog->category }}"
                             image="{{ $blog->image_url }}" author="{{ $blog->user->name }}" isLimitWidth="true">
-                            {{ \Str::limit($blog->title, 50) }}
+                            {{ \Str::limit($blog->title, 49) }}
                         </x-blog-card>
                     </a>
                 @endforeach

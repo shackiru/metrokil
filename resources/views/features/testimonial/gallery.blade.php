@@ -1,46 +1,53 @@
-<x-template title="Gallery Metrokil" active="testimonial"> 
-    <div x-data="{ selectedImage: 'http://localhost:8080/storage/{{ $gallery->first()->image_url ?? '' }}' }">
-            <div class="gallery-header flex justify-between items-center">
-                <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
-            </div>
-            <!-- Gambar besar -->
-            <div class="mb-6">
-                <img :src="selectedImage" class="rounded-xl w-full h-96 object-cover" alt="">
-            </div>
+<x-template title="Gallery Metrokil" active="testimonial">
+    <div x-data="{ selectedImage: 'http://localhost:8080/storage/{{ $gallery->first()->image_url ?? '' }}' }" class="gap-20 lg:mx-14 xl:mx-44 mx-8">
+        <div class="gallery-header flex justify-between items-center">
+            <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
+        </div>
+        <!-- Gambar besar -->
+        <div class="mb-6">
+            <img :src="selectedImage" class="rounded-xl w-full h-96 object-cover" alt="">
+        </div>
 
-            <!-- Grid gambar -->
-            <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
-                @foreach ($gallery->take(3) as $item)
-                    <div class="gallery-pictures cursor-pointer gap-6"
-                        @click="selectedImage = 'http://localhost:8080/storage/{{ $item->image_url }}'">
-                        <img src="http://localhost:8080/storage/{{ $item->image_url }}"
-                            class="rounded-xl h-56 w-full object-cover" alt="">
-                        <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
-                    </div>
-                @endforeach
-            </div>
+        <!-- Grid gambar -->
+        <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
+            @foreach ($gallery->take(3) as $item)
+                <div class="gallery-pictures cursor-pointer gap-6"
+                    @click="selectedImage = '{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}'">
+                    <img src="{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}"
+                        class="rounded-xl h-56 w-full object-cover" alt="">
+                    <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
+                </div>
+            @endforeach
+        </div>
 
     </div>
-    <div class="mt-12 mx-44" x-data="{ modalOpen: false, modalImage: '', modalTitle: '', modalDescription: '' }">
+    <div class="mt-12  lg:mx-14 xl:mx-44 mx-8" x-data="{ modalOpen: false, modalImage: '', modalTitle: '', modalDescription: '' }">
         <div class="gallery-header flex justify-between items-center">
             <h1 class="text-4xl font-semibold">Gallery <span class="text-primary">Metrokil</span></h1>
         </div>
 
-        <div class="gallery-content grid grid-cols-3 gap-4 mt-6">
+        <div class="gallery-content grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-6">
             @foreach ($gallery as $item)
-                <div class="gallery-pictures cursor-pointer gap-6 mt-6 mb-20 lg:mb-36 grid-cols-3" 
-                     @click="modalOpen = true; modalImage = 'http://localhost:8080/storage/{{ $item->image_url }}'; modalTitle = '{{ strip_tags($item->name) }}'; modalDescription = '{{ strip_tags($item->description) }}';">
-                    <img src="http://localhost:8080/storage/{{ $item->image_url }}" class="rounded-xl h-56 w-full object-cover" alt="">
+                <div class="gallery-pictures cursor-pointer gap-6 mb-6 lg:mb-12 grid-cols-3"
+                   @click="
+                    modalOpen = true;
+                    modalImage = '{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}';
+                    modalTitle = '{{ strip_tags($item->name) }}'; 
+                    modalDescription = '{{ strip_tags($item->description) }}';">
+                    <img src="{{ Storage::disk('public')->exists($item->image_url) ? Storage::url($item->image_url) : $item->image_url }}"
+                        class="rounded-xl h-96 w-full object-cover" alt="">
                     <p class="font-semibold text-center mt-2">{{ $item->name }}</p>
                 </div>
             @endforeach
         </div>
 
         <!-- Modal -->
-        <div x-show="modalOpen" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50" x-cloak>
+        <div x-show="modalOpen" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+            x-cloak>
             <div class="bg-white rounded-xl shadow-lg max-w-3xl w-full relative overflow-hidden">
                 <!-- Close Button -->
-                <button @click="modalOpen = false" class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl">
+                <button @click="modalOpen = false"
+                    class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl">
                     &times;
                 </button>
 
