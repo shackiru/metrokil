@@ -120,11 +120,6 @@
             </div>
         </main>
     </section>
-
-        @foreach ($services as $service)
-        {{ $service->benefits }}
-
-        @endforeach
 </x-template>
 
 <script>
