@@ -19,6 +19,20 @@ class GalleryController extends Controller
         return view('features.testimonial.index', compact('galleries', 'testimonials'));
     }
 
+    public function all()
+    {
+        if (request('search')) {
+            $testimonials = Testimonial::where('name', 'like', '%' . request('search') . '%')
+                ->orWhere('review', 'like', '%' . request('search') . '%')
+                ->paginate(6)
+                ->withQueryString();
+        } else {
+            $testimonials = Testimonial::latest()->paginate(6);
+        }
+
+        return view('features.testimonial.testimonies', compact('testimonials'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */

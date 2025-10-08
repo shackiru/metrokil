@@ -100,11 +100,19 @@
 
     <section class="testimonial-client mt-12 lg:mt-24 w-full bg-primary">
         <main class="py-20 pl-8 w-full">
-            <header class="px-8 lg:px-14 xl:px-44 relative">
-                <span
-                    class="text-9xl text-primary opacity-60 absolute z-1 top-[-20px] left-0 lg:left-6 xl:left-36">"</span>
-                <h1 class="text-4xl lg:text-4xl font-semibold z-2 text-white">Testimoni Metrokil</h1>
-            </header>
+            <div class="flex justify-between">
+                <header class="px-8 lg:px-14 xl:px-44 relative">
+                    <span
+                        class="text-9xl text-primary opacity-60 absolute z-1 top-[-20px] left-0 lg:left-6 xl:left-36">"</span>
+                    <h1 class="text-4xl lg:text-4xl font-semibold z-2 text-white">Testimoni Metrokil</h1>
+                </header>
+                <div class="flex gap-3 pr-8 lg:pr-14 xl:pr-44 items-center hover:underline decoration-white cursor-pointer">
+                    <p class="font-medium text-lg text-white"><a href="/testimonials/all">Pelajari selengkapnya</a></p>
+                    <img src="{{ asset('icons/Iconsax/Svg/All/linear/arrow-right-white.svg') }}" alt=""
+                        width="20">
+
+                </div>
+            </div>
 
             <article class="testimonials flex mt-4 py-4 gap-6 overflow-x-auto w-full cursor-grab select-none"
                 id="testimonials-container" style="scrollbar-width: none; -ms-overflow-style: none;"

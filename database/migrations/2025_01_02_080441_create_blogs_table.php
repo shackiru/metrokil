@@ -16,10 +16,12 @@ return new class extends Migration
             $table->string('title');
             $table->text('description');
             $table->unsignedBigInteger('user_id');
-            $table->enum('category', ['news', 'information']);
+            // $table->enum('category', ['news', 'information']);
+            $table->unsignedBigInteger('category_id');
             $table->text('image_url');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
         });
     }
 

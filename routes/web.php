@@ -24,6 +24,9 @@ Route::get('/about', function () {
     return view('features.about.index');
 });
 
-Route::get('/testimonials', [GalleryController::class, 'index']);
-Route::get('/testimonials/galleries', [GalleryController::class, 'show']);
+Route::prefix('testimonials')->group(function () {
+    Route::get('/', [GalleryController::class, 'index']);
+    Route::get('/galleries', [GalleryController::class, 'show']);
+    Route::get('/all', [GalleryController::class, 'all']);
+});
 

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Blog extends Model
 {
     protected $guarded = ['id'];
-    protected $with = ['user'];
+    protected $with = ['user', 'category'];
 
     const RULES = [
         'title' => ['required', 'string', 'max:255'],
@@ -20,5 +20,10 @@ class Blog extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
     }
 }
